@@ -1,0 +1,23 @@
+{
+	"Akrobatik": {
+		"Schwerpunkte": ["Ausweichen", "Balancieren", "Entfesseln", "Körperformen", "Kunststücke", "Sturz abfangen"],
+		"1": {
+			"Ausweichen I": {},
+			"Balance": {},
+			"Blitzreflexe": {},
+			"Stehaufmännchen": {}
+		},
+		"2": {
+			"Abrollen": {},
+			"Ausweichen II": {},
+			"Entfesselungskünstler": {},
+			"Koordiniertes Ausweichen": {},
+			"Meisterhafte Balance": {}
+		},
+		"3": {
+			"Ausweichbewegungen": {},
+			"Ausweichen III:": {},
+			"Schlangenmensch": {}
+		}
+	}
+}

@@ -1,24 +1,37 @@
-from tkinter import *
+import abstammungen
+import kulturen
+testabst = ["alle au\u00dfer Hochadel",
+        "H\u00f6flinge und Landadel"]
+testabst2 = [
+        "Einsiedler",
+        "Handwerker",
+        "Kleinbauern",
+        "Kriegsvolk",
+        "Reisende",
+        "Zauberer"
+    ]
 
-class App(Toplevel):
-def sel():
-   selection = "You selected the option " + str(var.get())
-   label.config(text = selection)
 
-root = Tk()
-var = IntVar()
-R1 = Radiobutton(root, text="Option 1", variable=var, value=1,
-                  command=sel)
-R1.pack( anchor = W )
+def parseAbstammung(akzeptierteAbstammungRaw):
+    if type(akzeptierteAbstammungRaw) is str:
+        akzeptierteAbstammungRaw = [akzeptierteAbstammungRaw]
+    else:
+        akzeptierteAbstammungRaw = akzeptierteAbstammungRaw
+    akzeptierteAbstammungRaw =  ' '.join(akzeptierteAbstammungRaw)
+    akzeptierteAbstammung = []
+    if 'alle' in akzeptierteAbstammungRaw:
+        akzeptierteAbstammung += abstammungen.ListeAbstammungen
+        if 'außer' in akzeptierteAbstammungRaw:
+            ausnahmen = akzeptierteAbstammungRaw.rsplit(sep = ' außer ', maxsplit = 1)[1]
+            for ausnahme in ausnahmen.split(' '):
+                try:
+                    akzeptierteAbstammung.remove(ausnahme)
+                except ValueError:
+                    pass    
+                
+    else:
+        akzeptierteAbstammung += akzeptierteAbstammungRaw.split(sep = ' ')
+    return akzeptierteAbstammung
 
-R2 = Radiobutton(root, text="Option 2", variable=var, value=2,
-                  command=sel)
-R2.pack( anchor = W )
-
-R3 = Radiobutton(root, text="Option 3", variable=var, value=3,
-                  command=sel)
-R3.pack( anchor = W)
-
-label = Label(root)
-label.pack()
-root.mainloop()
+for x in kulturen.Kulturen:
+    print(parseAbstammung(kulturen.Kulturen[x].Abstammungen))

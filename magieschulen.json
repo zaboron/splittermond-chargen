@@ -1,0 +1,21 @@
+{
+	"Bannmagie": {"attr1": "MYS", "attr2": "WIL", "description": "das Bekämpfen anderer Zauber und magischer Wirkungen" },
+	"Beherrschungsmagie": {"attr1": "MYS", "attr2": "WIL", "description": "Kontrolle über den Geist eines anderen Wesens" },
+	"Bewegungsmagie": {"attr1": "MYS", "attr2": "BEW", "description": "magische Bewegung des eigenen oder eines anderen Körpers oder Objekts" },
+	"Erkenntnismagie": {"attr1": "MYS", "attr2": "VER", "description": "Hellseherei, Gedankenlesen und Verständigung" },
+	"Felsmagie": {"attr1": "MYS", "attr2": "KON", "description": "Kontrolle über Felsen, Steine und Erde" },
+	"Feuermagie": {"attr1": "MYS", "attr2": "AUS", "description": "Kontrolle über Feuer und Hitze" },
+	"Heilungsmagie": {"attr1": "MYS", "attr2": "AUS", "description": "magische Heilung, Erholung und Wachstum" },
+	"Illusionsmagie": {"attr1": "MYS", "attr2": "AUS", "description": "Beugen der Realität und Verwirren der Sinne" },
+	"Kampfmagie": {"attr1": "MYS", "attr2": "STÄ", "description": "zerstörerische Magie zum Bekämpfen eines Gegners" },
+	"Lichtmagie": {"attr1": "MYS", "attr2": "AUS", "description": "Licht und Helligkeit, aber auch Segen und die Macht des Guten" },
+	"Naturmagie": {"attr1": "MYS", "attr2": "AUS", "description": "Beeinflussen von Pflanzen, Tieren und Wildnis" },
+	"Schattenmagie": {"attr1": "MYS", "attr2": "INT", "description": "Schatten und Dunkelheit, die Macht der Finsternis" },
+	"Schicksalsmagie": {"attr1": "MYS", "attr2": "AUS", "description": "Wahrsagerei, Segnungen, Flüche und das Erkennen von Bestimmungen" },
+	"Schutzmagie": {"attr1": "MYS", "attr2": "AUS", "description": "Schutz vor Gefahren, Schaden und Zaubern" },
+	"Stärkungsmagie": {"attr1": "MYS", "attr2": "STÄ", "description": "die Stärkung und Verbesserung von Lebewesen" },
+	"Todmagie": {"attr1": "MYS", "attr2": "VER", "description": "Verfall, Vergänglichkeit, Geister und Untote" },
+	"Verwandlungsmagie": {"attr1": "MYS", "attr2": "KON", "description": "die Verwandlung des eigenen oder eines anderen Körpers" },
+	"Wassermagie": {"attr1": "MYS", "attr2": "INT", "description": "Kontrolle über Wasser, Kälte und Nebel" },
+	"Windmagie": {"attr1": "MYS", "attr2": "VER", "description": "Kontrolle über Wind, Wetter und Blitze" }
+}

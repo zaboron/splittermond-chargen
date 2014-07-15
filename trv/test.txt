@@ -1,0 +1,1279 @@
+-- call updatePriceBlocking(20140708, 20140708);
+-- select count(1) from trivago_analytic.prod_partnerslot_rules  -- 242860
+-- select blocktype, count(1) from trivago_analytic.prod_partnerslot_rules group by blocktype;   -- 41594, 259260
+-- select * from trivago_analytic.prod_partnerslot_rules;
+-- select * from trivago_analytic.prod_partnerslot_rules where blocktype = -1;
+-- select count(1) from trivago_analytic.tempfb_bidding16;
+-- select * from trivago_analytic.tempfb_bidding16;
+-- select * from trivago_analytic.prod_partnerslot_rules where blocked_partner_id like '%,%';
+-- select locale, count(1) from trivago_analytic.prod_partnerslot_rules where blocktype = -1 group by locale;  
+-- select locale, blocktype, count(1) from trivago_analytic.prod_partnerslot_rules where blocked_partner_id like '%,%' group by locale, blocktype;  
+-- select locale, blocktype, count(1) from trivago_analytic.prod_partnerslot_rules group by locale, blocktype;
+-- select blocktype, count(1) from trivago_analytic.prod_partnerslot_rules group by blocktype; 
+
+/*
+create table trivago_analytic.prod_partnerslot_rules_backup20140506 as
+
+select * from trivago_analytic.prod_partnerslot_rules_backup20140506;
+
+call updatePriceBlocking(20140505, 20140505);
+
+*/
+
+use trivago_analytic_ssd;
+
+delimiter //
+
+drop procedure if exists updatePriceBlocking
+//
+create procedure updatePriceBlocking(startDate int, endDate int)
+begin
+
+	declare crunchDate int;
+	
+	select startDate into crunchDate;
+	
+     call logQueryTime('updatePriceBlocking_start',startDate);
+
+  WHILE endDate >= crunchDate DO
+
+    CALL updatePriceBlockingDay(round(crunchDate + 0));
+    SET crunchDate = round(date_add(crunchDate, interval 1 day));
+
+  END WHILE;
+
+      call logQueryTime('updatePriceBlocking_end',startDate);
+
+end
+//
+
+
+
+drop procedure if exists updatePriceBlockingDay
+//
+create procedure updatePriceBlockingDay(crunchDate int)
+begin
+      
+declare absolute_minimum_cpc int default 14;
+declare absolute_maximum_cpc int default 66;
+declare pba, pbrunning, pbcntr, pbitem_d bigint unsigned default 0;
+
+-- quality score für booking und für andere:
+declare qs_booking double default 1.0;
+declare qs_other double default 1.0;
+
+-- declare max_quality_score_date int;
+-- select max(date) from trivago_analytic.prod_quality_score_bi into max_quality_score_date;
+
+
+drop table if exists temppb_bidding00;
+create temporary table temppb_bidding00 engine = memory as
+select
+      date_id,
+      locale,
+      left(date_id,8) as date,
+      partner_id, 
+      bucket_id,
+      item_id           
+from
+      co_log
+where
+      date_id >= date_sub(crunchDate, interval 7 day) * 100000000000
+      and page_id = 8001
+      and partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928) -- 850 taken out of the list 18.06
+      AND partner_id <> 0
+      AND item_id <> 0;
+      
+
+      
+drop table if exists temppb_bidding01;
+create temporary table temppb_bidding01 engine = memory as   
+select 
+      locale,
+      date,
+      item_id,
+      partner_id,
+      bucket_id,
+      count(1) as clickouts
+from 
+      temppb_bidding00
+group by
+      locale, date, item_id, partner_id, bucket_id;
+      
+      
+      
+      
+      
+      
+      
+alter table temppb_bidding01 add column cpc double default 0.0;
+create index idx on temppb_bidding01(partner_id, bucket_id, locale);
+
+
+
+-- start: jetzt mit aktuellen co-preisen rechnen
+
+call logQueryDetail('updatePriceBlocking01', crunchDate );  
+drop table if exists temppb_price1;
+create temporary table temppb_price1 ENGINE=MEMORY as
+select 
+      max(start_date) as date, 
+      partner_id,
+      bucket_id,
+      locale
+from 
+      trivago_analytic_repl.co_price  
+where 
+      start_date <= 0+date_add(crunchDate, interval 1 day)
+      and state = 0
+      and page_id = 8001 
+      and partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+      AND partner_id <> 0
+group by 
+      partner_id,
+      bucket_id,  
+      locale;
+      
+      
+alter table temppb_price1 add primary key (date, partner_id, bucket_id, locale);
+
+-- REPLACE!
+drop table if exists temppb_price2;
+create table temppb_price2 as
+select 
+      p1.*,       
+      if(cp.partner_id != 626, qs_other * cp.price, qs_booking * cp.price) as cpc
+from 
+      temppb_price1 p1,
+      trivago_analytic_repl.co_price cp
+where
+      cp.state = 0
+      and cp.page_id = 8001
+      and cp.start_date = p1.date
+      and cp.partner_id = p1.partner_id
+      and cp.bucket_id = p1.bucket_id
+      and cp.locale = p1.locale;
+
+
+/* 
+REPLACE ABOVE BY     
+QS:
+
+ drop table if exists temp_weighted_locale_qs;
+ create temporary table temp_weighted_locale_qs ENGINE = MEMORY as
+    select 
+       ct.locale,
+       round(sum(clickouts * qs.qs_bi)/sum(clickouts) ,1) as avg_qs_locale
+ from 
+       trivago_analytic.prod_quality_score_bi qs,
+       trivago_analytic.co_tracking ct
+ where
+       ct.page_id = 8001
+       and ct.locale = qs.locale
+       and ct.date = crunchDate
+       and qs.date = max_quality_score_date
+ group by 
+       ct.locale;
+       
+create index ind on temp_weighted_locale_qs(locale); 
+
+
+drop table if exists temppb_price2;
+create table temppb_price2 as
+select 
+      p1.*,     
+      if(qs.qs_bi is null, 1.0* cp.price, qs_bi* cp.price/l.avg_qs_locale) as cpc
+from 
+      temppb_price1 p1
+join 
+      trivago_analytic_repl.co_price cp
+on 
+      cp.start_date = p1.date
+      and cp.partner_id = p1.partner_id
+      and cp.bucket_id = p1.bucket_id
+      and cp.locale = p1.locale
+left outer join 
+      trivago_analytic.prod_quality_score_bi  qs
+on 
+      qs.partner_id = p1.partner_id and qs.locale = p1.locale and qs.bucket_id = p1.bucket_id and qs.date = max_quality_score_date
+left outer join 
+      temp_weighted_locale_qs l
+on 
+      l.locale = p1.locale  
+where
+      cp.state = 0
+      and cp.page_id = 8001;
+*/        
+
+    
+
+create index idx on temppb_price2(partner_id, bucket_id, locale);
+
+
+update
+      temppb_bidding01 b1,
+      temppb_price2 p2
+set
+      b1.cpc = p2.cpc
+where
+      b1.partner_id = p2.partner_id
+      and b1.bucket_id = p2.bucket_id
+      and b1.locale = p2.locale;
+      
+      
+-- ende: jetzt mit akutellen co-preisen rechnen
+
+call logQueryDetail('updatePriceBlocking02', crunchDate );  
+
+
+drop table if exists temppb_bidding02;
+create temporary table temppb_bidding02 engine = memory as   
+select 
+      locale,
+      item_id,
+      partner_id,
+      sum(clickouts) as clickouts,
+      sum(clickouts*cpc)/sum(clickouts) as cpc
+from 
+      temppb_bidding01
+group by
+      locale, item_id, partner_id;
+      
+
+      
+drop table if exists temppb_bidding03;
+create temporary table temppb_bidding03 engine = memory as   
+select 
+      locale,
+      item_id,
+      sum(clickouts) as hotel_clickouts,
+      sum(clickouts*cpc)/sum(clickouts) as hotel_cpc,
+      count(distinct partner_id) as partner_nmbr
+from 
+      temppb_bidding02
+group by
+      locale, item_id;
+      
+      
+create index ix_item_id on temppb_bidding03(item_id);
+create index ix_locale_item_id on temppb_bidding03(locale,item_id);
+
+
+alter table temppb_bidding03 add column category_id int default null; 
+
+
+update
+      temppb_bidding03 d3,
+      item i
+set
+      d3.category_id = i.category_id
+where
+      d3.item_id = i.item_id;
+      
+/******************************************
+Update ABC-categories (paths)
+******************************************/          
+      
+call logQueryDetail('updatePriceBlocking03', crunchDate );  
+drop table if exists temppb_bidding04;
+create temporary table temppb_bidding04 engine = memory as   
+select
+      locale,
+      category_id,
+      sum(hotel_clickouts) as category_clickouts,
+      sum(hotel_clickouts*hotel_cpc)/sum(hotel_clickouts) as category_cpc,
+      'D' as category_abc 
+from 
+      temppb_bidding03
+group by
+      locale, category_id;
+      
+      
+call logQueryDetail('updatePriceBlocking03a', crunchDate );  
+
+
+drop table if exists temppb_bidding05;
+create temporary table temppb_bidding05 engine = memory as
+select
+      category_id,
+      round(sum(category_clickouts),0) as cat_clickouts 
+from 
+      temppb_bidding04
+group by
+      category_id
+order by
+      cat_clickouts asc;
+      
+      
+set @pba:=(select   sum(cat_clickouts) from temppb_bidding05);
+
+
+
+call logQueryDetail('updatePriceBlocking03b', crunchDate );  
+drop table if exists temppb_bidding06;
+select @pbrunning:=0; 
+create temporary table temppb_bidding06 engine = memory as
+select 
+      *,
+      @pbrunning:=@pbrunning + cat_clickouts  as acc_clickouts
+from 
+      temppb_bidding05;
+
+
+
+call logQueryDetail('updatePriceBlocking03c', crunchDate );  
+drop table if exists temppb_bidding07;
+create temporary table temppb_bidding07 engine = memory as
+select
+      category_id, 
+      cat_clickouts, 
+      acc_clickouts,
+      if(acc_clickouts < @pba/3, 'C', if(acc_clickouts > 2*@pba/3, 'A', 'B')) as abc
+from 
+      temppb_bidding06;
+      
+      
+
+
+create index idx on temppb_bidding07(category_id);
+create index ix_locale_category_id on temppb_bidding04(locale,category_id);
+
+
+alter table temppb_bidding03 add column category_clickouts int default null;
+alter table temppb_bidding03 add column category_cpc double default null;
+
+
+call logQueryDetail('updatePriceBlocking03d', crunchDate );  
+update
+      temppb_bidding03 c3,
+      temppb_bidding04 c3c
+set
+      c3.category_clickouts = c3c.category_clickouts,
+      c3.category_cpc = c3c.category_cpc
+where
+      c3.locale = c3c.locale
+      and c3.category_id = c3c.category_id;
+      
+
+      
+alter table temppb_bidding03 add column category_abc char(1);
+
+
+
+update
+      temppb_bidding03 c3,
+      temppb_bidding07 c34
+set
+      c3.category_abc = c34.abc
+where
+      c3.category_id = c34.category_id;
+      
+      
+create index idx on temppb_bidding02(locale,item_id);
+
+call logQueryDetail('updatePriceBlocking03e', crunchDate );  
+      
+drop table if exists temppb_bidding08;
+create temporary table temppb_bidding08 engine = memory as   
+select 
+      c2.*, 
+      c3.hotel_clickouts, 
+      c3.hotel_cpc, 
+      c3.category_id,
+      c3.category_clickouts,
+      c3.category_cpc,
+      c3.category_abc 
+from 
+      temppb_bidding02 c2,
+      temppb_bidding03 c3
+where
+      c2.locale = c3.locale
+      and c2.item_id = c3.item_id;
+      
+
+
+
+alter table temppb_bidding08 add column other_cpc double default null;
+
+
+update
+      temppb_bidding08
+set   
+      other_cpc = if(hotel_clickouts > clickouts,    
+      (hotel_clickouts*hotel_cpc - clickouts*cpc) / (hotel_clickouts - clickouts), cpc); 
+      
+create index idxb on temppb_bidding08(locale, category_abc);
+      
+call logQueryDetail('updatePriceBlocking03f', crunchDate );  
+drop table if exists temppb_bidding09;
+create table temppb_bidding09 as     
+select
+      upper(b8.locale) as locale,
+      b8.item_id,
+      b8.partner_id,
+      b8.clickouts,
+      b8.hotel_clickouts - b8.clickouts as other_clickouts,
+      b8.hotel_clickouts,
+      b8.cpc,
+      b8.other_cpc,
+      b8.hotel_cpc,
+      b8.category_cpc,
+      b8.category_abc,
+      --    round((- clickouts * cpc + if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * clickouts * 0.5 * (other_cpc + category_cpc))*100000,0) as block_benefit,
+      --      if(b8.locale not in ('DE', 'FI'), 
+     round((- b8.clickouts * b8.cpc + if(b8.category_abc = 'A', a.prob_final, if(b8.category_abc = 'B', a.prob_final, a.prob_final)) * b8.clickouts * 0.5 * (other_cpc + b8.category_cpc))*100000,0)  as block_benefit,
+      --        round((- b8.clickouts * b8.cpc + if(b8.category_abc = 'A', 0.86, if(b8.category_abc = 'B', 0.72, 0.60)) * b8.clickouts * 0.5 * (b8.other_cpc + b8.category_cpc))*100000,0))
+      round(1000*cpc,0) as prio    
+from 
+      temppb_bidding08  b8 
+left outer join
+      trivago_analytic_ssd.blockweights a
+on
+    (b8.locale = a.locale 
+     and b8.category_abc = a.abc
+     and a.state = 0);
+      
+
+/***************************************
+exposure CPCs
+***************************************/
+
+call logQueryDetail('updatePriceBlocking04', crunchDate );  
+
+create index idxb on temppb_bidding09(locale, category_abc);
+
+drop table if exists trivago_analytic_ssd.tpc_exposure_cpcs;
+create table trivago_analytic_ssd.tpc_exposure_cpcs as
+select
+      b9.locale,
+      b9.item_id,
+      b9.partner_id,
+      i.category_id,    
+       --    if(b9.locale not in ('de', 'fi'), 
+      round(100*if(category_abc = 'A', a.prob_final, if(category_abc = 'B', a.prob_final, a.prob_final)) * clickouts * 0.5 * (other_cpc + category_cpc) / clickouts,0)  as exposure_cpc  
+      --    round(100*if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * clickouts * 0.5 * (other_cpc + category_cpc) / clickouts,0) )
+      --    as exposure_cpc   
+      --    round(100*if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * clickouts * 0.5 * (other_cpc + category_cpc) / clickouts,0) as exposure_cpc 
+from
+      temppb_bidding09 b9
+join
+      item i
+on
+      ( b9.item_id = i.item_id )
+left outer join
+      trivago_analytic_ssd.blockweights a
+on
+      (b9.locale = a.locale 
+      and b9.category_abc = a.abc 
+      and a.state = 0);
+      
+      
+update trivago_analytic_ssd.tpc_exposure_cpcs
+set   exposure_cpc = absolute_minimum_cpc where exposure_cpc < absolute_minimum_cpc;
+
+update trivago_analytic_ssd.tpc_exposure_cpcs
+set   exposure_cpc = absolute_maximum_cpc where exposure_cpc > absolute_maximum_cpc;    
+      
+      
+create index idx on trivago_analytic_ssd.tpc_exposure_cpcs(locale, item_id, partner_id); 
+      
+      
+drop table if exists temppb_impressed_lpi_exp;
+create table temppb_impressed_lpi_exp as
+select
+      locale,
+      item_id,
+      partner_id,
+      bucket_id,
+      count(1) as clicks,
+      round(min(100*cpc_bid),0) as min_cpc_bid,
+      round(avg(100*cpc_bid),0) as avg_cpc_bid
+from
+      psl_clickout_log_partner_detail
+where
+      date_id between concat(0+date_add(crunchDate, interval -6 day), '00000000000') AND concat(crunchDate + 1, '00000000000')
+      and partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+      AND partner_id <> 0
+group by
+      locale, item_id, partner_id;
+     
+ 
+/*
+
+drop table if exists temppb_impressed_lpi_exp;
+create table temppb_impressed_lpi_exp as
+select
+      p.locale,
+      p.item_id,
+      p.partner_id,
+      p.bucket_id,
+      count(1) as clicks,
+      if(qs.qs_bi is null, round(min(100*cpc_bid),0),   round(min(100*cpc_bid*qs.qs_bi/l.avg_qs_locale ),0 )) as min_cpc_bid,
+      if(qs.qs_bi is null, round(avg(100*cpc_bid),0),   round(avg(100*cpc_bid*qs.qs_bi/l.avg_qs_locale ),0 )) as avg_cpc_bid 
+from
+      trivago_analytic_ssd.psl_clickout_log_partner_detail p
+left outer join 
+      trivago_analytic.prod_quality_score_bi  qs
+on 
+      qs.partner_id = p.partner_id and qs.locale = p.locale and qs.bucket_id = p.bucket_id and qs.date = max_quality_score_date
+left outer join 
+      temp_weighted_locale_qs l
+on 
+      l.locale = p.locale      
+where
+      date_id between concat(0+date_add(crunchDate, interval -1 day), '00000000000') AND concat(crunchDate + 1, '00000000000')
+      and p.partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+      AND p.partner_id <> 0
+group by
+      p.locale, p.item_id, p.partner_id;
+ 
+   
+*/ 
+      
+      
+-- delete following:      
+update
+	temppb_impressed_lpi_exp  
+set
+	min_cpc_bid = round(qs_booking * min_cpc_bid,0),
+	avg_cpc_bid = round(qs_booking * avg_cpc_bid,0)
+where
+	partner_id = 626;
+	
+
+update
+	temppb_impressed_lpi_exp
+set
+	min_cpc_bid = round(qs_other * min_cpc_bid,0),
+	avg_cpc_bid = round(qs_other * avg_cpc_bid,0)
+where
+	partner_id != 626;
+	
+
+
+create index idx on temppb_impressed_lpi_exp(item_id);
+
+
+drop table if exists temppb_impressed_lpi_exp01;
+create table temppb_impressed_lpi_exp01 as
+select
+    lpi.locale, 
+    lpi.item_id,
+    i.category_id,
+    partner_id,
+      bucket_id,
+    clicks,
+      min_cpc_bid,
+      avg_cpc_bid
+from
+    temppb_impressed_lpi_exp lpi
+join
+    item as i
+using
+    ( item_id );
+
+
+create index idx on temppb_impressed_lpi_exp01(category_id);     
+    
+drop table if exists temppb_impressed_lpi_exp02;
+create table temppb_impressed_lpi_exp02 as    
+select
+    locale, 
+    item_id,
+    category_id,
+    abc as category_abc,
+    partner_id,
+      bucket_id,
+    clicks,
+      min_cpc_bid,
+      avg_cpc_bid
+from
+    temppb_impressed_lpi_exp01 as lpi
+join
+    temppb_bidding07
+using
+    ( category_id );
+    
+
+create index idxb on temppb_impressed_lpi_exp02(locale, category_abc);
+
+drop table if exists trivago_analytic_ssd.tpc_exposure_cpcs_item;
+create table trivago_analytic_ssd.tpc_exposure_cpcs_item as
+select 
+      e2.locale, 
+      item_id,
+      --    round(if(round(if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * round(sum(clicks * avg_cpc_bid ) / sum(clicks)),0) >= min(min_cpc_bid), 
+      --                round(if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * round(sum(clicks * avg_cpc_bid ) / sum(clicks)),0) , min(min_cpc_bid) )) as exposure_cpc_item
+      --  if(e2.locale not in ('de', 'fi'), 
+   round(if(round(if(category_abc = 'A', a.prob_final, if(category_abc = 'B', a.prob_final, a.prob_final)) * round(sum(clicks * avg_cpc_bid ) / sum(clicks)),0) >= min(min_cpc_bid), 
+            round(if(category_abc = 'A', a.prob_final, if(category_abc = 'B', a.prob_final, a.prob_final)) * round(sum(clicks * avg_cpc_bid ) / sum(clicks)),0) , min(min_cpc_bid) ))  as exposure_cpc_item
+     --   round(if(round(if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * round(sum(clicks * avg_cpc_bid ) / sum(clicks)),0) >= min(min_cpc_bid), 
+     --           round(if(category_abc = 'A', 0.86, if(category_abc = 'B', 0.72, 0.60)) * round(sum(clicks * avg_cpc_bid ) / sum(clicks)),0) , min(min_cpc_bid) ))   )     
+     -- as exposure_cpc_item
+from 
+      temppb_impressed_lpi_exp02 e2
+left outer join
+      trivago_analytic_ssd.blockweights a
+on
+    ( e2.locale = a.locale 
+      and e2.category_abc = a.abc 
+      and a.state = 0)
+group by
+      e2.locale, e2.item_id;
+
+
+
+update trivago_analytic_ssd.tpc_exposure_cpcs_item
+set   exposure_cpc_item = absolute_minimum_cpc where exposure_cpc_item < absolute_minimum_cpc;
+
+update trivago_analytic_ssd.tpc_exposure_cpcs_item
+set   exposure_cpc_item = absolute_maximum_cpc where exposure_cpc_item > absolute_maximum_cpc;   
+
+
+create index idx on trivago_analytic_ssd.tpc_exposure_cpcs_item(locale, item_id); 
+
+
+
+
+drop table if exists trivago_analytic_ssd.tpc_exposure_cpcs_category;
+create table trivago_analytic_ssd.tpc_exposure_cpcs_category as
+select
+      locale, 
+      category_id, 
+      round(avg(exposure_cpc),0) as exposure_cpc_cat
+from
+      trivago_analytic_ssd.tpc_exposure_cpcs
+group by
+      locale, category_id;
+
+
+
+update trivago_analytic_ssd.tpc_exposure_cpcs_category
+set   exposure_cpc_cat = absolute_minimum_cpc where exposure_cpc_cat < absolute_minimum_cpc;
+
+update trivago_analytic_ssd.tpc_exposure_cpcs_category
+set   exposure_cpc_cat = absolute_maximum_cpc where exposure_cpc_cat > absolute_maximum_cpc;
+
+
+create index idx on trivago_analytic_ssd.tpc_exposure_cpcs_category(locale, category_id);
+
+
+/***************************************
+END: exposure CPCs
+***************************************/
+
+call logQueryDetail('updatePriceBlocking05', crunchDate );  
+
+
+
+drop table if exists temppb_bidding12;
+create table temppb_bidding12 as
+select
+      locale,
+      item_id,
+      max(block_benefit) as max_block_benefit 
+from 
+      temppb_bidding09
+group by
+      locale, item_id;
+      
+      
+
+      
+      
+create index idx on temppb_bidding09(locale, item_id);
+create index idx on temppb_bidding12(locale, item_id);
+
+      
+
+-- max block benefit list
+drop table if exists temppb_bidding16;
+create table temppb_bidding16 as     
+select 
+      b09.*
+from 
+      temppb_bidding09 b09,
+      temppb_bidding12 b12
+where
+      b09.locale = b12.locale
+      and b09.item_id = b12.item_id
+      and b09.block_benefit = b12.max_block_benefit
+      and b09.block_benefit >= 80000
+group by
+      b09.locale, b09.item_id;
+      
+      
+drop table if exists trivago_analytic.tempfb_bidding16;
+create table trivago_analytic.tempfb_bidding16 as select * from temppb_bidding16;
+      
+      
+
+/*********************************
+hardblocking below exposure CPC
+*********************************/
+
+call logQueryDetail('updatePriceBlocking06', crunchDate );  
+-- exp cpc blocking from original blocking list
+drop table if exists temppb_bidding_exp_cpc;
+create table temppb_bidding_exp_cpc as
+select
+    b.locale, 
+    b.item_id,
+    b.partner_id,
+    round(100*b.cpc) as cpc,
+    b.block_benefit,
+    e.exposure_cpc,
+    if(b.cpc*100 <= if(b.locale = 'FI', 1.0, 0.5) * e.exposure_cpc, 1, 0) as exp_cpc_block  
+from
+    temppb_bidding16 as b
+left outer join
+    trivago_analytic_ssd.tpc_exposure_cpcs as e
+using
+    ( locale, item_id, partner_id )
+where
+      b.cpc > 0 -- exclude 0 CPC as this is probably a problem in the logging / matching
+      and b.partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+      AND b.partner_id <> 0;
+
+
+
+
+-- exp cpc blocking from impression list
+
+-- join lpi with cpcs
+drop table if exists temppb_impressed_lpi01;
+create table temppb_impressed_lpi01 as
+select
+      lpi.*,
+    i.category_id,
+      round(100*c.cpc) as current_cpc
+from
+      temppb_impressed_lpi_exp as lpi
+join
+    item i
+using
+    ( item_id )
+join
+      temppb_price2 as c
+using
+      ( locale, partner_id, bucket_id );
+
+
+create index idx1 on temppb_impressed_lpi01(locale, item_id, partner_id);
+create index idx2 on temppb_impressed_lpi01(locale, category_id);
+
+
+drop table if exists temppb_impressed_lpi02;
+create table temppb_impressed_lpi02 as
+select 
+    lpi.locale, 
+    lpi.item_id, 
+    lpi.category_id,
+    lpi.partner_id,
+    lpi.current_cpc,
+    if( isnull(e1.exposure_cpc), 
+        if(isnull(e2.exposure_cpc_item), 
+            if(isnull(e3.exposure_cpc_cat), 
+            absolute_minimum_cpc
+            , e3.exposure_cpc_cat )
+        , e2.exposure_cpc_item )
+    , e1.exposure_cpc ) as exposure_cpc_tot
+from
+    temppb_impressed_lpi01 as lpi
+left outer join
+    trivago_analytic_ssd.tpc_exposure_cpcs_category as e3
+using
+    ( locale, category_id )    
+left outer join
+    trivago_analytic_ssd.tpc_exposure_cpcs_item as e2
+using
+    ( locale, item_id ) 
+left outer join
+    trivago_analytic_ssd.tpc_exposure_cpcs as e1
+using
+    ( locale, item_id, partner_id );
+   
+   
+-- current CPCs are correct in ~80% of the cases (why???)
+-- reduce them in case of lower CPCs according to co_log:
+
+drop table if exists tpc_cpc_correction_by_co_log; 
+create temporary table tpc_cpc_correction_by_co_log engine = memory as
+select
+      locale,
+      partner_id,
+      item_id,
+      round(avg(revenue),0) as cpc,
+      round(avg(if(date_id between concat(crunchdate, '00000000000') and concat(crunchdate, '24000000000'), revenue, null)),0) as cpc_yesterday
+from
+      co_log
+where
+      date_id between concat(0+date_add(crunchDate, interval -2 day), '00000000000') AND concat(crunchDate + 1, '00000000000')
+      and page_id = 8001
+      and partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+      AND partner_id <> 0
+group by
+      locale, partner_id, item_id;
+      
+ -- MAKE THE CO_LOG CORRECTION ON A BUCKET LEVEL - 	remove qs factor until corrected    
+update 
+	tpc_cpc_correction_by_co_log 
+set
+	cpc = round(qs_booking * cpc,0),
+	cpc_yesterday = round(qs_booking * cpc_yesterday,0)
+where
+	partner_id = 626;
+	
+
+-- detele following:	
+update 
+	tpc_cpc_correction_by_co_log
+set
+	cpc = round(qs_other * cpc,0),
+	cpc_yesterday = round(qs_other * cpc_yesterday,0)
+where
+	partner_id != 626;
+   
+   
+update
+      tpc_cpc_correction_by_co_log
+set
+      cpc = cpc_yesterday
+where
+      cpc_yesterday is not null
+      and cpc_yesterday < cpc;
+      
+      
+
+create index ix_locale_partner_item_id on tpc_cpc_correction_by_co_log(locale,partner_id,item_id);
+
+
+update
+      temppb_impressed_lpi02 l2,
+      tpc_cpc_correction_by_co_log cc
+set
+      l2.current_cpc = cc.cpc
+where
+      l2.locale = cc.locale
+      and l2.partner_id = cc.partner_id
+      and l2.item_id = cc.item_id
+      and cc.cpc < l2.current_cpc - 1;
+      
+      
+
+
+drop table if exists tpc_cpc_correction_by_co_log;
+    
+    
+create index idx on temppb_impressed_lpi02(locale, item_id, partner_id);    
+create index idx on temppb_bidding16(locale, item_id, partner_id);        
+   
+   
+drop table if exists trivago_analytic.tempfb_impressed_lpi02;
+create table trivago_analytic.tempfb_impressed_lpi02 as
+select * from  temppb_impressed_lpi02;
+   
+    
+drop table if exists temppb_impressed_lpi03;
+create table temppb_impressed_lpi03 as
+select 
+    lpi.*,
+    b.block_benefit,
+    if(isnull(b.cpc), lpi.current_cpc, round(100*b.cpc)) as cpc,
+    if( if(isnull(b.cpc), lpi.current_cpc, round(100*b.cpc)) <= if(lpi.locale = 'FI', 1.0, 0.5)*lpi.exposure_cpc_tot, 1, 0) as exp_cpc_block   
+from
+    temppb_impressed_lpi02 as lpi
+left outer join
+    temppb_bidding16 as b
+using
+    ( locale, item_id, partner_id )
+order by
+    locale ASC, item_id ASC, exp_cpc_block ASC, block_benefit DESC;
+
+
+
+
+
+
+drop table if exists temppb_impressed_lpi_exp_cpc_block;
+create table temppb_impressed_lpi_exp_cpc_block as
+select
+    *
+from
+    temppb_impressed_lpi03
+where
+    exp_cpc_block = 1;
+
+
+
+
+insert into temppb_bidding_exp_cpc
+select
+    locale, 
+    item_id, 
+    partner_id,
+    current_cpc as cpc,
+    NULL as block_benefit,
+    exposure_cpc_tot as exposure_cpc,
+    exp_cpc_block
+from
+    temppb_impressed_lpi_exp_cpc_block
+where
+      current_cpc > 0; -- exclude 0 CPC as this is probably a problem in the logging / matching
+    
+    
+-- exp cpc blocking from impression list END    
+    
+
+-- order to block most beneficial combinations first    
+drop table if exists temppb_bidding_exp_cpc01;
+create table temppb_bidding_exp_cpc01 as
+select
+    *
+from
+    temppb_bidding_exp_cpc
+where
+    partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+    AND partner_id <> 0
+order by
+    locale ASC, item_id ASC, exp_cpc_block ASC, CPC ASC, block_benefit DESC;
+
+
+
+
+/**********************
+make sure there is only one rule per locale/partner/item
+**********************/    
+
+call logQueryDetail('updatePriceBlocking07', crunchDate );  
+drop table if exists temppb_bidding_exp_cpc02;
+create table temppb_bidding_exp_cpc02 as
+select
+    *,
+    if(block_benefit >= 800000, -1, if(exp_cpc_block = 1, -1, 2)) as blocktype    
+from
+    temppb_bidding_exp_cpc01
+group by
+    locale, item_id, partner_id
+having
+   blocktype <> 0
+   and partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+   AND partner_id <> 0
+order by
+    locale ASC, item_id ASC, exp_cpc_block ASC, CPC ASC, block_benefit DESC;
+
+
+
+/**********************
+block at most two partners
+**********************/     
+        
+    
+drop table if exists temppb_bidding_exp_cpc03;
+set @pbcntr := 0; set @pbitem_d := 0;
+create table temppb_bidding_exp_cpc03 as    
+select
+    *, 
+    @pbcntr := if(item_id = @pbitem_d, @pbcntr + 1, 1) as counter,
+    @pbitem_d := item_id
+from
+    temppb_bidding_exp_cpc02;
+    
+    
+drop table if exists temppb_bidding_exp_cpc04;
+create table temppb_bidding_exp_cpc04 as     
+select
+    locale, 
+    item_id, 
+    sum(if(counter = 1, partner_id, NULL)) as partner_id_1,
+    sum(if(counter = 2, partner_id, NULL)) as partner_id_2,
+    min(blocktype) as blocktype
+from
+    temppb_bidding_exp_cpc03
+group by
+    locale, item_id;
+        
+        
+        
+/**********************
+populate blocking list
+**********************/
+
+drop table if exists temppb_bidding17;
+CREATE TABLE temppb_bidding17 (
+  `locale` varchar(2) NOT NULL DEFAULT '',
+  `item_id` int(4) NOT NULL DEFAULT '0',
+  `arrival_date` int(8) not null DEFAULT '0',
+  `champion_partner_id` int(2) DEFAULT '0',
+  `blocked_partner_id` varchar(100) DEFAULT NULL,
+  `blocktype` int(1) DEFAULT '0',
+  KEY `ix_locale_item_id_arrival_date` (`locale`,`item_id`,`arrival_date`)
+) ENGINE=memory DEFAULT CHARSET=latin1;
+      
+      
+insert into temppb_bidding17   
+select
+      upper(locale) as locale,
+      item_id,
+      0 as arrival_date,
+      null as champion_partner_id,
+      if(isnull(partner_id_2), partner_id_1, CONCAT(partner_id_1,',',partner_id_2)) as blocked_partner_id,
+    if(isnull(partner_id_2), blocktype, -1 ) as blocktype -- always block hard in case of multiple blocked parnter per item
+      -- -1 as blocktype      
+from
+    temppb_bidding_exp_cpc04;
+    
+  
+      
+-- select locale, blocktype, count(1) as frq from temppb_bidding17 group by blocktype;
+
+/*********************************
+don't block on standard date
+*********************************/
+/*
+insert into temppb_bidding17
+select
+      locale,
+      item_id,
+      0+date_add(20131208, interval 7*round(datediff(curdate(), 20131117)/7,0) day) as arrival_date,
+      null as champion_partner_id,
+      null as blocked_partner_id,
+      0 as blocktype    
+from
+      temppb_bidding16;
+*/
+
+
+update temppb_bidding17 
+set champion_partner_id = null
+where champion_partner_id = blocked_partner_id;
+
+
+/*********************************
+make sure each locale/item combination only appears once
+*********************************/
+
+
+call logQueryDetail('updatePriceBlocking08', crunchDate );  
+drop table if exists temppb_bidding18;
+create table temppb_bidding18 as
+select
+      *
+from
+      temppb_bidding17
+order by
+      locale, item_id, arrival_date, blocktype ASC;
+
+
+drop table if exists trivago_analytic.temppb_bidding19;
+create table trivago_analytic.temppb_bidding19 as
+select 
+      * 
+from 
+      temppb_bidding18
+group by
+      locale, item_id, arrival_date;
+      
+      
+-- some useful blockings are missing because
+-- a) number of partners-to-block is restricted to a most 2, and
+-- b) some item might have clickouts, but no impressions according to psl_clickout_log
+
+call logQueryDetail('updatePriceBlockng - 100', curdate()+0 );
+
+drop table if exists trivago_analytic.temppb_bidding20;
+create table trivago_analytic.temppb_bidding20 as
+select
+      locale,
+      partner_id,
+      item_id,
+      round(avg(if(date_id between concat(crunchdate, '00000000000') and concat(crunchdate, '24000000000'), revenue, null)),0) as cpc,
+      round(avg(if(date_id between concat(0+date_add(crunchDate, interval -1 day), '00000000000') and concat(0+date_add(crunchDate, interval -1 day), '24000000000'), revenue, null)),0) as cpc1,
+      round(avg(if(date_id between concat(0+date_add(crunchDate, interval -2 day), '00000000000') and concat(0+date_add(crunchDate, interval -2 day), '24000000000'), revenue, null)),0) as cpc2,
+      round(avg(if(date_id between concat(0+date_add(crunchDate, interval -3 day), '00000000000') and concat(0+date_add(crunchDate, interval -3 day), '24000000000'), revenue, null)),0) as cpc3,
+      round(avg(if(date_id between concat(0+date_add(crunchDate, interval -4 day), '00000000000') and concat(0+date_add(crunchDate, interval -4 day), '24000000000'), revenue, null)),0) as cpc4,
+      round(avg(if(date_id between concat(0+date_add(crunchDate, interval -5 day), '00000000000') and concat(0+date_add(crunchDate, interval -5 day), '24000000000'), revenue, null)),0) as cpc5,
+      round(avg(if(date_id between concat(0+date_add(crunchDate, interval -6 day), '00000000000') and concat(0+date_add(crunchDate, interval -6 day), '24000000000'), revenue, null)),0) as cpc6
+from
+      co_log
+where
+      date_id between concat(0+date_add(crunchDate, interval -6 day), '00000000000') AND concat(crunchDate + 1, '00000000000')
+      and page_id = 8001
+      and partner_id not in (680,756,876,398,436,412,440,512,367,748,744,618,876,862,361,656,275,540,756,257,688,371,786,928)
+      AND partner_id <> 0
+group by
+      locale, partner_id, item_id;
+      
+
+update trivago_analytic.temppb_bidding20 set cpc = cpc1 where cpc is null;
+update trivago_analytic.temppb_bidding20 set cpc = cpc2 where cpc is null;
+update trivago_analytic.temppb_bidding20 set cpc = cpc3 where cpc is null;
+update trivago_analytic.temppb_bidding20 set cpc = cpc4 where cpc is null;
+update trivago_analytic.temppb_bidding20 set cpc = cpc5 where cpc is null;
+update trivago_analytic.temppb_bidding20 set cpc = cpc6 where cpc is null;
+
+-- DO THIS ON A BUCKET LEVEL TO USE BUCKET-SPECIFIC QS!
+update trivago_analytic.temppb_bidding20 set cpc = round(qs_booking * cpc,0) where partner_id = 626;
+update trivago_analytic.temppb_bidding20 set cpc = round(qs_other * cpc,0) where partner_id != 626;
+
+
+delete from trivago_analytic.temppb_bidding20
+where 
+      (cpc >= absolute_minimum_cpc/2 or cpc is null);
+
+
+      
+      
+      
+create index ix_locale_item_id on trivago_analytic.temppb_bidding19(locale,item_id);
+create index ix_locale_item_id on trivago_analytic.temppb_bidding20(locale,item_id);
+
+
+call logQueryDetail('updatePriceBlockng - 110', curdate()+0 );
+
+drop table if exists trivago_analytic.temppb_bidding21;
+create table trivago_analytic.temppb_bidding21 as
+select
+      b20.locale,
+      b20.item_id,
+      0 as arrival_date,
+      null as champion_partner_id,
+      group_concat(b20.partner_id) as blocked_partner_id,
+      -1 as blocktype,
+      if(b19.item_id is null, 1, 0) as missing
+from
+      trivago_analytic.temppb_bidding20 b20
+      left outer join
+      trivago_analytic.temppb_bidding19 b19
+      on (b20.locale = b19.locale and b20.item_id = b19.item_id)
+group by
+      b20.locale, b20.item_id
+having
+      missing = 1;
+      
+call logQueryDetail('updatePriceBlockng - 120', curdate()+0 );
+
+
+
+insert into trivago_analytic.temppb_bidding19
+select
+      locale,
+      item_id,
+      arrival_date,
+      champion_partner_id,
+      blocked_partner_id,
+      blocktype
+from
+      trivago_analytic.temppb_bidding21;
+      
+
+call logQueryDetail('updatePriceBlockng - 130', curdate()+0 );
+
+drop table if exists trivago_analytic.temppb_bidding22;
+create table trivago_analytic.temppb_bidding22 as
+select
+      b20.locale,
+      b20.item_id,
+      0 as arrival_date,
+      null as champion_partner_id,
+      group_concat(b20.partner_id) as blocked_partner_id
+from
+      trivago_analytic.temppb_bidding20 b20,
+      trivago_analytic.temppb_bidding19 b19 
+where
+   b20.locale = b19.locale 
+   and b20.item_id = b19.item_id
+   and locate(b20.partner_id,b19.blocked_partner_id) = 0  -- nicht ganz sauber: partner_id 15 ist auch teilstring der blockliste 123,115
+group by
+      b20.locale, b20.item_id;
+      
+      
+
+call logQueryDetail('updatePriceBlockng - 140', curdate()+0 );
+      
+create index ix_locale_item_id on trivago_analytic.temppb_bidding22(locale, item_id);
+
+call logQueryDetail('updatePriceBlockng - 150', curdate()+0 );
+
+
+update
+      trivago_analytic.temppb_bidding19 b19,
+      trivago_analytic.temppb_bidding22 b22
+set
+      b19.blocked_partner_id = concat(b19.blocked_partner_id, ',', b22.blocked_partner_id)
+where
+      b19.locale = b22.locale
+      and b19.item_id = b22.item_id
+      and b19.blocked_partner_id is not null
+      and char_length(b19.blocked_partner_id) > 0;  
+   
+   
+call logQueryDetail('updatePriceBlockng - 160', curdate()+0 );  
+
+
+
+drop table if exists trivago_analytic.temppb_bidding20;
+drop table if exists trivago_analytic.temppb_bidding21;
+drop table if exists trivago_analytic.temppb_bidding22;
+
+
+      
+      
+
+/*********************************
+produce output
+*********************************/
+
+truncate table trivago_analytic.prod_partnerslot_rules;
+
+/*
+
+use this block to freeze the list
+
+insert into trivago_analytic.prod_partnerslot_rules 
+select locale, item_id, arrival_date, champion_partner_id, blocked_partner_id, blocktype from trivago_analytic.prod_partnerslot_rules_archive
+where 
+      blocked_partner_id not in ( 680, 756, 876, 726, 774, 776, 784, 898 )
+      AND locale = 'de'
+      AND date = 20140317;
+
+*/
+
+insert into trivago_analytic.prod_partnerslot_rules 
+select
+      upper(locale) as locale,
+      item_id,
+      arrival_date,
+      champion_partner_id,
+      blocked_partner_id,
+      blocktype   
+from 
+      trivago_analytic.temppb_bidding19
+group by
+	locale, item_id, arrival_date;
+-- where 
+--    blocked_partner_id not in ( 680, 756, 876, 726, 774, 776, 784, 898 );
+      -- funktoniert bei mehreren geblockten IDs nur bedingt...
+
+-- select * from trivago_analytic.prod_partnerslot_rules
+
+drop table if exists temppb_bidding00;     
+drop table if exists temppb_price1;  
+drop table if exists temppb_bidding01;
+drop table if exists temppb_bidding05;
+drop table if exists temppb_bidding06;     
+drop table if exists temppb_bidding04;     
+drop table if exists temppb_bidding07;     
+drop table if exists temppb_bidding02;
+drop table if exists temppb_bidding03;     
+drop table if exists temppb_bidding08; 
+drop table if exists temppb_price2;
+drop table if exists temppb_bidding17;
+drop table if exists temppb_bidding18;
+drop table if exists trivago_analytic.temppb_bidding19;
+
+end
+//
+
+
+delimiter ;

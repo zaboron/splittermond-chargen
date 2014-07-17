@@ -185,10 +185,10 @@ select
       if(qs.qs_bi is null, 1.0* cp.price, qs_bi* cp.price/l.avg_qs_locale) as cpc
 from 
       temppb_price1 p1
-join 
+join
       trivago_analytic_repl.co_price cp
 on 
-      cp.start_date = p1.date
+	  cp.start_date = p1.date
       and cp.partner_id = p1.partner_id
       and cp.bucket_id = p1.bucket_id
       and cp.locale = p1.locale

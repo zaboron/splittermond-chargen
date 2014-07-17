@@ -1,0 +1,2825 @@
+// Dependency Table BI
+digraph {
+	session_stats [fontsize=14]
+		session_stats -> updateDummyDay
+	updateWidgetsDay [fontsize=14 shape=box]
+	"trivago_analytic.trv_external_log" [fontsize=14]
+		"trivago_analytic.trv_external_log" -> updateWidgetsDay
+	"trivago_analytic.external_log" [fontsize=14]
+		updateWidgetsDay -> "trivago_analytic.external_log"
+	"trivago_analytic.external_referrer" [fontsize=14]
+		updateWidgetsDay -> "trivago_analytic.external_referrer"
+	updatefullcopyaly22aly1 [fontsize=14 shape=box]
+	"information_schema.tables" [fontsize=14]
+		"information_schema.tables" -> updatefullcopyaly22aly1
+	updateUSbyDMA [fontsize=14 shape=box]
+	updateSeoSuiteItemPerformance [fontsize=14 shape=box]
+	updatePixelStatusHistory [fontsize=14 shape=box]
+	updateBookableHotels [fontsize=14 shape=box]
+	"trivago_analytic_ssd.partner_price" [fontsize=14]
+		"trivago_analytic_ssd.partner_price" -> updateBookableHotels
+	"trivago_analytic_ssd.partner" [fontsize=14]
+		"trivago_analytic_ssd.partner" -> updateBookableHotels
+	"trivago_analytic_ssd.item2partner" [fontsize=14]
+		"trivago_analytic_ssd.item2partner" -> updateBookableHotels
+	"trivago_analytic_ssd.partner2locale" [fontsize=14]
+		"trivago_analytic_ssd.partner2locale" -> updateBookableHotels
+	item [fontsize=14]
+		item -> updateBookableHotels
+	"trivago_analytic.bookable_hotels" [fontsize=14]
+		updateBookableHotels -> "trivago_analytic.bookable_hotels"
+	updateTPCdataDay [fontsize=14 shape=box]
+	co_log [fontsize=14]
+		co_log -> updateTPCdataDay
+	"trivago_analytic.psl_hotel_list_hidden" [fontsize=14]
+		"trivago_analytic.psl_hotel_list_hidden" -> updateTPCdataDay
+	psl_clickout_log [fontsize=14]
+		psl_clickout_log -> updateTPCdataDay
+	booking_log [fontsize=14]
+		booking_log -> updateTPCdataDay
+	copySsd2Hdd [fontsize=14 shape=box]
+	"trivago_analytic_ssd.hotel2proxy_t_cos" [fontsize=14]
+		"trivago_analytic_ssd.hotel2proxy_t_cos" -> copySsd2Hdd
+	"trivago_analytic_ssd.hotel_manager_data" [fontsize=14]
+		"trivago_analytic_ssd.hotel_manager_data" -> copySsd2Hdd
+	"trivago_analytic_ssd.thpi_base" [fontsize=14]
+		"trivago_analytic_ssd.thpi_base" -> copySsd2Hdd
+	"trivago_analytic_ssd.crunchjob_failures" [fontsize=14]
+		copySsd2Hdd -> "trivago_analytic_ssd.crunchjob_failures"
+	"trivago_analytic.hotel2proxy_t_cos" [fontsize=14]
+		copySsd2Hdd -> "trivago_analytic.hotel2proxy_t_cos"
+	"trivago_analytic.hotel_manager_data" [fontsize=14]
+		copySsd2Hdd -> "trivago_analytic.hotel_manager_data"
+	"trivago_analytic.display_tracking_backup" [fontsize=14]
+		copySsd2Hdd -> "trivago_analytic.display_tracking_backup"
+	"trivago_analytic.cip_detail_weekly" [fontsize=14]
+		copySsd2Hdd -> "trivago_analytic.cip_detail_weekly"
+	"trivago_analytic.thpi_base" [fontsize=14]
+		copySsd2Hdd -> "trivago_analytic.thpi_base"
+	updateMysteryguestResultsHoteltestControl [fontsize=14 shape=box]
+	updateExpediaHotelscomDailyHotelClickoutReport [fontsize=14 shape=box]
+	update_ClickshareDevelopmentInventory [fontsize=14 shape=box]
+	FraudDetectionDay [fontsize=14 shape=box]
+		psl_clickout_log -> FraudDetectionDay
+	"trivago_analytic.psl_date_room" [fontsize=14]
+		"trivago_analytic.psl_date_room" -> FraudDetectionDay
+	price_search_log_id [fontsize=14]
+		price_search_log_id -> FraudDetectionDay
+	page_log [fontsize=14]
+		page_log -> FraudDetectionDay
+	date_id [fontsize=14]
+		date_id -> FraudDetectionDay
+	psl_clickout_log_partner_detail [fontsize=14]
+		psl_clickout_log_partner_detail -> FraudDetectionDay
+	"trivago_analytic.fraud_detection_data01_detail" [fontsize=14]
+		"trivago_analytic.fraud_detection_data01_detail" -> FraudDetectionDay
+	"trivago_analytic.fraud_detection_data_non_ava01" [fontsize=14]
+		"trivago_analytic.fraud_detection_data_non_ava01" -> FraudDetectionDay
+	"trivago_analytic.fraud_detection_data_non_ava_partner00" [fontsize=14]
+		"trivago_analytic.fraud_detection_data_non_ava_partner00" -> FraudDetectionDay
+	"trivago_analytic.fraud_detection_data00" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data00"
+	"trivago_analytic.fraud_detection_price_info" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_price_info"
+	"trivago_analytic.fraud_detection_data01" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data01"
+	"trivago_analytic.fraud_detection_data01_detail" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data01_detail"
+	"trivago_analytic.fraud_detection_data_non_ava_hotel" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava_hotel"
+	"trivago_analytic.fraud_detection_data_non_ava_partner" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava_partner"
+	"trivago_analytic.fraud_detection_data_non_ava01" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava01"
+	"trivago_analytic.fraud_detection_data_non_ava_locale" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava_locale"
+	"trivago_analytic.fraud_detection_data_non_ava_partner00" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava_partner00"
+	"trivago_analytic.fraud_detection_data_non_ava_partner01" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava_partner01"
+	"trivago_analytic.fraud_detection_data_non_ava_score_day" [fontsize=14]
+		FraudDetectionDay -> "trivago_analytic.fraud_detection_data_non_ava_score_day"
+	updateKpisMarketingSpend [fontsize=14 shape=box]
+	archive_item_relevance [fontsize=14 shape=box]
+	"trivago_analytic.item_relevance_archive" [fontsize=14]
+		"trivago_analytic.item_relevance_archive" -> archive_item_relevance
+	"trivago_analytic.item_relevance_archive" [fontsize=14]
+		archive_item_relevance -> "trivago_analytic.item_relevance_archive"
+	updateTestResults [fontsize=14 shape=box]
+		session_stats -> updateTestResults
+	updateCipTcDay [fontsize=14 shape=box]
+	page_log_detail [fontsize=14]
+		page_log_detail -> updateCipTcDay
+		session_stats -> updateCipTcDay
+	"(date_id" [fontsize=14]
+		"(date_id" -> updateCipTcDay
+	"trivago_analytic_ssd.cip_tc_report" [fontsize=14]
+		updateCipTcDay -> "trivago_analytic_ssd.cip_tc_report"
+	UpdateLocalePartnerItemTracking [fontsize=14 shape=box]
+	updateKpisVisitsClickouts [fontsize=14 shape=box]
+	selectPartnerCoTrackingVemas [fontsize=14 shape=box]
+	compute_ttest_breakouts [fontsize=14 shape=box]
+	tab_name [fontsize=14]
+		tab_name -> compute_ttest_breakouts
+	"trivago_analytic_ssd.normal_distribution_two_tailed" [fontsize=14]
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> compute_ttest_breakouts
+	standard_analysis_aux_1 [fontsize=14]
+		compute_ttest_breakouts -> standard_analysis_aux_1
+	standard_analysis_aux_2 [fontsize=14]
+		compute_ttest_breakouts -> standard_analysis_aux_2
+	standard_analysis_aux_3 [fontsize=14]
+		compute_ttest_breakouts -> standard_analysis_aux_3
+	standard_analysis_aux_4 [fontsize=14]
+		compute_ttest_breakouts -> standard_analysis_aux_4
+	standard_analysis_results [fontsize=14]
+		compute_ttest_breakouts -> standard_analysis_results
+	ctest_data_main [fontsize=14]
+		compute_ttest_breakouts -> ctest_data_main
+	updateGeoTopHotelsHomepage [fontsize=14 shape=box]
+	copyFederatedTablesToLocal [fontsize=14 shape=box]
+	updateClickoutTrackingDay [fontsize=14 shape=box]
+		page_log -> updateClickoutTrackingDay
+		page_log_detail -> updateClickoutTrackingDay
+		"(date_id" -> updateClickoutTrackingDay
+	updateSearchTypeAndPageCallsDay [fontsize=14 shape=box]
+		page_log -> updateSearchTypeAndPageCallsDay
+		page_log_detail -> updateSearchTypeAndPageCallsDay
+	session_stats [fontsize=14]
+		updateSearchTypeAndPageCallsDay -> session_stats
+	updatePartnerInfoTrackingMonth [fontsize=14 shape=box]
+	hotel_traffic_annual [fontsize=14]
+		hotel_traffic_annual -> updatePartnerInfoTrackingMonth
+		item -> updatePartnerInfoTrackingMonth
+	"trivago_analytic_ssd.cats2names" [fontsize=14]
+		"trivago_analytic_ssd.cats2names" -> updatePartnerInfoTrackingMonth
+		co_log -> updatePartnerInfoTrackingMonth
+	"trivago_analytic_repl.co_tracking" [fontsize=14]
+		"trivago_analytic_repl.co_tracking" -> updatePartnerInfoTrackingMonth
+	partner [fontsize=14]
+		partner -> updatePartnerInfoTrackingMonth
+	partner_info_tracking [fontsize=14]
+		updatePartnerInfoTrackingMonth -> partner_info_tracking
+	updateReporting [fontsize=14 shape=box]
+	compute_ttest [fontsize=14 shape=box]
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> compute_ttest
+	ctest_data_main [fontsize=14]
+		compute_ttest -> ctest_data_main
+	standard_analysis_aux_1 [fontsize=14]
+		compute_ttest -> standard_analysis_aux_1
+	standard_analysis_aux_2 [fontsize=14]
+		compute_ttest -> standard_analysis_aux_2
+	standard_analysis_aux_3 [fontsize=14]
+		compute_ttest -> standard_analysis_aux_3
+	standard_analysis_aux_4 [fontsize=14]
+		compute_ttest -> standard_analysis_aux_4
+	standard_analysis_results [fontsize=14]
+		compute_ttest -> standard_analysis_results
+	updatePartnerCOshare [fontsize=14 shape=box]
+	updatePathCoTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> updatePathCoTrackingDay
+	path_co_tracking [fontsize=14]
+		updatePathCoTrackingDay -> path_co_tracking
+	aggregatesemsList [fontsize=14 shape=box]
+	"trivago_analytic.sems_feed_final" [fontsize=14]
+		"trivago_analytic.sems_feed_final" -> aggregatesemsList
+	"trivago_analytic.sems_feed" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed"
+	"trivago_analytic.sems_feed_final" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final"
+	aggregate_cpc [fontsize=14]
+		aggregatesemsList -> aggregate_cpc
+	"trivago_analytic.sems_feed_final_GR" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_GR"
+	"trivago_analytic.sems_feed_final_DE" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_DE"
+	"trivago_analytic.sems_feed_final_FR" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_FR"
+	"trivago_analytic.sems_feed_final_ES" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_ES"
+	"trivago_analytic.sems_feed_final_IT" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_IT"
+	"trivago_analytic.sems_feed_final_UK" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_UK"
+	"trivago_analytic.sems_feed_final_NL" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_NL"
+	"trivago_analytic.sems_feed_final_PT" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_PT"
+	"trivago_analytic.sems_feed_final_US" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_US"
+	"trivago_analytic.sems_feed_final_AT" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_AT"
+	"trivago_analytic.sems_feed_final_SE" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_SE"
+	"trivago_analytic.sems_feed_final_DK" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_DK"
+	"trivago_analytic.sems_feed_final_BG" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_BG"
+	"trivago_analytic.sems_feed_final_BE" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_BE"
+	"trivago_analytic.sems_feed_final_IE" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_IE"
+	"trivago_analytic.sems_feed_final_FI" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_FI"
+	"trivago_analytic.sems_feed_final_RU" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_RU"
+	"trivago_analytic.sems_feed_final_CH" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_CH"
+	"trivago_analytic.sems_feed_final_PL" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_PL"
+	"trivago_analytic.sems_feed_final_BR" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_BR"
+	"trivago_analytic.sems_feed_final_MX" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_MX"
+	"trivago_analytic.sems_feed_final_TR" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_TR"
+	"trivago_analytic.sems_feed_final_CZ" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_CZ"
+	"trivago_analytic.sems_feed_final_NO" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_NO"
+	"trivago_analytic.sems_feed_final_HU" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_HU"
+	"trivago_analytic.sems_feed_final_CA" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_CA"
+	"trivago_analytic.sems_feed_final_SI" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_SI"
+	"trivago_analytic.sems_feed_final_AU" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_AU"
+	"trivago_analytic.sems_feed_final_NZ" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_NZ"
+	"trivago_analytic.sems_feed_final_KR" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_KR"
+	"trivago_analytic.sems_feed_final_JP" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_JP"
+	"trivago_analytic.sems_feed_final_IN" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_IN"
+	"trivago_analytic.sems_feed_final_SG" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_SG"
+	"trivago_analytic.sems_feed_final_CN" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_CN"
+	"trivago_analytic.sems_feed_final_CL" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_CL"
+	"trivago_analytic.sems_feed_final_CO" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_CO"
+	"trivago_analytic.sems_feed_final_AR" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_AR"
+	"trivago_analytic.sems_feed_final_RS" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_RS"
+	"trivago_analytic.sems_feed_final_HK" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_HK"
+	"trivago_analytic.sems_feed_final_RO" [fontsize=14]
+		aggregatesemsList -> "trivago_analytic.sems_feed_final_RO"
+	updateKpisSalesMetrics_Day [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> updateKpisSalesMetrics_Day
+	"trivago_analytic_ssd.session_stats" [fontsize=14]
+		"trivago_analytic_ssd.session_stats" -> updateKpisSalesMetrics_Day
+	"trivago_analytic_ssd.page_log" [fontsize=14]
+		"trivago_analytic_ssd.page_log" -> updateKpisSalesMetrics_Day
+	"trivago_analytic_ssd.partner2realpartner" [fontsize=14]
+		"trivago_analytic_ssd.partner2realpartner" -> updateKpisSalesMetrics_Day
+	sales_metrics [fontsize=14]
+		updateKpisSalesMetrics_Day -> sales_metrics
+	updateSeoSuiteItemContentDataDay [fontsize=14 shape=box]
+	"trivago_analytic.trv_image_data" [fontsize=14]
+		"trivago_analytic.trv_image_data" -> updateSeoSuiteItemContentDataDay
+	item_stats [fontsize=14]
+		item_stats -> updateSeoSuiteItemContentDataDay
+	"trivago_analytic.seo_suite_content_edit_images" [fontsize=14]
+		updateSeoSuiteItemContentDataDay -> "trivago_analytic.seo_suite_content_edit_images"
+	"trivago_analytic.seo_suite_count_image" [fontsize=14]
+		updateSeoSuiteItemContentDataDay -> "trivago_analytic.seo_suite_count_image"
+	updateKpisSEOMetricsDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateKpisSEOMetricsDay
+	"trivago_analytic_ssd.session_detail" [fontsize=14]
+		"trivago_analytic_ssd.session_detail" -> updateKpisSEOMetricsDay
+		"(date_id" -> updateKpisSEOMetricsDay
+	kpis [fontsize=14]
+		updateKpisSEOMetricsDay -> kpis
+	updateHoteltestRegistrationProcessTrackingDay [fontsize=14 shape=box]
+	hoteltest_registration_process_tracking [fontsize=14]
+		updateHoteltestRegistrationProcessTrackingDay -> hoteltest_registration_process_tracking
+	updateMapInteraction [fontsize=14 shape=box]
+	"trivago_analytic_ssd.map_interaction" [fontsize=14]
+		"trivago_analytic_ssd.map_interaction" -> updateMapInteraction
+	"trivago_confluence.map_interaction" [fontsize=14]
+		updateMapInteraction -> "trivago_confluence.map_interaction"
+	updateKpisVisitsClickoutsDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateKpisVisitsClickoutsDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisVisitsClickoutsDay -> "trivago_analytic_ssd.kpis"
+	updateCommunityKpisDay [fontsize=14 shape=box]
+	"trivago_analytic_ssd.community_kpis" [fontsize=14]
+		updateCommunityKpisDay -> "trivago_analytic_ssd.community_kpis"
+	updatePixelStatusHistoryDay [fontsize=14 shape=box]
+		booking_log -> updatePixelStatusHistoryDay
+	"trivago_analytic_repl.pixel_status" [fontsize=14]
+		"trivago_analytic_repl.pixel_status" -> updatePixelStatusHistoryDay
+	pixel_status_history [fontsize=14]
+		updatePixelStatusHistoryDay -> pixel_status_history
+	"trivago_analytic_repl.pixel_status" [fontsize=14]
+		updatePixelStatusHistoryDay -> "trivago_analytic_repl.pixel_status"
+	"(partner_id" [fontsize=14]
+		updatePixelStatusHistoryDay -> "(partner_id"
+	bucket_id [fontsize=14]
+		updatePixelStatusHistoryDay -> bucket_id
+	locale [fontsize=14]
+		updatePixelStatusHistoryDay -> locale
+	timestamp [fontsize=14]
+		updatePixelStatusHistoryDay -> timestamp
+	"trivago_analytic.pixel_status_history" [fontsize=14]
+		updatePixelStatusHistoryDay -> "trivago_analytic.pixel_status_history"
+	updateTvSpot [fontsize=14 shape=box]
+	tv_advertising [fontsize=14]
+		updateTvSpot -> tv_advertising
+	updateKpisSpiderStats [fontsize=14 shape=box]
+	updateFirstPosDilutionDay [fontsize=14 shape=box]
+	"trivago_analytic_repl.co_price" [fontsize=14]
+		"trivago_analytic_repl.co_price" -> updateFirstPosDilutionDay
+	trv_cpc_override [fontsize=14]
+		trv_cpc_override -> updateFirstPosDilutionDay
+	"trivago_analytic.locale_partner_item" [fontsize=14]
+		"trivago_analytic.locale_partner_item" -> updateFirstPosDilutionDay
+	item2partner [fontsize=14]
+		item2partner -> updateFirstPosDilutionDay
+		psl_clickout_log_partner_detail -> updateFirstPosDilutionDay
+	"trivago_analytic.first_pos_dilution" [fontsize=14]
+		"trivago_analytic.first_pos_dilution" -> updateFirstPosDilutionDay
+	"trivago_analytic.first_pos_dilution" [fontsize=14]
+		updateFirstPosDilutionDay -> "trivago_analytic.first_pos_dilution"
+	"trivago_analytic.first_pos_dilution_analysis" [fontsize=14]
+		updateFirstPosDilutionDay -> "trivago_analytic.first_pos_dilution_analysis"
+	"trivago_analytic.prod_partnerslot_rules" [fontsize=14]
+		updateFirstPosDilutionDay -> "trivago_analytic.prod_partnerslot_rules"
+	updateItemPriceFoundDaily [fontsize=14 shape=box]
+	"trivago_analytic.partner_price_archive_2011" [fontsize=14]
+		"trivago_analytic.partner_price_archive_2011" -> updateItemPriceFoundDaily
+	"trivago_analytic_ssd.item" [fontsize=14]
+		"trivago_analytic_ssd.item" -> updateItemPriceFoundDaily
+	"(item_id" [fontsize=14]
+		"(item_id" -> updateItemPriceFoundDaily
+	"trivago_analytic.partner_price_archive_2012" [fontsize=14]
+		"trivago_analytic.partner_price_archive_2012" -> updateItemPriceFoundDaily
+	"trivago_analytic.partner_price_archive_2013" [fontsize=14]
+		"trivago_analytic.partner_price_archive_2013" -> updateItemPriceFoundDaily
+	"trivago_analytic.partner_price_archive" [fontsize=14]
+		"trivago_analytic.partner_price_archive" -> updateItemPriceFoundDaily
+	"trivago_analytic.item_price_found_daily" [fontsize=14]
+		updateItemPriceFoundDaily -> "trivago_analytic.item_price_found_daily"
+	"trivago_analytic_ssd.item_price_daily" [fontsize=14]
+		updateItemPriceFoundDaily -> "trivago_analytic_ssd.item_price_daily"
+	updateUsTraffic [fontsize=14 shape=box]
+	updateMCconversionsMonth [fontsize=14 shape=box]
+		page_log -> updateMCconversionsMonth
+		session_stats -> updateMCconversionsMonth
+	copyFederatedPath [fontsize=14 shape=box]
+	"trivago_analytic.path" [fontsize=14]
+		copyFederatedPath -> "trivago_analytic.path"
+	"trivago_analytic.path_name" [fontsize=14]
+		copyFederatedPath -> "trivago_analytic.path_name"
+	updateHotelierTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateHotelierTrackingDay
+		"trivago_analytic_ssd.session_stats" -> updateHotelierTrackingDay
+	hotelier_tracking [fontsize=14]
+		updateHotelierTrackingDay -> hotelier_tracking
+	updateControllerUsage [fontsize=14 shape=box]
+	createPartnerCoLogDetail [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> createPartnerCoLogDetail
+	"trivago_analytic_ssd.page_log_detail" [fontsize=14]
+		"trivago_analytic_ssd.page_log_detail" -> createPartnerCoLogDetail
+		"trivago_analytic_ssd.session_stats" -> createPartnerCoLogDetail
+	partner_co_log_detail [fontsize=14]
+		createPartnerCoLogDetail -> partner_co_log_detail
+	"trivago_analytic_ssd.item" [fontsize=14]
+		createPartnerCoLogDetail -> "trivago_analytic_ssd.item"
+	updateAndroidStats [fontsize=14 shape=box]
+	updateTestResultTrackingSearchTypeDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateTestResultTrackingSearchTypeDay
+	test_result_tracking [fontsize=14]
+		test_result_tracking -> updateTestResultTrackingSearchTypeDay
+	test_result_tracking_searchtype [fontsize=14]
+		test_result_tracking_searchtype -> updateTestResultTrackingSearchTypeDay
+	test_result_tracking_searchtype [fontsize=14]
+		updateTestResultTrackingSearchTypeDay -> test_result_tracking_searchtype
+	"trivago_analytic.test_result_tracking_searchtype_archive" [fontsize=14]
+		updateTestResultTrackingSearchTypeDay -> "trivago_analytic.test_result_tracking_searchtype_archive"
+	updateFinanceControlDay [fontsize=14 shape=box]
+		kpis -> updateFinanceControlDay
+	"trivago_analytic_ssd.finance_tracking" [fontsize=14]
+		updateFinanceControlDay -> "trivago_analytic_ssd.finance_tracking"
+	updateCommunityKpis [fontsize=14 shape=box]
+	"trivago_analytic.trv_member_action" [fontsize=14]
+		"trivago_analytic.trv_member_action" -> updateCommunityKpis
+	updatepicturescontrollerDay [fontsize=14 shape=box]
+		"trivago_analytic.trv_image_data" -> updatepicturescontrollerDay
+	"trivago_analytic.trv_member" [fontsize=14]
+		"trivago_analytic.trv_member" -> updatepicturescontrollerDay
+	"trivago_analytic.cc_picturescontroller_2" [fontsize=14]
+		"trivago_analytic.cc_picturescontroller_2" -> updatepicturescontrollerDay
+	"(SELECT" [fontsize=14]
+		"(SELECT" -> updatepicturescontrollerDay
+	"@last_zahl:=0" [fontsize=14]
+		"@last_zahl:=0" -> updatepicturescontrollerDay
+	vars [fontsize=14]
+		vars -> updatepicturescontrollerDay
+	"trivago_analytic.trv_picture_collage" [fontsize=14]
+		"trivago_analytic.trv_picture_collage" -> updatepicturescontrollerDay
+	"trivago_analytic.cc_collage_pictures_new" [fontsize=14]
+		"trivago_analytic.cc_collage_pictures_new" -> updatepicturescontrollerDay
+	"trivago_analytic.cc_collage_pictures_date" [fontsize=14]
+		"trivago_analytic.cc_collage_pictures_date" -> updatepicturescontrollerDay
+	"trivago_analytic.cc_subject_images_date" [fontsize=14]
+		"trivago_analytic.cc_subject_images_date" -> updatepicturescontrollerDay
+	"trivago_analytic.cc_picturescontroller" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_picturescontroller"
+	"trivago_analytic.pc_images" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.pc_images"
+	"trivago_analytic.cc_collage_pictures" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_collage_pictures"
+	"trivago_analytic.cc_subject_images" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_subject_images"
+	"trivago_analytic.date" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.date"
+	"trivago_analytic.cc_picturescontroller_2" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_picturescontroller_2"
+	"trivago_analytic.pc_images_2" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.pc_images_2"
+	"trivago_analytic.pc_images_3" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.pc_images_3"
+	"trivago_analytic.cc_collage_pictures_new" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_collage_pictures_new"
+	"trivago_analytic.cc_collage_pictures_2" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_collage_pictures_2"
+	"trivago_analytic.cc_collage_pictures_date" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_collage_pictures_date"
+	"trivago_analytic.cc_subject_images_date" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_subject_images_date"
+	"trivago_analytic.cc_subjects_2" [fontsize=14]
+		updatepicturescontrollerDay -> "trivago_analytic.cc_subjects_2"
+	BuildTestSummaryApp [fontsize=14 shape=box]
+	test_result_tracking_app [fontsize=14]
+		test_result_tracking_app -> BuildTestSummaryApp
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> BuildTestSummaryApp
+	"trivago_analytic.trv_ctest" [fontsize=14]
+		BuildTestSummaryApp -> "trivago_analytic.trv_ctest"
+	GetSignificantBreakouts [fontsize=14 shape=box]
+		test_result_tracking -> GetSignificantBreakouts
+	test_result_tracking_browser [fontsize=14]
+		test_result_tracking_browser -> GetSignificantBreakouts
+	agent2browser_group [fontsize=14]
+		agent2browser_group -> GetSignificantBreakouts
+	a2bg [fontsize=14]
+		a2bg -> GetSignificantBreakouts
+	lookup_value [fontsize=14]
+		lookup_value -> GetSignificantBreakouts
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> GetSignificantBreakouts
+	test_summary [fontsize=14]
+		test_summary -> GetSignificantBreakouts
+	test_summary [fontsize=14]
+		GetSignificantBreakouts -> test_summary
+	updateKpisTVMetricsDay [fontsize=14 shape=box]
+	"trivago_analytic_repl.tv_advertising" [fontsize=14]
+		"trivago_analytic_repl.tv_advertising" -> updateKpisTVMetricsDay
+	"trivago_analytic_ssd.spotlength_index" [fontsize=14]
+		"trivago_analytic_ssd.spotlength_index" -> updateKpisTVMetricsDay
+	kpis [fontsize=14]
+		updateKpisTVMetricsDay -> kpis
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisTVMetricsDay -> "trivago_analytic_ssd.kpis"
+	updateDPMTracking [fontsize=14 shape=box]
+	updatePartnerClickReportsDay [fontsize=14 shape=box]
+		item2partner -> updatePartnerClickReportsDay
+	"trivago_analytic.partner_report_access" [fontsize=14]
+		"trivago_analytic.partner_report_access" -> updatePartnerClickReportsDay
+		co_log -> updatePartnerClickReportsDay
+	"trivago_analytic.partner_click_report" [fontsize=14]
+		updatePartnerClickReportsDay -> "trivago_analytic.partner_click_report"
+	updateItem2Proxy [fontsize=14 shape=box]
+	update_BookingAlert [fontsize=14 shape=box]
+	recalculateTvKpis [fontsize=14 shape=box]
+		"trivago_analytic_repl.tv_advertising" -> recalculateTvKpis
+		"trivago_analytic_ssd.spotlength_index" -> recalculateTvKpis
+	kpis [fontsize=14]
+		recalculateTvKpis -> kpis
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		recalculateTvKpis -> "trivago_analytic_ssd.kpis"
+	updateSessionStatsTrafficType [fontsize=14 shape=box]
+	is_branded_sem [fontsize=14]
+		updateSessionStatsTrafficType -> is_branded_sem
+	updateCookieStats [fontsize=14 shape=box]
+	cookie_olap_active [fontsize=14]
+		cookie_olap_active -> updateCookieStats
+	cookie_olap_combined [fontsize=14]
+		updateCookieStats -> cookie_olap_combined
+	updateSEOReferrerReport [fontsize=14 shape=box]
+		"trivago_analytic.external_log" -> updateSEOReferrerReport
+		"trivago_analytic.external_referrer" -> updateSEOReferrerReport
+	"(external_referrer_id" [fontsize=14]
+		"(external_referrer_id" -> updateSEOReferrerReport
+	"(ref_domain" [fontsize=14]
+		"(ref_domain" -> updateSEOReferrerReport
+		"trivago_analytic_ssd.session_stats" -> updateSEOReferrerReport
+		"trivago_analytic_ssd.session_detail" -> updateSEOReferrerReport
+		"(date_id" -> updateSEOReferrerReport
+	"trivago_analytic_ssd.referrer_detail" [fontsize=14]
+		"trivago_analytic_ssd.referrer_detail" -> updateSEOReferrerReport
+		"trivago_analytic_ssd.page_log" -> updateSEOReferrerReport
+	seo_referrer_report [fontsize=14]
+		updateSEOReferrerReport -> seo_referrer_report
+	updateKpiswebsiteother [fontsize=14 shape=box]
+	archive_item_relevance2 [fontsize=14 shape=box]
+	"trivago_analytic.item_relevance2_archive" [fontsize=14]
+		"trivago_analytic.item_relevance2_archive" -> archive_item_relevance2
+	"trivago_analytic.item_relevance2_archive" [fontsize=14]
+		archive_item_relevance2 -> "trivago_analytic.item_relevance2_archive"
+	updateServerPerformance [fontsize=14 shape=box]
+	updateKpisVisitsSearchContextDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateKpisVisitsSearchContextDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisVisitsSearchContextDay -> "trivago_analytic_ssd.kpis"
+	updateOnlineMarketingCipTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateOnlineMarketingCipTrackingDay
+	"trivago_analytic_ssd.online_marketing_cip_tracking" [fontsize=14]
+		"trivago_analytic_ssd.online_marketing_cip_tracking" -> updateOnlineMarketingCipTrackingDay
+	"trivago_analytic_repl.display_tracking" [fontsize=14]
+		"trivago_analytic_repl.display_tracking" -> updateOnlineMarketingCipTrackingDay
+	"trivago_analytic_repl.cip_detail" [fontsize=14]
+		"trivago_analytic_repl.cip_detail" -> updateOnlineMarketingCipTrackingDay
+	"(ci_partner_id" [fontsize=14]
+		"(ci_partner_id" -> updateOnlineMarketingCipTrackingDay
+		kpis -> updateOnlineMarketingCipTrackingDay
+	"trivago_analytic_ssd.online_marketing_cip_tracking" [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> "trivago_analytic_ssd.online_marketing_cip_tracking"
+	"trivago_analytic_ssd.online_marketing_cig_tracking" [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> "trivago_analytic_ssd.online_marketing_cig_tracking"
+	"(select" [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> "(select"
+	locale [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> locale
+	date [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> date
+	"sum(if(kpi=5value0" [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> "sum(if(kpi=5value0"
+	"\)/sum(if(kpi=2value0" [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> "\)/sum(if(kpi=2value0"
+	from [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> from
+	kpis [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> kpis
+	traffic_type [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> traffic_type
+	"(locale" [fontsize=14]
+		updateOnlineMarketingCipTrackingDay -> "(locale"
+	updateAdExposureDevelopment [fontsize=14 shape=box]
+	automatedMatch [fontsize=14 shape=box]
+	"trivago_analytic.automatedmatchlog" [fontsize=14]
+		automatedMatch -> "trivago_analytic.automatedmatchlog"
+	updateHotelTestControlDay [fontsize=14 shape=box]
+		page_log -> updateHotelTestControlDay
+		session_stats -> updateHotelTestControlDay
+	"trivago_analytic.trv_mc_locale" [fontsize=14]
+		"trivago_analytic.trv_mc_locale" -> updateHotelTestControlDay
+	straight_ [fontsize=14]
+		straight_ -> updateHotelTestControlDay
+		page_log_detail -> updateHotelTestControlDay
+	"trivago_analytic_ssd.hoteltestkpis" [fontsize=14]
+		updateHotelTestControlDay -> "trivago_analytic_ssd.hoteltestkpis"
+	updateClickshare_ABC_development [fontsize=14 shape=box]
+	"trivago_confluence.clickshare_cpc_abc_development" [fontsize=14]
+		updateClickshare_ABC_development -> "trivago_confluence.clickshare_cpc_abc_development"
+	updateRegionTrafficDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateRegionTrafficDay
+		"trivago_analytic_ssd.session_detail" -> updateRegionTrafficDay
+		"(date_id" -> updateRegionTrafficDay
+	"trivago_analytic_ssd.region_traffic" [fontsize=14]
+		"trivago_analytic_ssd.region_traffic" -> updateRegionTrafficDay
+	"trivago_analytic_ssd.region_traffic" [fontsize=14]
+		updateRegionTrafficDay -> "trivago_analytic_ssd.region_traffic"
+	"trivago_analytic.region_traffic" [fontsize=14]
+		updateRegionTrafficDay -> "trivago_analytic.region_traffic"
+	PartnerLocaleHotelcountryOverview [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_tracking" -> PartnerLocaleHotelcountryOverview
+	ipr21 [fontsize=14]
+		ipr21 -> PartnerLocaleHotelcountryOverview
+	ipr23 [fontsize=14]
+		ipr23 -> PartnerLocaleHotelcountryOverview
+	ipr22 [fontsize=14]
+		ipr22 -> PartnerLocaleHotelcountryOverview
+	ipr25 [fontsize=14]
+		ipr25 -> PartnerLocaleHotelcountryOverview
+	ipr26 [fontsize=14]
+		ipr26 -> PartnerLocaleHotelcountryOverview
+	partner2realpartner [fontsize=14]
+		PartnerLocaleHotelcountryOverview -> partner2realpartner
+	ipr24 [fontsize=14]
+		PartnerLocaleHotelcountryOverview -> ipr24
+	combined_partner [fontsize=14]
+		PartnerLocaleHotelcountryOverview -> combined_partner
+	updateCigTracking [fontsize=14 shape=box]
+		"trivago_analytic_repl.cip_detail" -> updateCigTracking
+	"trivago_analytic_ssd.cip_tracking" [fontsize=14]
+		"trivago_analytic_ssd.cip_tracking" -> updateCigTracking
+		"(ci_partner_id" -> updateCigTracking
+	"trivago_analytic_repl.cig_detail" [fontsize=14]
+		updateCigTracking -> "trivago_analytic_repl.cig_detail"
+	"trivago_analytic_ssd.cig_tracking" [fontsize=14]
+		updateCigTracking -> "trivago_analytic_ssd.cig_tracking"
+	UpdateLocalePartnerItemTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> UpdateLocalePartnerItemTrackingDay
+		"trivago_analytic_ssd.page_log_detail" -> UpdateLocalePartnerItemTrackingDay
+		"trivago_analytic_ssd.session_stats" -> UpdateLocalePartnerItemTrackingDay
+	"trivago_analytic.locale_partner_item" [fontsize=14]
+		UpdateLocalePartnerItemTrackingDay -> "trivago_analytic.locale_partner_item"
+	updateCologneRankingTest [fontsize=14 shape=box]
+	"trivago_analytic.item_relevance" [fontsize=14]
+		"trivago_analytic.item_relevance" -> updateCologneRankingTest
+		item -> updateCologneRankingTest
+	"trivago_confluence.cologne_ranking_test" [fontsize=14]
+		updateCologneRankingTest -> "trivago_confluence.cologne_ranking_test"
+	BuildTestSummary [fontsize=14 shape=box]
+		test_result_tracking -> BuildTestSummary
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> BuildTestSummary
+	test_result_tracking [fontsize=14]
+		BuildTestSummary -> test_result_tracking
+	test_result_tracking_searchtype [fontsize=14]
+		BuildTestSummary -> test_result_tracking_searchtype
+	test_result_tracking_browser [fontsize=14]
+		BuildTestSummary -> test_result_tracking_browser
+	"trivago_analytic.trv_ctest" [fontsize=14]
+		BuildTestSummary -> "trivago_analytic.trv_ctest"
+	updateHotelManagerDataPeriod [fontsize=14 shape=box]
+		item -> updateHotelManagerDataPeriod
+	path [fontsize=14]
+		path -> updateHotelManagerDataPeriod
+	hotel_manager_raw [fontsize=14]
+		hotel_manager_raw -> updateHotelManagerDataPeriod
+	sub2 [fontsize=14]
+		updateHotelManagerDataPeriod -> sub2
+	prepareMysteryCheck [fontsize=14 shape=box]
+	mc_question [fontsize=14]
+		prepareMysteryCheck -> mc_question
+	mc_response_value [fontsize=14]
+		prepareMysteryCheck -> mc_response_value
+	mc_response [fontsize=14]
+		prepareMysteryCheck -> mc_response
+	mc_scale [fontsize=14]
+		prepareMysteryCheck -> mc_scale
+	mc_respondent [fontsize=14]
+		prepareMysteryCheck -> mc_respondent
+	mc_results [fontsize=14]
+		prepareMysteryCheck -> mc_results
+	updateImageControllerDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateImageControllerDay
+		"trivago_analytic_ssd.page_log_detail" -> updateImageControllerDay
+	"trivago_analytic.image_data" [fontsize=14]
+		"trivago_analytic.image_data" -> updateImageControllerDay
+	"trivago_analytic_ssd.hotel_traffic_annual" [fontsize=14]
+		"trivago_analytic_ssd.hotel_traffic_annual" -> updateImageControllerDay
+		"trivago_analytic_ssd.item2partner" -> updateImageControllerDay
+	"trivago_analytic.partner_image" [fontsize=14]
+		"trivago_analytic.partner_image" -> updateImageControllerDay
+	"trivago_analytic.image_con_2_1" [fontsize=14]
+		"trivago_analytic.image_con_2_1" -> updateImageControllerDay
+	"trivago_analytic.image_con_2_2" [fontsize=14]
+		"trivago_analytic.image_con_2_2" -> updateImageControllerDay
+	"trivago_analytic.member" [fontsize=14]
+		"trivago_analytic.member" -> updateImageControllerDay
+	"(member_id" [fontsize=14]
+		"(member_id" -> updateImageControllerDay
+		"trivago_analytic_ssd.item" -> updateImageControllerDay
+	"trivago_analytic.image_con_3_1" [fontsize=14]
+		"trivago_analytic.image_con_3_1" -> updateImageControllerDay
+	"trivago_analytic.trv_member_admin_log" [fontsize=14]
+		"trivago_analytic.trv_member_admin_log" -> updateImageControllerDay
+	"trivago_analytic.image_con_1" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_1"
+	"trivago_analytic.image_con_2_1" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_2_1"
+	"trivago_analytic.image_con_2_2" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_2_2"
+	"trivago_analytic.image_con_2" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_2"
+	"trivago_analytic.image_con_3_1" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_3_1"
+	"trivago_analytic.image_con_3_2" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_3_2"
+	"trivago_analytic.image_con_3" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.image_con_3"
+	"trivago_analytic.hoteledit_c" [fontsize=14]
+		updateImageControllerDay -> "trivago_analytic.hoteledit_c"
+	updateBooking [fontsize=14 shape=box]
+	updateCookieControl [fontsize=14 shape=box]
+	updateRegionTraffic [fontsize=14 shape=box]
+	updateSEMTracking [fontsize=14 shape=box]
+	update_GuaranteedExpCPC [fontsize=14 shape=box]
+	updateCoPriceDay [fontsize=14 shape=box]
+	intradayTestResults [fontsize=14 shape=box]
+	"trivago_analytic.live_page_log" [fontsize=14]
+		"trivago_analytic.live_page_log" -> intradayTestResults
+	"trivago_analytic.live_page_log_detail" [fontsize=14]
+		"trivago_analytic.live_page_log_detail" -> intradayTestResults
+	updateTvImpact [fontsize=14 shape=box]
+	updateUSlist [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateUSlist
+		"trivago_analytic_ssd.session_detail" -> updateUSlist
+		"(date_id" -> updateUSlist
+		"trivago_analytic_ssd.page_log" -> updateUSlist
+		"trivago_analytic.path_name" -> updateUSlist
+		"trivago_analytic.path" -> updateUSlist
+	updateWeeklyClickShareReportHotelscomExpediacom [fontsize=14 shape=box]
+		"trivago_analytic.locale_partner_item" -> updateWeeklyClickShareReportHotelscomExpediacom
+		psl_clickout_log_partner_detail -> updateWeeklyClickShareReportHotelscomExpediacom
+		item2partner -> updateWeeklyClickShareReportHotelscomExpediacom
+	reportexpedia00 [fontsize=14]
+		updateWeeklyClickShareReportHotelscomExpediacom -> reportexpedia00
+	reportexpedia01 [fontsize=14]
+		updateWeeklyClickShareReportHotelscomExpediacom -> reportexpedia01
+	reportexpedia02 [fontsize=14]
+		updateWeeklyClickShareReportHotelscomExpediacom -> reportexpedia02
+	reportexpedia05 [fontsize=14]
+		updateWeeklyClickShareReportHotelscomExpediacom -> reportexpedia05
+	generatePOIList [fontsize=14 shape=box]
+		session_stats -> generatePOIList
+		page_log -> generatePOIList
+		"(date_id" -> generatePOIList
+		path -> generatePOIList
+	updateFinanceControl [fontsize=14 shape=box]
+		lookup_value -> updateFinanceControl
+	"trivago_analytic_ssd.finance_tracking" [fontsize=14]
+		updateFinanceControl -> "trivago_analytic_ssd.finance_tracking"
+	updateNonFocusPagesDay [fontsize=14 shape=box]
+	"trivago_analytic_ssd.non_focus_pages" [fontsize=14]
+		"trivago_analytic_ssd.non_focus_pages" -> updateNonFocusPagesDay
+	"trivago_analytic_ssd.non_focus_pages" [fontsize=14]
+		updateNonFocusPagesDay -> "trivago_analytic_ssd.non_focus_pages"
+	"trivago_analytic_ssd.page_id_development" [fontsize=14]
+		updateNonFocusPagesDay -> "trivago_analytic_ssd.page_id_development"
+	"trivago_analytic.non_focus_pages" [fontsize=14]
+		updateNonFocusPagesDay -> "trivago_analytic.non_focus_pages"
+	"trivago_analytic.page_id_development" [fontsize=14]
+		updateNonFocusPagesDay -> "trivago_analytic.page_id_development"
+	updateBigRegions [fontsize=14 shape=box]
+	path_name [fontsize=14]
+		path_name -> updateBigRegions
+		path -> updateBigRegions
+	big_regions_with_category_id [fontsize=14]
+		big_regions_with_category_id -> updateBigRegions
+	big_regions_with_category_id [fontsize=14]
+		updateBigRegions -> big_regions_with_category_id
+	big_regions_with_category_id_for_path_id_0 [fontsize=14]
+		updateBigRegions -> big_regions_with_category_id_for_path_id_0
+	updateCoPrice [fontsize=14 shape=box]
+	optimizeTables [fontsize=14 shape=box]
+	"trivago_analytic_ssd.repeat_id_tracking" [fontsize=14]
+		optimizeTables -> "trivago_analytic_ssd.repeat_id_tracking"
+	"trivago_analytic.live_page_log" [fontsize=14]
+		optimizeTables -> "trivago_analytic.live_page_log"
+	"trivago_analytic.live_page_log_detail" [fontsize=14]
+		optimizeTables -> "trivago_analytic.live_page_log_detail"
+	updatePartnerPrice [fontsize=14 shape=box]
+	generateCountryList [fontsize=14 shape=box]
+		"trivago_analytic.path_name" -> generateCountryList
+	"(path_id" [fontsize=14]
+		"(path_id" -> generateCountryList
+		"trivago_analytic.path" -> generateCountryList
+		"trivago_analytic.bookable_hotels" -> generateCountryList
+	updateStats [fontsize=14 shape=box]
+	updatePathCiCoTrackingDay [fontsize=14 shape=box]
+		session_stats -> updatePathCiCoTrackingDay
+		path -> updatePathCiCoTrackingDay
+	path_cico_cip_tracking [fontsize=14]
+		path_cico_cip_tracking -> updatePathCiCoTrackingDay
+	"trivago_analytic_ssd.path_cico_tracking" [fontsize=14]
+		"trivago_analytic_ssd.path_cico_tracking" -> updatePathCiCoTrackingDay
+	path_cico_cip_tracking [fontsize=14]
+		updatePathCiCoTrackingDay -> path_cico_cip_tracking
+	path_cico_tracking [fontsize=14]
+		updatePathCiCoTrackingDay -> path_cico_tracking
+	"trivago_analytic.path_cico_tracking" [fontsize=14]
+		updatePathCiCoTrackingDay -> "trivago_analytic.path_cico_tracking"
+	updateSystemControlJSPerfDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_detail" -> updateSystemControlJSPerfDay
+		"trivago_analytic_ssd.session_stats" -> updateSystemControlJSPerfDay
+		"(date_id" -> updateSystemControlJSPerfDay
+	"trivago_analytic.trv_aly_export_js_perf" [fontsize=14]
+		"trivago_analytic.trv_aly_export_js_perf" -> updateSystemControlJSPerfDay
+	"trivago_analytic_ssd.aly_export_js_perf" [fontsize=14]
+		"trivago_analytic_ssd.aly_export_js_perf" -> updateSystemControlJSPerfDay
+	"trivago_analytic_ssd.aly_export_js_perf_sessions" [fontsize=14]
+		"trivago_analytic_ssd.aly_export_js_perf_sessions" -> updateSystemControlJSPerfDay
+	"trivago_analytic_ssd.aly_export_js_perf_select" [fontsize=14]
+		"trivago_analytic_ssd.aly_export_js_perf_select" -> updateSystemControlJSPerfDay
+	"trivago_analytic_ssd.sd_session_ids" [fontsize=14]
+		"trivago_analytic_ssd.sd_session_ids" -> updateSystemControlJSPerfDay
+	"(session_id" [fontsize=14]
+		"(session_id" -> updateSystemControlJSPerfDay
+	"trivago_analytic_ssd.sd_session_ids" [fontsize=14]
+		updateSystemControlJSPerfDay -> "trivago_analytic_ssd.sd_session_ids"
+	"trivago_analytic_ssd.aly_export_js_perf" [fontsize=14]
+		updateSystemControlJSPerfDay -> "trivago_analytic_ssd.aly_export_js_perf"
+	"trivago_analytic_ssd.aly_export_js_perf_sessions" [fontsize=14]
+		updateSystemControlJSPerfDay -> "trivago_analytic_ssd.aly_export_js_perf_sessions"
+	"trivago_analytic_ssd.aly_export_js_perf_select" [fontsize=14]
+		updateSystemControlJSPerfDay -> "trivago_analytic_ssd.aly_export_js_perf_select"
+	"trivago_analytic_ssd.system_control_js_perf" [fontsize=14]
+		updateSystemControlJSPerfDay -> "trivago_analytic_ssd.system_control_js_perf"
+	updateBookingWithoutCookiesPcco [fontsize=14 shape=box]
+	booking_without_cookies_log [fontsize=14]
+		booking_without_cookies_log -> updateBookingWithoutCookiesPcco
+		page_log -> updateBookingWithoutCookiesPcco
+	session_detail [fontsize=14]
+		session_detail -> updateBookingWithoutCookiesPcco
+	logQueryTime [fontsize=14 shape=box]
+	"trivago_analytic_ssd.query_log" [fontsize=14]
+		logQueryTime -> "trivago_analytic_ssd.query_log"
+	updateNewMarketslist [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateNewMarketslist
+		"trivago_analytic_ssd.page_log" -> updateNewMarketslist
+		"trivago_analytic.path_name" -> updateNewMarketslist
+		"trivago_analytic.path" -> updateNewMarketslist
+	"trivago_analytic.path_dist_hotels" [fontsize=14]
+		"trivago_analytic.path_dist_hotels" -> updateNewMarketslist
+		"(path_id" -> updateNewMarketslist
+		"trivago_analytic.bookable_hotels" -> updateNewMarketslist
+		item -> updateNewMarketslist
+	"(category_id" [fontsize=14]
+		"(category_id" -> updateNewMarketslist
+		hotel_traffic_annual -> updateNewMarketslist
+		"(item_id" -> updateNewMarketslist
+	"trivago_analytic_ssd.path_name" [fontsize=14]
+		"trivago_analytic_ssd.path_name" -> updateNewMarketslist
+	htapl [fontsize=14]
+		htapl -> updateNewMarketslist
+	"trivago_analytic.trv_item_group" [fontsize=14]
+		"trivago_analytic.trv_item_group" -> updateNewMarketslist
+		item_stats -> updateNewMarketslist
+	"(select" [fontsize=14]
+		updateNewMarketslist -> "(select"
+	market [fontsize=14]
+		updateNewMarketslist -> market
+	"max(sum_clickouts" [fontsize=14]
+		updateNewMarketslist -> "max(sum_clickouts"
+	from [fontsize=14]
+		updateNewMarketslist -> from
+	"max(counter" [fontsize=14]
+		updateNewMarketslist -> "max(counter"
+	update_AdblockingSubstitutionProb [fontsize=14 shape=box]
+	PartnerLocaleHotelcountryShares2L [fontsize=14 shape=box]
+	"trivago_analytic_ssd.partner_locale_hotelcountry" [fontsize=14]
+		"trivago_analytic_ssd.partner_locale_hotelcountry" -> PartnerLocaleHotelcountryShares2L
+	updateBigRegionsRelevantItems [fontsize=14 shape=box]
+		big_regions_with_category_id -> updateBigRegionsRelevantItems
+		"trivago_analytic.item_relevance" -> updateBigRegionsRelevantItems
+	updateSearchTypesContextsDay [fontsize=14 shape=box]
+		session_detail -> updateSearchTypesContextsDay
+		session_stats -> updateSearchTypesContextsDay
+		"(date_id" -> updateSearchTypesContextsDay
+		page_log -> updateSearchTypesContextsDay
+	page_log [fontsize=14]
+		updateSearchTypesContextsDay -> page_log
+	search_types_contexts [fontsize=14]
+		updateSearchTypesContextsDay -> search_types_contexts
+	updateCiCoTrackingDay [fontsize=14 shape=box]
+	updateReleaseControl [fontsize=14 shape=box]
+	updateAndroidStatsDay [fontsize=14 shape=box]
+	prepareCpaInformationByCountry [fontsize=14 shape=box]
+	"trivago_analytic_repl.co_cpa_credit_note" [fontsize=14]
+		"trivago_analytic_repl.co_cpa_credit_note" -> prepareCpaInformationByCountry
+		"trivago_analytic_repl.co_tracking" -> prepareCpaInformationByCountry
+	updateKpisBookingsDay [fontsize=14 shape=box]
+	"trivago_analytic_ssd.pixel_status_history" [fontsize=14]
+		"trivago_analytic_ssd.pixel_status_history" -> updateKpisBookingsDay
+		"trivago_analytic_repl.co_tracking" -> updateKpisBookingsDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisBookingsDay -> "trivago_analytic_ssd.kpis"
+	updateKpisthmDay [fontsize=14 shape=box]
+		page_log -> updateKpisthmDay
+		session_stats -> updateKpisthmDay
+	"trivago_analytic.thm_login_log" [fontsize=14]
+		"trivago_analytic.thm_login_log" -> updateKpisthmDay
+	"trivago_analytic.trv_item2hotelpartner" [fontsize=14]
+		"trivago_analytic.trv_item2hotelpartner" -> updateKpisthmDay
+	item2hotelpartner [fontsize=14]
+		item2hotelpartner -> updateKpisthmDay
+		item -> updateKpisthmDay
+		"trivago_analytic.trv_image_data" -> updateKpisthmDay
+	image_data [fontsize=14]
+		image_data -> updateKpisthmDay
+	"trivago_analytic.trv_item_history" [fontsize=14]
+		"trivago_analytic.trv_item_history" -> updateKpisthmDay
+	"trivago_analytic.trv_mc_check_request_order" [fontsize=14]
+		"trivago_analytic.trv_mc_check_request_order" -> updateKpisthmDay
+	"trivago_analytic.trv_mc_check_request_order2hotel" [fontsize=14]
+		"trivago_analytic.trv_mc_check_request_order2hotel" -> updateKpisthmDay
+	member_impressions [fontsize=14]
+		member_impressions -> updateKpisthmDay
+	member_spendminutes [fontsize=14]
+		member_spendminutes -> updateKpisthmDay
+	"trivago_analytic.thm_login_log" [fontsize=14]
+		updateKpisthmDay -> "trivago_analytic.thm_login_log"
+	kpis_hgw [fontsize=14]
+		updateKpisthmDay -> kpis_hgw
+	image_data [fontsize=14]
+		updateKpisthmDay -> image_data
+	member_impressions [fontsize=14]
+		updateKpisthmDay -> member_impressions
+	member_spendminutes [fontsize=14]
+		updateKpisthmDay -> member_spendminutes
+	kpi_hgw [fontsize=14]
+		updateKpisthmDay -> kpi_hgw
+	updateContentController [fontsize=14 shape=box]
+	replaceReplTable2Hdd [fontsize=14 shape=box]
+	"trivago_analytic." [fontsize=14]
+		replaceReplTable2Hdd -> "trivago_analytic."
+	updatePriceStatsTopDealsDay [fontsize=14 shape=box]
+		psl_clickout_log -> updatePriceStatsTopDealsDay
+	between [fontsize=14]
+		between -> updatePriceStatsTopDealsDay
+	"trivago_analytic.prod_hotelprices_for_topdeals" [fontsize=14]
+		updatePriceStatsTopDealsDay -> "trivago_analytic.prod_hotelprices_for_topdeals"
+	updateItemLastWeekVisitors [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateItemLastWeekVisitors
+		"trivago_analytic_ssd.session_stats" -> updateItemLastWeekVisitors
+	"trivago_analytic_ssd.item_stats" [fontsize=14]
+		"trivago_analytic_ssd.item_stats" -> updateItemLastWeekVisitors
+	"trivago_analytic.item_lastweekvisitors" [fontsize=14]
+		"trivago_analytic.item_lastweekvisitors" -> updateItemLastWeekVisitors
+	"trivago_analytic.item_lastweekvisitors" [fontsize=14]
+		updateItemLastWeekVisitors -> "trivago_analytic.item_lastweekvisitors"
+	"trivago_analytic.item_lastweekvisitors_changes" [fontsize=14]
+		updateItemLastWeekVisitors -> "trivago_analytic.item_lastweekvisitors_changes"
+	updateBookingWithoutCookies [fontsize=14 shape=box]
+	pre_confluence_RS [fontsize=14 shape=box]
+	selectCoTrackingVemas [fontsize=14 shape=box]
+	"trivago_analytic.co_tracking_changes_vemas" [fontsize=14]
+		selectCoTrackingVemas -> "trivago_analytic.co_tracking_changes_vemas"
+	updateContentScore [fontsize=14 shape=box]
+		item -> updateContentScore
+	item_data_language [fontsize=14]
+		item_data_language -> updateContentScore
+	item_data [fontsize=14]
+		item_data -> updateContentScore
+	content_score_data1 [fontsize=14]
+		content_score_data1 -> updateContentScore
+	"trivago_analytic_ssd.item_description" [fontsize=14]
+		"trivago_analytic_ssd.item_description" -> updateContentScore
+	contentscoreitemdescription [fontsize=14]
+		contentscoreitemdescription -> updateContentScore
+		"trivago_analytic.partner_image" -> updateContentScore
+		item2partner -> updateContentScore
+	"(item2partner_id" [fontsize=14]
+		"(item2partner_id" -> updateContentScore
+		"trivago_analytic.image_data" -> updateContentScore
+		"trivago_analytic.trv_picture_collage" -> updateContentScore
+	contentscore_partner_images [fontsize=14]
+		contentscore_partner_images -> updateContentScore
+		"(item_id" -> updateContentScore
+	contentscore_thm_images [fontsize=14]
+		contentscore_thm_images -> updateContentScore
+	contentscore_collage [fontsize=14]
+		contentscore_collage -> updateContentScore
+	"trivago_analytic.trv_pro_review" [fontsize=14]
+		"trivago_analytic.trv_pro_review" -> updateContentScore
+	contentscore_1 [fontsize=14]
+		contentscore_1 -> updateContentScore
+	contentscore_2 [fontsize=14]
+		contentscore_2 -> updateContentScore
+	contentscore_3 [fontsize=14]
+		contentscore_3 -> updateContentScore
+	contentscore_4 [fontsize=14]
+		contentscore_4 -> updateContentScore
+	contentscore_5 [fontsize=14]
+		contentscore_5 -> updateContentScore
+	"trivago_analytic.content_score_stats" [fontsize=14]
+		"trivago_analytic.content_score_stats" -> updateContentScore
+	contentscore_1 [fontsize=14]
+		updateContentScore -> contentscore_1
+	content_score_data1 [fontsize=14]
+		updateContentScore -> content_score_data1
+	content_score_data2 [fontsize=14]
+		updateContentScore -> content_score_data2
+	content_score_data3 [fontsize=14]
+		updateContentScore -> content_score_data3
+	contentscore_2 [fontsize=14]
+		updateContentScore -> contentscore_2
+	contentscoreitemdescription [fontsize=14]
+		updateContentScore -> contentscoreitemdescription
+	contentscore_3 [fontsize=14]
+		updateContentScore -> contentscore_3
+	contentscore_partner_images [fontsize=14]
+		updateContentScore -> contentscore_partner_images
+	contentscore_thm_images [fontsize=14]
+		updateContentScore -> contentscore_thm_images
+	contentscore_collage [fontsize=14]
+		updateContentScore -> contentscore_collage
+	contentscore_4 [fontsize=14]
+		updateContentScore -> contentscore_4
+	contentscore_5 [fontsize=14]
+		updateContentScore -> contentscore_5
+	"trivago_analytic.content_stats_info" [fontsize=14]
+		updateContentScore -> "trivago_analytic.content_stats_info"
+	"trivago_analytic.content_score_stats" [fontsize=14]
+		updateContentScore -> "trivago_analytic.content_score_stats"
+	"trivago_analytic.content_score" [fontsize=14]
+		updateContentScore -> "trivago_analytic.content_score"
+	"trivago_analytic.content_score_history" [fontsize=14]
+		updateContentScore -> "trivago_analytic.content_score_history"
+	"trivago_analytic.content_score_stats_history" [fontsize=14]
+		updateContentScore -> "trivago_analytic.content_score_stats_history"
+	updatePartnerArchive [fontsize=14 shape=box]
+	"trivago_analytic.item2partner_archive" [fontsize=14]
+		updatePartnerArchive -> "trivago_analytic.item2partner_archive"
+	"trivago_analytic_ssd.partner_archive" [fontsize=14]
+		updatePartnerArchive -> "trivago_analytic_ssd.partner_archive"
+	"trivago_analytic.item_archive" [fontsize=14]
+		updatePartnerArchive -> "trivago_analytic.item_archive"
+	updateMcSignStatements [fontsize=14 shape=box]
+	updateReportingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.kpis" -> updateReportingDay
+	"trivago_analytic_ssd.reporting" [fontsize=14]
+		updateReportingDay -> "trivago_analytic_ssd.reporting"
+	updateSnoozeeBenchmarks [fontsize=14 shape=box]
+	updateCookieTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateCookieTrackingDay
+	cookie_tracking [fontsize=14]
+		updateCookieTrackingDay -> cookie_tracking
+	"trivago_analytic.cookie_tracking" [fontsize=14]
+		updateCookieTrackingDay -> "trivago_analytic.cookie_tracking"
+	dailyclickoutreportvenere [fontsize=14 shape=box]
+	updateKpisRevenuePartnerDay [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_tracking" -> updateKpisRevenuePartnerDay
+		"trivago_analytic_ssd.kpis" -> updateKpisRevenuePartnerDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisRevenuePartnerDay -> "trivago_analytic_ssd.kpis"
+	update_BookingAlert_Day [fontsize=14 shape=box]
+	partnerclickreportsftp [fontsize=14 shape=box]
+	updateKpisMarketingSpendDay [fontsize=14 shape=box]
+	updateSnoozeeOpportunityCostsDay [fontsize=14 shape=box]
+		psl_clickout_log -> updateSnoozeeOpportunityCostsDay
+		psl_clickout_log_partner_detail -> updateSnoozeeOpportunityCostsDay
+		price_search_log_id -> updateSnoozeeOpportunityCostsDay
+		co_log -> updateSnoozeeOpportunityCostsDay
+		page_log_detail -> updateSnoozeeOpportunityCostsDay
+		page_log -> updateSnoozeeOpportunityCostsDay
+		date_id -> updateSnoozeeOpportunityCostsDay
+	"trivago_confluence.snoozee_opportunity_costs" [fontsize=14]
+		updateSnoozeeOpportunityCostsDay -> "trivago_confluence.snoozee_opportunity_costs"
+	updateBookingRecode8102 [fontsize=14 shape=box]
+	update_BiddingMonitoring_Day [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> update_BiddingMonitoring_Day
+		"trivago_analytic_ssd.partner" -> update_BiddingMonitoring_Day
+	"trivago_analytic.bidding_monitoring" [fontsize=14]
+		update_BiddingMonitoring_Day -> "trivago_analytic.bidding_monitoring"
+	"trivago_confluence.bidding_monitoring" [fontsize=14]
+		update_BiddingMonitoring_Day -> "trivago_confluence.bidding_monitoring"
+	updateSnoozeelogging [fontsize=14 shape=box]
+	sumCoTrackingVemas [fontsize=14 shape=box]
+		"trivago_analytic.co_tracking_changes_vemas" -> sumCoTrackingVemas
+	updateKpisIpShare [fontsize=14 shape=box]
+	updateSystemController [fontsize=14 shape=box]
+	updateQualityScore_Day [fontsize=14 shape=box]
+		sales_metrics -> updateQualityScore_Day
+		"trivago_analytic_repl.co_tracking" -> updateQualityScore_Day
+	"trivago_analytic_ssd.qs_factors" [fontsize=14]
+		updateQualityScore_Day -> "trivago_analytic_ssd.qs_factors"
+	calculateBookingDevelopmentData [fontsize=14 shape=box]
+	updateSEOSuiteDataWeek [fontsize=14 shape=box]
+		"trivago_analytic.trv_item2hotelpartner" -> updateSEOSuiteDataWeek
+		"trivago_analytic.trv_member" -> updateSEOSuiteDataWeek
+	"trivago_analytic_ssd.trv_item_toplist_stats" [fontsize=14]
+		"trivago_analytic_ssd.trv_item_toplist_stats" -> updateSEOSuiteDataWeek
+		"trivago_analytic_ssd.item2partner" -> updateSEOSuiteDataWeek
+	"trivago_analytic.trv_opinion" [fontsize=14]
+		"trivago_analytic.trv_opinion" -> updateSEOSuiteDataWeek
+		item2partner -> updateSEOSuiteDataWeek
+		partner -> updateSEOSuiteDataWeek
+		"(partner_id" -> updateSEOSuiteDataWeek
+		partner2realpartner -> updateSEOSuiteDataWeek
+	p2rp [fontsize=14]
+		p2rp -> updateSEOSuiteDataWeek
+		item -> updateSEOSuiteDataWeek
+		"(item_id" -> updateSEOSuiteDataWeek
+		"trivago_analytic.item_relevance" -> updateSEOSuiteDataWeek
+		path -> updateSEOSuiteDataWeek
+		"(category_id" -> updateSEOSuiteDataWeek
+	item_description [fontsize=14]
+		item_description -> updateSEOSuiteDataWeek
+	LEFT [fontsize=14]
+		LEFT -> updateSEOSuiteDataWeek
+	OUTER [fontsize=14]
+		OUTER -> updateSEOSuiteDataWeek
+	JOIN [fontsize=14]
+		JOIN -> updateSEOSuiteDataWeek
+	"trivago_analytic.seo_suite_booking_engine" [fontsize=14]
+		"trivago_analytic.seo_suite_booking_engine" -> updateSEOSuiteDataWeek
+	USING [fontsize=14]
+		USING -> updateSEOSuiteDataWeek
+	"trivago_analytic.item_description_languages" [fontsize=14]
+		"trivago_analytic.item_description_languages" -> updateSEOSuiteDataWeek
+	"trivago_analytic.item_native_description" [fontsize=14]
+		"trivago_analytic.item_native_description" -> updateSEOSuiteDataWeek
+	"trivago_analytic.hotelierinfo" [fontsize=14]
+		"trivago_analytic.hotelierinfo" -> updateSEOSuiteDataWeek
+	ilfp [fontsize=14]
+		ilfp -> updateSEOSuiteDataWeek
+		"trivago_analytic.seo_suite_content_edit_images" -> updateSEOSuiteDataWeek
+	sscei [fontsize=14]
+		sscei -> updateSEOSuiteDataWeek
+		"trivago_analytic.seo_suite_count_image" -> updateSEOSuiteDataWeek
+	ssci [fontsize=14]
+		ssci -> updateSEOSuiteDataWeek
+	"trivago_analytic.seo_suite_count_hq_images" [fontsize=14]
+		"trivago_analytic.seo_suite_count_hq_images" -> updateSEOSuiteDataWeek
+	"trivago_analytic.seo_suite_attribute_last_edit" [fontsize=14]
+		"trivago_analytic.seo_suite_attribute_last_edit" -> updateSEOSuiteDataWeek
+	"trivago_analytic.seo_suite_booking_engine" [fontsize=14]
+		updateSEOSuiteDataWeek -> "trivago_analytic.seo_suite_booking_engine"
+	item_default_language [fontsize=14]
+		updateSEOSuiteDataWeek -> item_default_language
+	"trivago_analytic.item_description_languages" [fontsize=14]
+		updateSEOSuiteDataWeek -> "trivago_analytic.item_description_languages"
+	"trivago_analytic.seo_suite_weekly_report" [fontsize=14]
+		updateSEOSuiteDataWeek -> "trivago_analytic.seo_suite_weekly_report"
+	replaceSsdTable2Hdd [fontsize=14 shape=box]
+	"trivago_analytic." [fontsize=14]
+		replaceSsdTable2Hdd -> "trivago_analytic."
+	updateCipTracking [fontsize=14 shape=box]
+	updateRefererTracking [fontsize=14 shape=box]
+	updateBookingDay [fontsize=14 shape=box]
+		booking_without_cookies_log -> updateBookingDay
+	booking_log [fontsize=14]
+		updateBookingDay -> booking_log
+	HotelInfoClickoutBookingPerPartner [fontsize=14 shape=box]
+	"trivago_analytic_repl.partner_hotelinfo_co_booking_log_detail" [fontsize=14]
+		HotelInfoClickoutBookingPerPartner -> "trivago_analytic_repl.partner_hotelinfo_co_booking_log_detail"
+	updateRepeatIdTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateRepeatIdTrackingDay
+	"trivago_analytic_ssd.repeat_id_tracking" [fontsize=14]
+		updateRepeatIdTrackingDay -> "trivago_analytic_ssd.repeat_id_tracking"
+	updateMysteryGuestFakeUserDetectionResultWeek [fontsize=14 shape=box]
+		mc_response -> updateMysteryGuestFakeUserDetectionResultWeek
+	mc_fake_user_detection_prep_mc_response [fontsize=14]
+		updateMysteryGuestFakeUserDetectionResultWeek -> mc_fake_user_detection_prep_mc_response
+	mc_fake_user_detection_prep_mc_response_value [fontsize=14]
+		updateMysteryGuestFakeUserDetectionResultWeek -> mc_fake_user_detection_prep_mc_response_value
+	produceLoadedData [fontsize=14 shape=box]
+	"trivago_analytic_ssd.crunchjob_failures" [fontsize=14]
+		produceLoadedData -> "trivago_analytic_ssd.crunchjob_failures"
+	updatePriceBlocking_new [fontsize=14 shape=box]
+		psl_clickout_log_partner_detail -> updatePriceBlocking_new
+	updateFirstPosDilution [fontsize=14 shape=box]
+	updateKpisthm [fontsize=14 shape=box]
+	updatebilingualDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updatebilingualDay
+		"trivago_analytic_ssd.page_log_detail" -> updatebilingualDay
+	pld2 [fontsize=14]
+		pld2 -> updatebilingualDay
+		"(date_id" -> updatebilingualDay
+	"trivago_confluence.belgium_performance" [fontsize=14]
+		updatebilingualDay -> "trivago_confluence.belgium_performance"
+	removeCpaInformation [fontsize=14 shape=box]
+	updateHGWInteraction [fontsize=14 shape=box]
+	updatePriceCalendarLocale [fontsize=14 shape=box]
+		"trivago_analytic_ssd.partner" -> updatePriceCalendarLocale
+		"trivago_analytic_ssd.partner2locale" -> updatePriceCalendarLocale
+	"trivago_analytic.price_calendar_new" [fontsize=14]
+		"trivago_analytic.price_calendar_new" -> updatePriceCalendarLocale
+		item -> updatePriceCalendarLocale
+	"trivago_analytic.price_calendar_category_new" [fontsize=14]
+		"trivago_analytic.price_calendar_category_new" -> updatePriceCalendarLocale
+	"trivago_analytic.price_overview_new" [fontsize=14]
+		"trivago_analytic.price_overview_new" -> updatePriceCalendarLocale
+		item_stats -> updatePriceCalendarLocale
+	"trivago_analytic.price_calendar_new" [fontsize=14]
+		updatePriceCalendarLocale -> "trivago_analytic.price_calendar_new"
+	"(select" [fontsize=14]
+		updatePriceCalendarLocale -> "(select"
+	item_id [fontsize=14]
+		updatePriceCalendarLocale -> item_id
+	"avg(2nd_best_price" [fontsize=14]
+		updatePriceCalendarLocale -> "avg(2nd_best_price"
+	from [fontsize=14]
+		updatePriceCalendarLocale -> from
+	price_date [fontsize=14]
+		updatePriceCalendarLocale -> price_date
+	between [fontsize=14]
+		updatePriceCalendarLocale -> between
+	"trivago_analytic.price_calendar_category_new" [fontsize=14]
+		updatePriceCalendarLocale -> "trivago_analytic.price_calendar_category_new"
+	"trivago_analytic.price_deals_new" [fontsize=14]
+		updatePriceCalendarLocale -> "trivago_analytic.price_deals_new"
+	updateHotelierKpisDay [fontsize=14 shape=box]
+		co_log -> updateHotelierKpisDay
+		session_stats -> updateHotelierKpisDay
+		booking_log -> updateHotelierKpisDay
+	pixel_partners [fontsize=14]
+		pixel_partners -> updateHotelierKpisDay
+	updateHotelManagerKPIDataDay [fontsize=14 shape=box]
+		co_log -> updateHotelManagerKPIDataDay
+		session_stats -> updateHotelManagerKPIDataDay
+		date -> updateHotelManagerKPIDataDay
+		item_id -> updateHotelManagerKPIDataDay
+		"trivago_analytic.locale_partner_item" -> updateHotelManagerKPIDataDay
+	hotel_manager_kpis [fontsize=14]
+		updateHotelManagerKPIDataDay -> hotel_manager_kpis
+	updateCrawlersDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_detail" -> updateCrawlersDay
+		"trivago_analytic_ssd.session_stats" -> updateCrawlersDay
+		"(date_id" -> updateCrawlersDay
+		session_detail -> updateCrawlersDay
+		page_log_detail -> updateCrawlersDay
+		page_log -> updateCrawlersDay
+	"trivago_analytic_ssd.session_detail" [fontsize=14]
+		updateCrawlersDay -> "trivago_analytic_ssd.session_detail"
+	"(date_id" [fontsize=14]
+		updateCrawlersDay -> "(date_id"
+	"trivago_analytic_ssd.session_stats" [fontsize=14]
+		updateCrawlersDay -> "trivago_analytic_ssd.session_stats"
+	"trivago_analytic_ssd.page_log_detail" [fontsize=14]
+		updateCrawlersDay -> "trivago_analytic_ssd.page_log_detail"
+	updateTestResultTrackingAppDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateTestResultTrackingAppDay
+		"trivago_analytic_ssd.page_log_detail" -> updateTestResultTrackingAppDay
+	"pld(" [fontsize=14]
+		"pld(" -> updateTestResultTrackingAppDay
+		"trivago_analytic.trv_ctest" -> updateTestResultTrackingAppDay
+	tdel [fontsize=14]
+		updateTestResultTrackingAppDay -> tdel
+	test_result_tracking_app [fontsize=14]
+		updateTestResultTrackingAppDay -> test_result_tracking_app
+	test_result_tracking_device_app [fontsize=14]
+		updateTestResultTrackingAppDay -> test_result_tracking_device_app
+	test_result_tracking_searchtype_app [fontsize=14]
+		updateTestResultTrackingAppDay -> test_result_tracking_searchtype_app
+	HotelRelationsTable [fontsize=14 shape=box]
+	updatebilingual [fontsize=14 shape=box]
+	updatekpis [fontsize=14 shape=box]
+	update_GuaranteedExpCPC_Day [fontsize=14 shape=box]
+		"trivago_analytic_ssd.item" -> update_GuaranteedExpCPC_Day
+	"trivago_analytic.prod_tpc" [fontsize=14]
+		"trivago_analytic.prod_tpc" -> update_GuaranteedExpCPC_Day
+	guaranteed_exposure_cpc [fontsize=14]
+		update_GuaranteedExpCPC_Day -> guaranteed_exposure_cpc
+	updateTestResultTracking [fontsize=14 shape=box]
+	updateCats2Names [fontsize=14 shape=box]
+	"trivago_analytic_ssd.path" [fontsize=14]
+		"trivago_analytic_ssd.path" -> updateCats2Names
+		"trivago_analytic_ssd.path_name" -> updateCats2Names
+	"trivago_analytic_ssd.cats2names_old" [fontsize=14]
+		updateCats2Names -> "trivago_analytic_ssd.cats2names_old"
+	"trivago_analytic_ssd.cats2names" [fontsize=14]
+		updateCats2Names -> "trivago_analytic_ssd.cats2names"
+	updateHotelierTracking [fontsize=14 shape=box]
+	updateBaselines [fontsize=14 shape=box]
+	updateMCconversions [fontsize=14 shape=box]
+	updateAdExposureDevelopment_Day [fontsize=14 shape=box]
+		"trivago_analytic.psl_hotel_list_hidden" -> updateAdExposureDevelopment_Day
+	"trivago_analytic_ssd.psl_clickout_log" [fontsize=14]
+		"trivago_analytic_ssd.psl_clickout_log" -> updateAdExposureDevelopment_Day
+	"trivago_analytic.prod_partnerslot_rules_archive" [fontsize=14]
+		"trivago_analytic.prod_partnerslot_rules_archive" -> updateAdExposureDevelopment_Day
+	"trivago_analytic.hotel_category" [fontsize=14]
+		"trivago_analytic.hotel_category" -> updateAdExposureDevelopment_Day
+		"(item_id" -> updateAdExposureDevelopment_Day
+		"trivago_analytic_ssd.co_log" -> updateAdExposureDevelopment_Day
+	"trivago_analytic_ssd.psl_clickout_log_partner_detail" [fontsize=14]
+		"trivago_analytic_ssd.psl_clickout_log_partner_detail" -> updateAdExposureDevelopment_Day
+	blocking_impact_clickshare [fontsize=14]
+		blocking_impact_clickshare -> updateAdExposureDevelopment_Day
+	blocking_impact_clickshare_total [fontsize=14]
+		blocking_impact_clickshare_total -> updateAdExposureDevelopment_Day
+	ad_exposure_development [fontsize=14]
+		updateAdExposureDevelopment_Day -> ad_exposure_development
+	updateAppVersionKpis [fontsize=14 shape=box]
+	"trivago_confluence.app_version_kpis" [fontsize=14]
+		updateAppVersionKpis -> "trivago_confluence.app_version_kpis"
+	updateHistoricRefererMetricsDay [fontsize=14 shape=box]
+	referer_code [fontsize=14]
+		referer_code -> updateHistoricRefererMetricsDay
+	updateTestResultsOSP [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateTestResultsOSP
+	updatePartnerInfoTracking [fontsize=14 shape=box]
+	insertLogFiles [fontsize=14 shape=box]
+	updatePartnerPriceTrackingDay [fontsize=14 shape=box]
+	partner_price_status [fontsize=14]
+		partner_price_status -> updatePartnerPriceTrackingDay
+	"trivago_analytic_ssd.price_parity_hotels" [fontsize=14]
+		"trivago_analytic_ssd.price_parity_hotels" -> updatePartnerPriceTrackingDay
+	"trivago_analytic.partner_price_tracking" [fontsize=14]
+		updatePartnerPriceTrackingDay -> "trivago_analytic.partner_price_tracking"
+	updateCipTc [fontsize=14 shape=box]
+	deleteCipId [fontsize=14 shape=box]
+	cip_detail [fontsize=14]
+		deleteCipId -> cip_detail
+	updatePriceParityTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic.partner_price_tracking" -> updatePriceParityTrackingDay
+	price_parity_tracking [fontsize=14]
+		updatePriceParityTrackingDay -> price_parity_tracking
+	update_ClickshareDevelopmentPartner [fontsize=14 shape=box]
+	updateSearchTracking [fontsize=14 shape=box]
+	callFinanceControlMonthlyOverview [fontsize=14 shape=box]
+	"trivago_analytic_ssd.finance_control_data" [fontsize=14]
+		"trivago_analytic_ssd.finance_control_data" -> callFinanceControlMonthlyOverview
+	"trivago_analytic_ssd.finance_control_code" [fontsize=14]
+		"trivago_analytic_ssd.finance_control_code" -> callFinanceControlMonthlyOverview
+	"(traffic_type" [fontsize=14]
+		"(traffic_type" -> callFinanceControlMonthlyOverview
+	"trivago_analytic_ssd.finance_control_locale2aggrelocale" [fontsize=14]
+		"trivago_analytic_ssd.finance_control_locale2aggrelocale" -> callFinanceControlMonthlyOverview
+		"(locale" -> callFinanceControlMonthlyOverview
+	"trivago_analytic_ssd.finance_control_aggrelocale_order" [fontsize=14]
+		"trivago_analytic_ssd.finance_control_aggrelocale_order" -> callFinanceControlMonthlyOverview
+	"(aggrelocale" [fontsize=14]
+		"(aggrelocale" -> callFinanceControlMonthlyOverview
+	"(order_id" [fontsize=14]
+		callFinanceControlMonthlyOverview -> "(order_id"
+	FraudDetection [fontsize=14 shape=box]
+	updateConfluence [fontsize=14 shape=box]
+	updateStatsDay [fontsize=14 shape=box]
+	"trivago_analytic.dump_page_log_detail" [fontsize=14]
+		"trivago_analytic.dump_page_log_detail" -> updateStatsDay
+	updatePlanControl [fontsize=14 shape=box]
+		kpis -> updatePlanControl
+	"trivago_analytic_ssd.plancontroller_data" [fontsize=14]
+		updatePlanControl -> "trivago_analytic_ssd.plancontroller_data"
+	"trivago_analytic_ssd.plancontroller_plans" [fontsize=14]
+		updatePlanControl -> "trivago_analytic_ssd.plancontroller_plans"
+	"(plan_id" [fontsize=14]
+		updatePlanControl -> "(plan_id"
+	"(select" [fontsize=14]
+		updatePlanControl -> "(select"
+	date [fontsize=14]
+		updatePlanControl -> date
+	traffic_type [fontsize=14]
+		updatePlanControl -> traffic_type
+	locale [fontsize=14]
+		updatePlanControl -> locale
+	"round(sum(if(value0" [fontsize=14]
+		updatePlanControl -> "round(sum(if(value0"
+	"round(sum(if(kpi=5value0" [fontsize=14]
+		updatePlanControl -> "round(sum(if(kpi=5value0"
+	"\)/sum(if(kpi=2value0" [fontsize=14]
+		updatePlanControl -> "\)/sum(if(kpi=2value0"
+	"\),2" [fontsize=14]
+		updatePlanControl -> "\),2"
+	"actual_cpc," [fontsize=14]
+		updatePlanControl -> "actual_cpc,"
+	"sum(if(kpi=2,value,0" [fontsize=14]
+		updatePlanControl -> "sum(if(kpi=2,value,0"
+	actual_cos [fontsize=14]
+		updatePlanControl -> actual_cos
+	from [fontsize=14]
+		updatePlanControl -> from
+	kpis [fontsize=14]
+		updatePlanControl -> kpis
+	"(2,3,5" [fontsize=14]
+		updatePlanControl -> "(2,3,5"
+	"locale," [fontsize=14]
+		updatePlanControl -> "locale,"
+	"date," [fontsize=14]
+		updatePlanControl -> "date,"
+	using [fontsize=14]
+		updatePlanControl -> using
+	"(locale," [fontsize=14]
+		updatePlanControl -> "(locale,"
+	"(date" [fontsize=14]
+		updatePlanControl -> "(date"
+	interval [fontsize=14]
+		updatePlanControl -> interval
+	year [fontsize=14]
+		updatePlanControl -> year
+	"\)+0" [fontsize=14]
+		updatePlanControl -> "\)+0"
+	updatePathCiCoTracking [fontsize=14 shape=box]
+	path_cico_tracking [fontsize=14]
+		updatePathCiCoTracking -> path_cico_tracking
+	updateExpediaHotelscomDailyHotelClickoutReportDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> updateExpediaHotelscomDailyHotelClickoutReportDay
+		"trivago_analytic_repl.co_tracking" -> updateExpediaHotelscomDailyHotelClickoutReportDay
+	"trivago_analytic_ssd.item2partner" [fontsize=14]
+		updateExpediaHotelscomDailyHotelClickoutReportDay -> "trivago_analytic_ssd.item2partner"
+	expedia_hotel_clickout_report [fontsize=14]
+		updateExpediaHotelscomDailyHotelClickoutReportDay -> expedia_hotel_clickout_report
+	updateOlap [fontsize=14 shape=box]
+	intradayHourglass [fontsize=14 shape=box]
+		"trivago_analytic.live_page_log" -> intradayHourglass
+		"trivago_analytic.live_page_log_detail" -> intradayHourglass
+	callFinanceControlYearlyOverviewByCountry [fontsize=14 shape=box]
+		"trivago_analytic_ssd.finance_control_data" -> callFinanceControlYearlyOverviewByCountry
+		"trivago_analytic_ssd.finance_control_code" -> callFinanceControlYearlyOverviewByCountry
+		"(traffic_type" -> callFinanceControlYearlyOverviewByCountry
+		"trivago_analytic_ssd.finance_control_locale2aggrelocale" -> callFinanceControlYearlyOverviewByCountry
+		"(locale" -> callFinanceControlYearlyOverviewByCountry
+		"trivago_analytic_ssd.finance_control_aggrelocale_order" -> callFinanceControlYearlyOverviewByCountry
+		"(aggrelocale" -> callFinanceControlYearlyOverviewByCountry
+	calculateExpediaHotelPositionReport [fontsize=14 shape=box]
+		item2partner -> calculateExpediaHotelPositionReport
+		item -> calculateExpediaHotelPositionReport
+		"(item_id" -> calculateExpediaHotelPositionReport
+	cats2names [fontsize=14]
+		cats2names -> calculateExpediaHotelPositionReport
+		"(category_id" -> calculateExpediaHotelPositionReport
+		"trivago_analytic.item_relevance" -> calculateExpediaHotelPositionReport
+	updateReportingYtdOutput [fontsize=14 shape=box]
+	reporting [fontsize=14]
+		reporting -> updateReportingYtdOutput
+	reporting_ytd_output [fontsize=14]
+		updateReportingYtdOutput -> reporting_ytd_output
+	updateSocialMonitoring2 [fontsize=14 shape=box]
+		page_log -> updateSocialMonitoring2
+		session_stats -> updateSocialMonitoring2
+	trv_tss_search [fontsize=14]
+		trv_tss_search -> updateSocialMonitoring2
+	trv_tss_search_user [fontsize=14]
+		trv_tss_search_user -> updateSocialMonitoring2
+	trv_tss_user [fontsize=14]
+		trv_tss_user -> updateSocialMonitoring2
+		"trivago_analytic.trv_member" -> updateSocialMonitoring2
+	"rids(" [fontsize=14]
+		"rids(" -> updateSocialMonitoring2
+	trv_tss_user_action_item [fontsize=14]
+		trv_tss_user_action_item -> updateSocialMonitoring2
+	"trivago_confluence.trivago_social_monitoring_2_day" [fontsize=14]
+		"trivago_confluence.trivago_social_monitoring_2_day" -> updateSocialMonitoring2
+	"trivago_confluence.trivago_social_monitoring_2_week" [fontsize=14]
+		"trivago_confluence.trivago_social_monitoring_2_week" -> updateSocialMonitoring2
+	"trivago_confluence.trivago_social_monitoring_cor" [fontsize=14]
+		"trivago_confluence.trivago_social_monitoring_cor" -> updateSocialMonitoring2
+	"trivago_confluence.trivago_social_monitoring_invite" [fontsize=14]
+		"trivago_confluence.trivago_social_monitoring_invite" -> updateSocialMonitoring2
+	"trivago_confluence.trivago_social_monitoring_2_day" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_confluence.trivago_social_monitoring_2_day"
+	"trivago_analytic.trivago_social_monitoring_2_day_archive" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_analytic.trivago_social_monitoring_2_day_archive"
+	"trivago_confluence.trivago_social_monitoring_2_week" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_confluence.trivago_social_monitoring_2_week"
+	"trivago_confluence.trivago_social_monitoring_cor" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_confluence.trivago_social_monitoring_cor"
+	"trivago_confluence.trivago_social_monitoring_invite" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_confluence.trivago_social_monitoring_invite"
+	"trivago_analytic.trivago_social_monitoring_2_week_archive" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_analytic.trivago_social_monitoring_2_week_archive"
+	"trivago_analytic.trivago_social_monitoring_cor_archive" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_analytic.trivago_social_monitoring_cor_archive"
+	"trivago_analytic.trivago_social_monitoring_invite_archive" [fontsize=14]
+		updateSocialMonitoring2 -> "trivago_analytic.trivago_social_monitoring_invite_archive"
+	updateGeoTopHotelsHomepageDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateGeoTopHotelsHomepageDay
+		"trivago_analytic_ssd.session_stats" -> updateGeoTopHotelsHomepageDay
+	"trivago_analytic.geo_path_tracking" [fontsize=14]
+		updateGeoTopHotelsHomepageDay -> "trivago_analytic.geo_path_tracking"
+	updateHotelManagerData [fontsize=14 shape=box]
+	updatePriceStatsTopDeals [fontsize=14 shape=box]
+	updatePriceBlocking [fontsize=14 shape=box]
+	updateCookieControlDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateCookieControlDay
+	excluded_tids [fontsize=14]
+		excluded_tids -> updateCookieControlDay
+	"(tracking_id" [fontsize=14]
+		"(tracking_id" -> updateCookieControlDay
+	cookiecontrol_repeatertraffic [fontsize=14]
+		cookiecontrol_repeatertraffic -> updateCookieControlDay
+	cookiecontrol_repeatertraffic [fontsize=14]
+		updateCookieControlDay -> cookiecontrol_repeatertraffic
+	ccrt [fontsize=14]
+		updateCookieControlDay -> ccrt
+	"trivago_analytic.cookiecontrol_expiredrepeatertraffic" [fontsize=14]
+		updateCookieControlDay -> "trivago_analytic.cookiecontrol_expiredrepeatertraffic"
+	cookiecontrol_viewtype1 [fontsize=14]
+		updateCookieControlDay -> cookiecontrol_viewtype1
+	updateRefererCode [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_detail" -> updateRefererCode
+		"trivago_analytic_ssd.session_stats" -> updateRefererCode
+	"trivago_analytic_repl.referer_code" [fontsize=14]
+		updateRefererCode -> "trivago_analytic_repl.referer_code"
+	"trivago_analytic_ssd.referer_tracking" [fontsize=14]
+		updateRefererCode -> "trivago_analytic_ssd.referer_tracking"
+	updateClickoutTracking [fontsize=14 shape=box]
+	updateSnoozeeBenchmarksDay [fontsize=14 shape=box]
+	updateCrawlerType [fontsize=14 shape=box]
+		"(date_id" -> updateCrawlerType
+	"(tracking_id" [fontsize=14]
+		updateCrawlerType -> "(tracking_id"
+	"(session_date_id" [fontsize=14]
+		updateCrawlerType -> "(session_date_id"
+	tbpc [fontsize=14]
+		updateCrawlerType -> tbpc
+	crawler_internetexplorer_de [fontsize=14]
+		updateCrawlerType -> crawler_internetexplorer_de
+	UpdatePathWeightsDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> UpdatePathWeightsDay
+		"trivago_analytic_ssd.session_stats" -> UpdatePathWeightsDay
+	"trivago_analytic.prod_pathname_weight2" [fontsize=14]
+		UpdatePathWeightsDay -> "trivago_analytic.prod_pathname_weight2"
+	pwd0 [fontsize=14]
+		UpdatePathWeightsDay -> pwd0
+	calculateBookingDevelopmentDataDay [fontsize=14 shape=box]
+		booking_without_cookies_log -> calculateBookingDevelopmentDataDay
+	updateHotel2ProxyJointCos [fontsize=14 shape=box]
+		page_log -> updateHotel2ProxyJointCos
+		session_stats -> updateHotel2ProxyJointCos
+	hotel2proxy_t_cos [fontsize=14]
+		updateHotel2ProxyJointCos -> hotel2proxy_t_cos
+	updateKpisRevenuePartner [fontsize=14 shape=box]
+	updateSeoSuiteItemPerformanceDay [fontsize=14 shape=box]
+	calculateMysteryCheckWeek [fontsize=14 shape=box]
+	updateNewWeeklyReporting [fontsize=14 shape=box]
+	traffic_conversion_tracking [fontsize=14]
+		traffic_conversion_tracking -> updateNewWeeklyReporting
+	newweeklydashboard_data_1 [fontsize=14]
+		newweeklydashboard_data_1 -> updateNewWeeklyReporting
+	newweeklydashboard_data_2 [fontsize=14]
+		newweeklydashboard_data_2 -> updateNewWeeklyReporting
+	reporting_output_weekly_dashboard_1 [fontsize=14]
+		reporting_output_weekly_dashboard_1 -> updateNewWeeklyReporting
+	reporting_output_weekly_dashboard_2 [fontsize=14]
+		reporting_output_weekly_dashboard_2 -> updateNewWeeklyReporting
+	"(breakout" [fontsize=14]
+		"(breakout" -> updateNewWeeklyReporting
+	reporting_output_weekly_dashboard_4 [fontsize=14]
+		reporting_output_weekly_dashboard_4 -> updateNewWeeklyReporting
+	newweeklydashboard_data_1 [fontsize=14]
+		updateNewWeeklyReporting -> newweeklydashboard_data_1
+	newweeklydashboard_data_2 [fontsize=14]
+		updateNewWeeklyReporting -> newweeklydashboard_data_2
+	reporting_output_weekly_dashboard_1 [fontsize=14]
+		updateNewWeeklyReporting -> reporting_output_weekly_dashboard_1
+	reporting_output_weekly_dashboard_2 [fontsize=14]
+		updateNewWeeklyReporting -> reporting_output_weekly_dashboard_2
+	reporting_output_weekly_dashboard_3 [fontsize=14]
+		updateNewWeeklyReporting -> reporting_output_weekly_dashboard_3
+	reporting_output_weekly_dashboard_4 [fontsize=14]
+		updateNewWeeklyReporting -> reporting_output_weekly_dashboard_4
+	newweeklydashboard_data_sorted [fontsize=14]
+		updateNewWeeklyReporting -> newweeklydashboard_data_sorted
+	PRRequests [fontsize=14 shape=box]
+		"trivago_analytic_ssd.item_price_daily" -> PRRequests
+		"(category_id" -> PRRequests
+		"trivago_analytic_ssd.item" -> PRRequests
+		"trivago_analytic_ssd.cats2names" -> PRRequests
+		"trivago_analytic_ssd.co_log" -> PRRequests
+		"(path_id" -> PRRequests
+		"trivago_analytic_ssd.path_name" -> PRRequests
+		"(item_id" -> PRRequests
+	"trivago_analytic_repl.prrequest_detail" [fontsize=14]
+		PRRequests -> "trivago_analytic_repl.prrequest_detail"
+	"trivago_analytic.prrequest_detail" [fontsize=14]
+		PRRequests -> "trivago_analytic.prrequest_detail"
+	updateUSbyDMADay [fontsize=14 shape=box]
+		session_detail -> updateUSbyDMADay
+	geoip_metrocode [fontsize=14]
+		geoip_metrocode -> updateUSbyDMADay
+	"(country" [fontsize=14]
+		"(country" -> updateUSbyDMADay
+	region [fontsize=14]
+		region -> updateUSbyDMADay
+	city [fontsize=14]
+		city -> updateUSbyDMADay
+		session_stats -> updateUSbyDMADay
+		"(date_id" -> updateUSbyDMADay
+	us_by_dma [fontsize=14]
+		updateUSbyDMADay -> us_by_dma
+	updateMapInteractionDay [fontsize=14 shape=box]
+		page_log -> updateMapInteractionDay
+		session_stats -> updateMapInteractionDay
+	"trivago_analytic_ssd.map_interaction" [fontsize=14]
+		updateMapInteractionDay -> "trivago_analytic_ssd.map_interaction"
+	updateip2locid [fontsize=14 shape=box]
+	updateUSESlist [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateUSESlist
+		page_log_detail -> updateUSESlist
+		"(date_id" -> updateUSESlist
+	updatePartnerCOshareDay [fontsize=14 shape=box]
+		"trivago_analytic.locale_partner_item" -> updatePartnerCOshareDay
+	tpsh [fontsize=14]
+		tpsh -> updatePartnerCOshareDay
+	updateSEOSuiteDataDay [fontsize=14 shape=box]
+	recoverPslDependency [fontsize=14 shape=box]
+	updateCookieStatsDay [fontsize=14 shape=box]
+		session_stats -> updateCookieStatsDay
+		"(tracking_id" -> updateCookieStatsDay
+	excluded_tids [fontsize=14]
+		updateCookieStatsDay -> excluded_tids
+	"(tracking_id" [fontsize=14]
+		updateCookieStatsDay -> "(tracking_id"
+	branded_seo_session_inday_attribution [fontsize=14]
+		updateCookieStatsDay -> branded_seo_session_inday_attribution
+	"(date_id" [fontsize=14]
+		updateCookieStatsDay -> "(date_id"
+	"trivago_analytic.active_visitor_stats" [fontsize=14]
+		updateCookieStatsDay -> "trivago_analytic.active_visitor_stats"
+	updatePriceSearchLog [fontsize=14 shape=box]
+	evaluate_trv_white_label [fontsize=14 shape=box]
+		session_stats -> evaluate_trv_white_label
+		co_log -> evaluate_trv_white_label
+		booking_log -> evaluate_trv_white_label
+		page_log -> evaluate_trv_white_label
+		date_id -> evaluate_trv_white_label
+		page_log_detail -> evaluate_trv_white_label
+	test_on [fontsize=14]
+		test_on -> evaluate_trv_white_label
+	PartnerLocaleHotelcountryOverview2L [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_tracking" -> PartnerLocaleHotelcountryOverview2L
+		ipr21 -> PartnerLocaleHotelcountryOverview2L
+		ipr23 -> PartnerLocaleHotelcountryOverview2L
+		ipr22 -> PartnerLocaleHotelcountryOverview2L
+		ipr25 -> PartnerLocaleHotelcountryOverview2L
+		ipr26 -> PartnerLocaleHotelcountryOverview2L
+	partner2realpartner [fontsize=14]
+		PartnerLocaleHotelcountryOverview2L -> partner2realpartner
+	ipr24 [fontsize=14]
+		PartnerLocaleHotelcountryOverview2L -> ipr24
+	combined_partner [fontsize=14]
+		PartnerLocaleHotelcountryOverview2L -> combined_partner
+	updatepicturescontroller [fontsize=14 shape=box]
+	PartnerLocaleHotelcountryShares [fontsize=14 shape=box]
+		"trivago_analytic_ssd.partner_locale_hotelcountry" -> PartnerLocaleHotelcountryShares
+	updateSEMTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> updateSEMTrackingDay
+	"trivago_analytic_ssd.sem_parameter_detail" [fontsize=14]
+		"trivago_analytic_ssd.sem_parameter_detail" -> updateSEMTrackingDay
+		pld2 -> updateSEMTrackingDay
+	cip_co_tracking [fontsize=14]
+		updateSEMTrackingDay -> cip_co_tracking
+	"trivago_analytic.sem_tracking" [fontsize=14]
+		updateSEMTrackingDay -> "trivago_analytic.sem_tracking"
+	updateHoteltestRegistrationProcessTracking [fontsize=14 shape=box]
+	dailyclickoutreportvenereDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> dailyclickoutreportvenereDay
+		"trivago_analytic_ssd.item2partner" -> dailyclickoutreportvenereDay
+	"trivago_analytic.venere_daily_report" [fontsize=14]
+		dailyclickoutreportvenereDay -> "trivago_analytic.venere_daily_report"
+	parse_price_search_logDay [fontsize=14 shape=box]
+	"trivago_analytic_ssd.price_search_log" [fontsize=14]
+		"trivago_analytic_ssd.price_search_log" -> parse_price_search_logDay
+	"trivago_analytic.psl_hotel_summary" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_hotel_summary"
+	"trivago_analytic.psl_filter" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_filter"
+	"trivago_analytic.psl_date_room" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_date_room"
+	"trivago_analytic.psl_clicked_item" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_clicked_item"
+	"trivago_analytic.psl_hotel_list" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_hotel_list"
+	"trivago_analytic.psl_partner_list" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_partner_list"
+	"trivago_analytic.psl_hotel_list_hidden" [fontsize=14]
+		parse_price_search_logDay -> "trivago_analytic.psl_hotel_list_hidden"
+	updatePageIDTracking [fontsize=14 shape=box]
+		test_result_tracking -> updatePageIDTracking
+	mantis_med_1 [fontsize=14]
+		mantis_med_1 -> updatePageIDTracking
+	updateSearchTypeAndPageCalls [fontsize=14 shape=box]
+	generateItemList [fontsize=14 shape=box]
+		co_log -> generateItemList
+		item -> generateItemList
+		"trivago_analytic.path" -> generateItemList
+		"(category_id" -> generateItemList
+		hotel_traffic_annual -> generateItemList
+		"(item_id" -> generateItemList
+	"trivago_analytic.item_stats_all_time_lowest" [fontsize=14]
+		"trivago_analytic.item_stats_all_time_lowest" -> generateItemList
+	locale2language [fontsize=14]
+		generateItemList -> locale2language
+	htapl [fontsize=14]
+		generateItemList -> htapl
+	updateecpcDay [fontsize=14 shape=box]
+		session_stats -> updateecpcDay
+		excluded_tids -> updateecpcDay
+		"(tracking_id" -> updateecpcDay
+	ecpc_active_visits [fontsize=14]
+		ecpc_active_visits -> updateecpcDay
+	"(tracking_id" [fontsize=14]
+		updateecpcDay -> "(tracking_id"
+	min_date_id [fontsize=14]
+		updateecpcDay -> min_date_id
+	ecpc_active_visits [fontsize=14]
+		updateecpcDay -> ecpc_active_visits
+	ecpc_expired_visits [fontsize=14]
+		updateecpcDay -> ecpc_expired_visits
+	prepareCpaInformation [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_cpa_credit_note" -> prepareCpaInformation
+		"trivago_analytic_repl.co_tracking" -> prepareCpaInformation
+	updateMobileAppKpis_loop [fontsize=14 shape=box]
+	"trivago_confluence.app_kpi_monitoring_month_android" [fontsize=14]
+		"trivago_confluence.app_kpi_monitoring_month_android" -> updateMobileAppKpis_loop
+	"trivago_confluence.app_kpi_monitoring_month_ios" [fontsize=14]
+		"trivago_confluence.app_kpi_monitoring_month_ios" -> updateMobileAppKpis_loop
+	optimizeRefererCode [fontsize=14 shape=box]
+	updateMysteryGuestFakeUserDetectionResult [fontsize=14 shape=box]
+	updatePriceSearchLogDay [fontsize=14 shape=box]
+	price_search_log [fontsize=14]
+		price_search_log -> updatePriceSearchLogDay
+		session_stats -> updatePriceSearchLogDay
+		page_log -> updatePriceSearchLogDay
+		page_log_detail -> updatePriceSearchLogDay
+	updateServerPerformanceDay [fontsize=14 shape=box]
+		session_stats -> updateServerPerformanceDay
+		page_log -> updateServerPerformanceDay
+		page_log_detail -> updateServerPerformanceDay
+	server_performance [fontsize=14]
+		updateServerPerformanceDay -> server_performance
+	updateContentControllerDay [fontsize=14 shape=box]
+		"trivago_analytic.trv_member_action" -> updateContentControllerDay
+		"trivago_analytic.trv_image_data" -> updateContentControllerDay
+	"trivago_analytic.trv_partner_opinion" [fontsize=14]
+		"trivago_analytic.trv_partner_opinion" -> updateContentControllerDay
+	"trivago_analytic.cc_rating_2" [fontsize=14]
+		"trivago_analytic.cc_rating_2" -> updateContentControllerDay
+		item -> updateContentControllerDay
+		"(item_id" -> updateContentControllerDay
+		cats2names -> updateContentControllerDay
+		"(category_id" -> updateContentControllerDay
+		"trivago_analytic.trv_opinion" -> updateContentControllerDay
+		"(member_id" -> updateContentControllerDay
+		item2hotelpartner -> updateContentControllerDay
+		page_log -> updateContentControllerDay
+	"trivago_analytic.trv_item2partner_history" [fontsize=14]
+		"trivago_analytic.trv_item2partner_history" -> updateContentControllerDay
+	"trivago_analytic.cc_hgw" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_hgw"
+	"trivago_analytic.cc_images" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_images"
+	"trivago_analytic.cc_rating" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_rating"
+	"trivago_analytic.cc_reward_controller" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_reward_controller"
+	"trivago_analytic.cc_opinion" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_opinion"
+	"trivago_analytic.cc_member_activity" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_member_activity"
+	"trivago_analytic.cc_hotel_development" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_hotel_development"
+	"trivago_analytic.cc_hotelier_dev" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_hotelier_dev"
+	"trivago_analytic_ssd.cc_opinion" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic_ssd.cc_opinion"
+	"trivago_analytic.cc_images_cc_count" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_images_cc_count"
+	"trivago_analytic.cc_rating_1" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_rating_1"
+	"trivago_analytic.cc_rating_2" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_rating_2"
+	"trivago_analytic.cc_matching" [fontsize=14]
+		updateContentControllerDay -> "trivago_analytic.cc_matching"
+	updatebackuptables [fontsize=14 shape=box]
+		"information_schema.tables" -> updatebackuptables
+	"test.tables" [fontsize=14]
+		updatebackuptables -> "test.tables"
+	"trivago_analytic.table_backup" [fontsize=14]
+		updatebackuptables -> "trivago_analytic.table_backup"
+	partnerclickreportsftpday [fontsize=14 shape=box]
+		partner -> partnerclickreportsftpday
+		"trivago_analytic.partner_report_access" -> partnerclickreportsftpday
+		co_log -> partnerclickreportsftpday
+		"trivago_analytic.partner_click_report" -> partnerclickreportsftpday
+	"trivago_analytic.partner_click_report" [fontsize=14]
+		partnerclickreportsftpday -> "trivago_analytic.partner_click_report"
+	"trivago_analytic.partner_click_report_archive" [fontsize=14]
+		partnerclickreportsftpday -> "trivago_analytic.partner_click_report_archive"
+	adblocking_clickshare [fontsize=14 shape=box]
+	updateQualityScore [fontsize=14 shape=box]
+	updateItemRelevance_ExpRevenueDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateItemRelevance_ExpRevenueDay
+		page_log -> updateItemRelevance_ExpRevenueDay
+		co_log -> updateItemRelevance_ExpRevenueDay
+		psl_clickout_log -> updateItemRelevance_ExpRevenueDay
+		"trivago_analytic.psl_hotel_list" -> updateItemRelevance_ExpRevenueDay
+		lookup_value -> updateItemRelevance_ExpRevenueDay
+	"trivago_analytic.ir_expclick_day" [fontsize=14]
+		updateItemRelevance_ExpRevenueDay -> "trivago_analytic.ir_expclick_day"
+	updateConfluenceDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.kpis" -> updateConfluenceDay
+		session_stats -> updateConfluenceDay
+		page_log_detail -> updateConfluenceDay
+		"(date_id" -> updateConfluenceDay
+		co_log -> updateConfluenceDay
+		price_search_log -> updateConfluenceDay
+		psl_clickout_log -> updateConfluenceDay
+		price_search_log_id -> updateConfluenceDay
+	dday [fontsize=14]
+		dday -> updateConfluenceDay
+		locale -> updateConfluenceDay
+	"trivago_confluence.lookup_value" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.lookup_value"
+	"trivago_confluence.browser_group2key_browser_type" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.browser_group2key_browser_type"
+	"trivago_confluence.agent2browser_group" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.agent2browser_group"
+	"trivago_confluence.cpc_price" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.cpc_price"
+	"trivago_confluence.seo_item" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.seo_item"
+	"trivago_confluence.seo_path" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.seo_path"
+	"trivago_confluence.snoozeemargins" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.snoozeemargins"
+	"trivago_confluence.seo_silo_report" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.seo_silo_report"
+	"trivago_confluence.blocking_metrics" [fontsize=14]
+		updateConfluenceDay -> "trivago_confluence.blocking_metrics"
+	updateReportingOutput [fontsize=14 shape=box]
+		"trivago_analytic_ssd.reporting" -> updateReportingOutput
+		"trivago_analytic_repl.co_tracking" -> updateReportingOutput
+	"trivago_analytic_ssd.reporting_output" [fontsize=14]
+		updateReportingOutput -> "trivago_analytic_ssd.reporting_output"
+	generateCityList [fontsize=14 shape=box]
+		"trivago_analytic.path_name" -> generateCityList
+		"trivago_analytic.path" -> generateCityList
+	updateWindowsPhoneTracking [fontsize=14 shape=box]
+	"trivago_confluence.windows_phone_tracking" [fontsize=14]
+		updateWindowsPhoneTracking -> "trivago_confluence.windows_phone_tracking"
+	archive_item_relevance_old [fontsize=14 shape=box]
+	item_relevance_archive [fontsize=14]
+		archive_item_relevance_old -> item_relevance_archive
+	updateKpisSalesMetrics [fontsize=14 shape=box]
+	updatePartnerPriceAnalysis [fontsize=14 shape=box]
+		"trivago_analytic.partner_price_tracking" -> updatePartnerPriceAnalysis
+	updateHotelTrafficAnnual [fontsize=14 shape=box]
+	hotel_traffic [fontsize=14]
+		hotel_traffic -> updateHotelTrafficAnnual
+	"trivago_analytic_ssd.hotel_traffic_annual_new" [fontsize=14]
+		"trivago_analytic_ssd.hotel_traffic_annual_new" -> updateHotelTrafficAnnual
+		booking_log -> updateHotelTrafficAnnual
+	hotelier_kpis [fontsize=14]
+		hotelier_kpis -> updateHotelTrafficAnnual
+	"trivago_analytic_ssd.hotel_traffic_annual_new" [fontsize=14]
+		updateHotelTrafficAnnual -> "trivago_analytic_ssd.hotel_traffic_annual_new"
+	updateEffectMinutesDay [fontsize=14 shape=box]
+	tv_advertising [fontsize=14]
+		updateEffectMinutesDay -> tv_advertising
+	compute_social_monitoring_loop [fontsize=14 shape=box]
+	updateTrackingPixelsDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> updateTrackingPixelsDay
+	"trivago_analytic_ssd.co_log" [fontsize=14]
+		updateTrackingPixelsDay -> "trivago_analytic_ssd.co_log"
+	"trivago_analytic_ssd.pixel_status_history" [fontsize=14]
+		updateTrackingPixelsDay -> "trivago_analytic_ssd.pixel_status_history"
+	"(partner_id" [fontsize=14]
+		updateTrackingPixelsDay -> "(partner_id"
+	bucket_id [fontsize=14]
+		updateTrackingPixelsDay -> bucket_id
+	locale [fontsize=14]
+		updateTrackingPixelsDay -> locale
+	"trivago_analytic_ssd.session_stats" [fontsize=14]
+		updateTrackingPixelsDay -> "trivago_analytic_ssd.session_stats"
+	"(date_id" [fontsize=14]
+		updateTrackingPixelsDay -> "(date_id"
+	parse_price_search_log [fontsize=14 shape=box]
+	BuildTestSummaryBrowser [fontsize=14 shape=box]
+		test_result_tracking -> BuildTestSummaryBrowser
+		test_result_tracking_browser -> BuildTestSummaryBrowser
+		agent2browser_group -> BuildTestSummaryBrowser
+		a2bg -> BuildTestSummaryBrowser
+		lookup_value -> BuildTestSummaryBrowser
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> BuildTestSummaryBrowser
+	test_summary_browser_withcounter1 [fontsize=14]
+		test_summary_browser_withcounter1 -> BuildTestSummaryBrowser
+	"trivago_analytic.trv_ctest" [fontsize=14]
+		BuildTestSummaryBrowser -> "trivago_analytic.trv_ctest"
+	test_summary_browser_withcounter [fontsize=14]
+		BuildTestSummaryBrowser -> test_summary_browser_withcounter
+	test_summary_browser_withcounter1 [fontsize=14]
+		BuildTestSummaryBrowser -> test_summary_browser_withcounter1
+	test_summary_browser [fontsize=14]
+		BuildTestSummaryBrowser -> test_summary_browser
+	updateWindowsPhoneTrackingDay [fontsize=14 shape=box]
+		session_stats -> updateWindowsPhoneTrackingDay
+		page_log_detail -> updateWindowsPhoneTrackingDay
+	100000000000 [fontsize=14]
+		100000000000 -> updateWindowsPhoneTrackingDay
+	data [fontsize=14]
+		data -> updateWindowsPhoneTrackingDay
+	like [fontsize=14]
+		like -> updateWindowsPhoneTrackingDay
+	"'%Windows" [fontsize=14]
+		"'%Windows" -> updateWindowsPhoneTrackingDay
+	"Phone%'" [fontsize=14]
+		"Phone%'" -> updateWindowsPhoneTrackingDay
+	windows_phone_tracking_00 [fontsize=14]
+		updateWindowsPhoneTrackingDay -> windows_phone_tracking_00
+	updateTestResultTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateTestResultTrackingDay
+		"trivago_analytic.trv_ctest" -> updateTestResultTrackingDay
+		test_result_tracking -> updateTestResultTrackingDay
+		test_result_tracking_browser -> updateTestResultTrackingDay
+		test_result_tracking_searchtype -> updateTestResultTrackingDay
+	tdel [fontsize=14]
+		updateTestResultTrackingDay -> tdel
+	test_result_tracking [fontsize=14]
+		updateTestResultTrackingDay -> test_result_tracking
+	"trivago_analytic.test_result_tracking_archive" [fontsize=14]
+		updateTestResultTrackingDay -> "trivago_analytic.test_result_tracking_archive"
+	test_result_tracking_browser [fontsize=14]
+		updateTestResultTrackingDay -> test_result_tracking_browser
+	"trivago_analytic.test_result_tracking_browser_archive" [fontsize=14]
+		updateTestResultTrackingDay -> "trivago_analytic.test_result_tracking_browser_archive"
+	test_result_tracking_searchtype [fontsize=14]
+		updateTestResultTrackingDay -> test_result_tracking_searchtype
+	"trivago_analytic.test_result_tracking_searchtype_archive" [fontsize=14]
+		updateTestResultTrackingDay -> "trivago_analytic.test_result_tracking_searchtype_archive"
+	updatekpisDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.community_kpis" -> updatekpisDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updatekpisDay -> "trivago_analytic_ssd.kpis"
+	updateCipTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateCipTrackingDay
+		"trivago_analytic_ssd.cip_tracking" -> updateCipTrackingDay
+	"trivago_analytic_ssd.cip_tracking" [fontsize=14]
+		updateCipTrackingDay -> "trivago_analytic_ssd.cip_tracking"
+	"trivago_analytic_ssd.missing_cips" [fontsize=14]
+		updateCipTrackingDay -> "trivago_analytic_ssd.missing_cips"
+	update_BiddingMonitoring [fontsize=14 shape=box]
+	createRepeatIdTracking [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> createRepeatIdTracking
+	"trivago_analytic_ssd.repeat_id_tracking_new" [fontsize=14]
+		createRepeatIdTracking -> "trivago_analytic_ssd.repeat_id_tracking_new"
+	update_AdblockingSubstitutionProb_Day [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> update_AdblockingSubstitutionProb_Day
+		"trivago_analytic.trv_ctest" -> update_AdblockingSubstitutionProb_Day
+		"trivago_analytic_ssd.session_stats" -> update_AdblockingSubstitutionProb_Day
+	"trivago_analytic_ssd.partners_per_hotel_tracking" [fontsize=14]
+		"trivago_analytic_ssd.partners_per_hotel_tracking" -> update_AdblockingSubstitutionProb_Day
+		"trivago_analytic_ssd.psl_clickout_log" -> update_AdblockingSubstitutionProb_Day
+		"trivago_analytic_ssd.page_log" -> update_AdblockingSubstitutionProb_Day
+	"trivago_analytic_ssd.blockweights" [fontsize=14]
+		"trivago_analytic_ssd.blockweights" -> update_AdblockingSubstitutionProb_Day
+	blockweights [fontsize=14]
+		update_AdblockingSubstitutionProb_Day -> blockweights
+	updateIntradayStats [fontsize=14 shape=box]
+	updateSEOSuiteData [fontsize=14 shape=box]
+	updateTestResultTrackingApp [fontsize=14 shape=box]
+	PageIDbasic [fontsize=14 shape=box]
+	page_id_tracking [fontsize=14]
+		page_id_tracking -> PageIDbasic
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> PageIDbasic
+	updateSocialMonitoring2loop [fontsize=14 shape=box]
+	updateROWlist [fontsize=14 shape=box]
+		"trivago_analytic_ssd.path_name" -> updateROWlist
+		"trivago_analytic.path" -> updateROWlist
+		"trivago_analytic.path_name" -> updateROWlist
+		item -> updateROWlist
+		"trivago_analytic.trv_item_group" -> updateROWlist
+		item_stats -> updateROWlist
+	"trivago_analytic_ssd.item_data_language" [fontsize=14]
+		"trivago_analytic_ssd.item_data_language" -> updateROWlist
+	locale2language [fontsize=14]
+		updateROWlist -> locale2language
+	htapl [fontsize=14]
+		updateROWlist -> htapl
+	updateHistoricRefererMetrics [fontsize=14 shape=box]
+	updatePathCoTracking [fontsize=14 shape=box]
+	updateecpc [fontsize=14 shape=box]
+	updatePageIDTrackingDayApp [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updatePageIDTrackingDayApp
+		"trivago_analytic_ssd.page_log_detail" -> updatePageIDTrackingDayApp
+		"pld(" -> updatePageIDTrackingDayApp
+		page_log -> updatePageIDTrackingDayApp
+		test_result_tracking_app -> updatePageIDTrackingDayApp
+	t4wp [fontsize=14]
+		updatePageIDTrackingDayApp -> t4wp
+	page_id_tracking_app [fontsize=14]
+		updatePageIDTrackingDayApp -> page_id_tracking_app
+	updateConversionTracking [fontsize=14 shape=box]
+	updatePageIDTrackingDay [fontsize=14 shape=box]
+		session_stats -> updatePageIDTrackingDay
+		page_log -> updatePageIDTrackingDay
+		test_result_tracking -> updatePageIDTrackingDay
+	t4wp [fontsize=14]
+		updatePageIDTrackingDay -> t4wp
+	page_id_tracking [fontsize=14]
+		updatePageIDTrackingDay -> page_id_tracking
+	copySsdTable2Hdd [fontsize=14 shape=box]
+	"trivago_analytic_ssd.'table_name" [fontsize=14]
+		"trivago_analytic_ssd.'table_name" -> copySsdTable2Hdd
+	cst2h_range [fontsize=14]
+		copySsdTable2Hdd -> cst2h_range
+	"trivago_analytic." [fontsize=14]
+		copySsdTable2Hdd -> "trivago_analytic."
+	updateTvImpactDayAll [fontsize=14 shape=box]
+	"trivago_analytic_ssd.baseline" [fontsize=14]
+		"trivago_analytic_ssd.baseline" -> updateTvImpactDayAll
+		"trivago_analytic_repl.tv_advertising" -> updateTvImpactDayAll
+	"trivago_analytic_repl.tv_advertising" [fontsize=14]
+		updateTvImpactDayAll -> "trivago_analytic_repl.tv_advertising"
+	updateIrExp [fontsize=14 shape=box]
+	updateDummy [fontsize=14 shape=box]
+	updateTPCdata [fontsize=14 shape=box]
+	copyQueryTime [fontsize=14 shape=box]
+	"trivago_analytic_ssd.copy_log" [fontsize=14]
+		copyQueryTime -> "trivago_analytic_ssd.copy_log"
+	removeCpaInformationByCountry [fontsize=14 shape=box]
+	copyFederatedTablesToLocalProc [fontsize=14 shape=box]
+		"trivago_analytic_ssd.item" -> copyFederatedTablesToLocalProc
+		"trivago_analytic_ssd.item_stats" -> copyFederatedTablesToLocalProc
+	"trivago_analytic_ssd.path_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.path_new"
+	"trivago_analytic_ssd.path_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.path_old"
+	"trivago_analytic.path_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.path_new"
+	"trivago_analytic.path_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.path_old"
+	"trivago_analytic_ssd.path_name_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.path_name_new"
+	"trivago_analytic_ssd.path_name_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.path_name_old"
+	"trivago_analytic.path_name_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.path_name_new"
+	"trivago_analytic.path_name_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.path_name_old"
+	"trivago_analytic_ssd.path_childs_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.path_childs_new"
+	"trivago_analytic_ssd.path_childs_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.path_childs_old"
+	"trivago_analytic_ssd.item_stats_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item_stats_new"
+	"trivago_analytic_ssd.item_stats_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item_stats_old"
+	"trivago_analytic_ssd.item_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item_new"
+	"trivago_analytic_ssd.item_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item_old"
+	"trivago_analytic_ssd.hotel_ranking" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.hotel_ranking"
+	"trivago_analytic_ssd.item2partner_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item2partner_new"
+	"trivago_analytic_ssd.item2partner_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item2partner_old"
+	"trivago_analytic_ssd.item2hotelpartner_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item2hotelpartner_new"
+	"trivago_analytic_ssd.item2hotelpartner_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.item2hotelpartner_old"
+	"trivago_analytic_ssd.partner_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.partner_new"
+	"trivago_analytic_ssd.partner_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.partner_old"
+	"trivago_analytic_ssd.partner2locale_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.partner2locale_new"
+	"trivago_analytic_ssd.partner2locale_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.partner2locale_old"
+	"trivago_analytic_ssd.bucket2locale_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.bucket2locale_old"
+	"trivago_analytic_ssd.bucket2locale" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.bucket2locale"
+	bucket2locale [fontsize=14]
+		copyFederatedTablesToLocalProc -> bucket2locale
+	"trivago_analytic_ssd.category_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.category_new"
+	"trivago_analytic_ssd.category_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.category_old"
+	"trivago_analytic.partner_image_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.partner_image_new"
+	"trivago_analytic.partner_image_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.partner_image_old"
+	"trivago_analytic.image_data_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.image_data_new"
+	"trivago_analytic.image_data_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.image_data_old"
+	"trivago_analytic.member_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.member_new"
+	"trivago_analytic.member_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.member_old"
+	"trivago_analytic_ssd.mc_check_request_new" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.mc_check_request_new"
+	"trivago_analytic_ssd.mc_check_request_old" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.mc_check_request_old"
+	"trivago_analytic_ssd.mc_locale" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic_ssd.mc_locale"
+	"trivago_analytic.external_referrer" [fontsize=14]
+		copyFederatedTablesToLocalProc -> "trivago_analytic.external_referrer"
+	updateIrrelevantChannels [fontsize=14 shape=box]
+	tv_advertising [fontsize=14]
+		updateIrrelevantChannels -> tv_advertising
+	updateHotelierKpiPeriod [fontsize=14 shape=box]
+		item -> updateHotelierKpiPeriod
+		path -> updateHotelierKpiPeriod
+	hotelier_kpi_tracking [fontsize=14]
+		hotelier_kpi_tracking -> updateHotelierKpiPeriod
+	sub2 [fontsize=14]
+		updateHotelierKpiPeriod -> sub2
+	hotelier_kpis_region_c2b [fontsize=14]
+		updateHotelierKpiPeriod -> hotelier_kpis_region_c2b
+	SnoozeeMarginsDay [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_tracking" -> SnoozeeMarginsDay
+		booking_without_cookies_log -> SnoozeeMarginsDay
+		page_log_detail -> SnoozeeMarginsDay
+	"trivago_analytic.snoozeemargins" [fontsize=14]
+		SnoozeeMarginsDay -> "trivago_analytic.snoozeemargins"
+	updateRepeatIdTracking [fontsize=14 shape=box]
+	deleteCoTrackingVemas [fontsize=14 shape=box]
+	"trivago_analytic.co_tracking_changes_vemas" [fontsize=14]
+		deleteCoTrackingVemas -> "trivago_analytic.co_tracking_changes_vemas"
+	updateTrv_ctestBackup [fontsize=14 shape=box]
+	"trivago_analytic.trv_ctest_archive" [fontsize=14]
+		updateTrv_ctestBackup -> "trivago_analytic.trv_ctest_archive"
+	updatePathTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updatePathTrackingDay
+		"trivago_analytic_ssd.session_stats" -> updatePathTrackingDay
+	path_tracking [fontsize=14]
+		updatePathTrackingDay -> path_tracking
+	updateKpisIpShareDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateKpisIpShareDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisIpShareDay -> "trivago_analytic_ssd.kpis"
+	generatePathStats [fontsize=14 shape=box]
+	"trivago_analytic.item_data" [fontsize=14]
+		"trivago_analytic.item_data" -> generatePathStats
+		item -> generatePathStats
+		"(item_id" -> generatePathStats
+		"trivago_analytic.item_stats_all_time_lowest" -> generatePathStats
+		"trivago_analytic.path" -> generatePathStats
+		"(category_id" -> generatePathStats
+	"trivago_analytic.item_stats_all_time_lowest" [fontsize=14]
+		generatePathStats -> "trivago_analytic.item_stats_all_time_lowest"
+	item_stats [fontsize=14]
+		generatePathStats -> item_stats
+	"(locale_code" [fontsize=14]
+		generatePathStats -> "(locale_code"
+	item_id [fontsize=14]
+		generatePathStats -> item_id
+	"trivago_analytic.item_data" [fontsize=14]
+		generatePathStats -> "trivago_analytic.item_data"
+	"(category_id" [fontsize=14]
+		generatePathStats -> "(category_id"
+	locale_code [fontsize=14]
+		generatePathStats -> locale_code
+	callFinanceControlYearlyOverviewByChannel [fontsize=14 shape=box]
+		"trivago_analytic_ssd.finance_control_data" -> callFinanceControlYearlyOverviewByChannel
+		"trivago_analytic_ssd.finance_control_code" -> callFinanceControlYearlyOverviewByChannel
+		"(traffic_type" -> callFinanceControlYearlyOverviewByChannel
+		"trivago_analytic_ssd.finance_control_locale2aggrelocale" -> callFinanceControlYearlyOverviewByChannel
+		"(locale" -> callFinanceControlYearlyOverviewByChannel
+		"trivago_analytic_ssd.finance_control_aggrelocale_order" -> callFinanceControlYearlyOverviewByChannel
+		"(aggrelocale" -> callFinanceControlYearlyOverviewByChannel
+	updatePixelPartnersDay [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_tracking" -> updatePixelPartnersDay
+	pixel_partners [fontsize=14]
+		updatePixelPartnersDay -> pixel_partners
+	archive_item_relevance2_old [fontsize=14 shape=box]
+	item_relevance2_archive [fontsize=14]
+		archive_item_relevance2_old -> item_relevance2_archive
+	updateSnoozeeOpportunityCosts [fontsize=14 shape=box]
+	TopLineBasicApp [fontsize=14 shape=box]
+		test_result_tracking_app -> TopLineBasicApp
+		"trivago_analytic.trv_ctest" -> TopLineBasicApp
+	TopLineBasic [fontsize=14 shape=box]
+		test_result_tracking -> TopLineBasic
+		"trivago_analytic.test_result_tracking_archive" -> TopLineBasic
+		"trivago_analytic.trv_ctest" -> TopLineBasic
+	updateTopHotelsHomepage [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateTopHotelsHomepage
+		"trivago_analytic_ssd.session_stats" -> updateTopHotelsHomepage
+		kpis -> updateTopHotelsHomepage
+	"trivago_analytic.top_hotels_homepage_small_locales" [fontsize=14]
+		updateTopHotelsHomepage -> "trivago_analytic.top_hotels_homepage_small_locales"
+	updateUserAgentTracking [fontsize=14 shape=box]
+	updateBaselinesDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateBaselinesDay
+	baseline [fontsize=14]
+		baseline -> updateBaselinesDay
+	baseline_day [fontsize=14]
+		updateBaselinesDay -> baseline_day
+	updateClickshare_ABC_developmentDay [fontsize=14 shape=box]
+		co_log -> updateClickshare_ABC_developmentDay
+	updateTestResultTrackingBrowser [fontsize=14 shape=box]
+	updatePartnersPerHotelTrackingNew [fontsize=14 shape=box]
+	HOTControllerDataDay [fontsize=14 shape=box]
+		"trivago_analytic.thm_login_log" -> HOTControllerDataDay
+		item2hotelpartner -> HOTControllerDataDay
+		"trivago_analytic.trv_image_data" -> HOTControllerDataDay
+	"trivago_analytic.trv_hotelpartner_item_description" [fontsize=14]
+		"trivago_analytic.trv_hotelpartner_item_description" -> HOTControllerDataDay
+		"trivago_analytic.trv_member_action" -> HOTControllerDataDay
+	"trivago_analytic.trv_hotelpartner_opinion_comment" [fontsize=14]
+		"trivago_analytic.trv_hotelpartner_opinion_comment" -> HOTControllerDataDay
+		"trivago_analytic.trv_opinion" -> HOTControllerDataDay
+	"(opinion_id" [fontsize=14]
+		"(opinion_id" -> HOTControllerDataDay
+	hot_data_kpis [fontsize=14]
+		HOTControllerDataDay -> hot_data_kpis
+	MissingPartnersAndHotels [fontsize=14 shape=box]
+		"trivago_analytic.locale_partner_item" -> MissingPartnersAndHotels
+		item -> MissingPartnersAndHotels
+		cats2names -> MissingPartnersAndHotels
+	"trivago_analytic_ssd.partner_locale_hotelcountry" [fontsize=14]
+		MissingPartnersAndHotels -> "trivago_analytic_ssd.partner_locale_hotelcountry"
+	updatePartnerClickReports [fontsize=14 shape=box]
+	updateOnlineMarketingCipTracking [fontsize=14 shape=box]
+	updateMarinCPC [fontsize=14 shape=box]
+		kpis -> updateMarinCPC
+	"trivago_analytic.marin_cpc" [fontsize=14]
+		updateMarinCPC -> "trivago_analytic.marin_cpc"
+	updateAndroidDay [fontsize=14 shape=box]
+	device_classification [fontsize=14]
+		updateAndroidDay -> device_classification
+	ConversionTrackingDayRecodeFollowUpSessions [fontsize=14 shape=box]
+	createPartnerCoLog [fontsize=14 shape=box]
+		page_log -> createPartnerCoLog
+		page_log_detail -> createPartnerCoLog
+		session_stats -> createPartnerCoLog
+	partner_co_log [fontsize=14]
+		createPartnerCoLog -> partner_co_log
+	WatchtowerSuspiciousThings [fontsize=14 shape=box]
+		session_stats -> WatchtowerSuspiciousThings
+	crawler_stats [fontsize=14]
+		crawler_stats -> WatchtowerSuspiciousThings
+		co_log -> WatchtowerSuspiciousThings
+		page_log_detail -> WatchtowerSuspiciousThings
+		lookup_value -> WatchtowerSuspiciousThings
+		booking_without_cookies_log -> WatchtowerSuspiciousThings
+		"trivago_analytic.prod_partnerslot_rules" -> WatchtowerSuspiciousThings
+	"trivago_confluence.watchtower_crawlerstats" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_crawlerstats"
+	"trivago_confluence.watchtower_specialclickouts" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_specialclickouts"
+	"trivago_confluence.watchtower_pooragents" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_pooragents"
+	"trivago_confluence.watchtower_invalidbookings" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_invalidbookings"
+	"trivago_confluence.watchtower_dataforliveserver" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_dataforliveserver"
+	"trivago_confluence.watchtower_rc_pop_share" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_rc_pop_share"
+	"trivago_confluence.watchtower_itemrelevanceclustering" [fontsize=14]
+		WatchtowerSuspiciousThings -> "trivago_confluence.watchtower_itemrelevanceclustering"
+	updateThpi [fontsize=14 shape=box]
+	"trivago_analytic_ssd.partner_price_status" [fontsize=14]
+		"trivago_analytic_ssd.partner_price_status" -> updateThpi
+	thpi_base [fontsize=14]
+		thpi_base -> updateThpi
+		"trivago_analytic_ssd.item" -> updateThpi
+		"trivago_analytic_ssd.path" -> updateThpi
+	"trivago_analytic_ssd.path_childs" [fontsize=14]
+		"trivago_analytic_ssd.path_childs" -> updateThpi
+	"trivago_analytic_ssd.thpi" [fontsize=14]
+		"trivago_analytic_ssd.thpi" -> updateThpi
+	thpi_base [fontsize=14]
+		updateThpi -> thpi_base
+	item [fontsize=14]
+		updateThpi -> item
+	thpi_daily [fontsize=14]
+		updateThpi -> thpi_daily
+	"trivago_analytic.currency_rates_for_thpi" [fontsize=14]
+		updateThpi -> "trivago_analytic.currency_rates_for_thpi"
+	thpi [fontsize=14]
+		updateThpi -> thpi
+	"trivago_analytic.thpi" [fontsize=14]
+		updateThpi -> "trivago_analytic.thpi"
+	updateTvImpactDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.baseline" -> updateTvImpactDay
+		"trivago_analytic_repl.tv_advertising" -> updateTvImpactDay
+	"trivago_analytic_repl.tv_advertising" [fontsize=14]
+		updateTvImpactDay -> "trivago_analytic_repl.tv_advertising"
+	updateSEOSuiteDataMonth [fontsize=14 shape=box]
+	"trivago_analytic.trv_item_data" [fontsize=14]
+		"trivago_analytic.trv_item_data" -> updateSEOSuiteDataMonth
+	"trivago_analytic.trv_value_label" [fontsize=14]
+		"trivago_analytic.trv_value_label" -> updateSEOSuiteDataMonth
+	"trivago_analytic.trv_item2partner" [fontsize=14]
+		"trivago_analytic.trv_item2partner" -> updateSEOSuiteDataMonth
+		"trivago_analytic.trv_member_action" -> updateSEOSuiteDataMonth
+		hotel_traffic_annual -> updateSEOSuiteDataMonth
+		item -> updateSEOSuiteDataMonth
+		"(item_id" -> updateSEOSuiteDataMonth
+		JOIN -> updateSEOSuiteDataMonth
+		"trivago_analytic.trv_item_group" -> updateSEOSuiteDataMonth
+		USING -> updateSEOSuiteDataMonth
+	"(item_group_id" [fontsize=14]
+		"(item_group_id" -> updateSEOSuiteDataMonth
+	"trivago_analytic.trv_field" [fontsize=14]
+		"trivago_analytic.trv_field" -> updateSEOSuiteDataMonth
+	"(field_id" [fontsize=14]
+		"(field_id" -> updateSEOSuiteDataMonth
+		LEFT -> updateSEOSuiteDataMonth
+		OUTER -> updateSEOSuiteDataMonth
+		"(category_id" -> updateSEOSuiteDataMonth
+		"trivago_analytic.item_native_description" -> updateSEOSuiteDataMonth
+		path -> updateSEOSuiteDataMonth
+	"trivago_analytic.seo_suite_monthly_report" [fontsize=14]
+		updateSEOSuiteDataMonth -> "trivago_analytic.seo_suite_monthly_report"
+	insertReferrerCode [fontsize=14 shape=box]
+	referer_code [fontsize=14]
+		insertReferrerCode -> referer_code
+	generateRegionList [fontsize=14 shape=box]
+		"trivago_analytic.path_name" -> generateRegionList
+		"(path_id" -> generateRegionList
+		"trivago_analytic.path" -> generateRegionList
+	"(select" [fontsize=14]
+		generateRegionList -> "(select"
+	market [fontsize=14]
+		generateRegionList -> market
+	"max(sum_clickouts" [fontsize=14]
+		generateRegionList -> "max(sum_clickouts"
+	from [fontsize=14]
+		generateRegionList -> from
+	updateCiCoTracking [fontsize=14 shape=box]
+	cico_tracking [fontsize=14]
+		updateCiCoTracking -> cico_tracking
+	updateBookingWithoutCookiesDay [fontsize=14 shape=box]
+	booking_without_cookies_log [fontsize=14]
+		updateBookingWithoutCookiesDay -> booking_without_cookies_log
+	updateHGWInteractionDay [fontsize=14 shape=box]
+		page_log -> updateHGWInteractionDay
+		session_stats -> updateHGWInteractionDay
+	"trivago_analytic.HGW_interaction" [fontsize=14]
+		updateHGWInteractionDay -> "trivago_analytic.HGW_interaction"
+	updateHotelTestControl [fontsize=14 shape=box]
+	updateItemRelevance_HGWBoost [fontsize=14 shape=box]
+	checkPriceToolCoTrackingVemas [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_tracking" -> checkPriceToolCoTrackingVemas
+	updateHotelTrafficDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log_detail" -> updateHotelTrafficDay
+		"trivago_analytic_ssd.page_log" -> updateHotelTrafficDay
+		"trivago_analytic_ssd.session_stats" -> updateHotelTrafficDay
+	"trivago_analytic_ssd.hotel_traffic" [fontsize=14]
+		updateHotelTrafficDay -> "trivago_analytic_ssd.hotel_traffic"
+	updateBaseline [fontsize=14 shape=box]
+	updateSoap [fontsize=14 shape=box]
+	updateHotelierKpis [fontsize=14 shape=box]
+	updatePartnerPriceTracking [fontsize=14 shape=box]
+	updateHotelManagerDataDay [fontsize=14 shape=box]
+		co_log -> updateHotelManagerDataDay
+		session_stats -> updateHotelManagerDataDay
+		booking_log -> updateHotelManagerDataDay
+		pixel_partners -> updateHotelManagerDataDay
+	updateWidgets [fontsize=14 shape=box]
+	updateSystemControlJSPerf [fontsize=14 shape=box]
+	updateKpisTVMetrics [fontsize=14 shape=box]
+	updateCookieTracking [fontsize=14 shape=box]
+	updateTrackingPixels [fontsize=14 shape=box]
+	CompareTestStates [fontsize=14 shape=box]
+		"trivago_analytic.trv_ctest" -> CompareTestStates
+	"trivago_confluence.compare_ctest_states" [fontsize=14]
+		CompareTestStates -> "trivago_confluence.compare_ctest_states"
+	"trivago_confluence.compare_ctest_states2" [fontsize=14]
+		CompareTestStates -> "trivago_confluence.compare_ctest_states2"
+	updateUsTrafficDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateUsTrafficDay
+		"trivago_analytic_ssd.session_detail" -> updateUsTrafficDay
+		"(date_id" -> updateUsTrafficDay
+	"trivago_analytic.metro_codes" [fontsize=14]
+		"trivago_analytic.metro_codes" -> updateUsTrafficDay
+	"trivago_analytic.us_traffic" [fontsize=14]
+		updateUsTrafficDay -> "trivago_analytic.us_traffic"
+	automatedMatchAll [fontsize=14 shape=box]
+	"trivago_analytic.automatedmatchlog" [fontsize=14]
+		automatedMatchAll -> "trivago_analytic.automatedmatchlog"
+	updateTestResultTrackingBrowserDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateTestResultTrackingBrowserDay
+		"trivago_analytic.trv_ctest" -> updateTestResultTrackingBrowserDay
+		test_result_tracking_browser -> updateTestResultTrackingBrowserDay
+	tdel [fontsize=14]
+		updateTestResultTrackingBrowserDay -> tdel
+	test_result_tracking_browser [fontsize=14]
+		updateTestResultTrackingBrowserDay -> test_result_tracking_browser
+	"trivago_analytic.test_result_tracking_browser_archive" [fontsize=14]
+		updateTestResultTrackingBrowserDay -> "trivago_analytic.test_result_tracking_browser_archive"
+	updatePathTracking [fontsize=14 shape=box]
+		"trivago_analytic_ssd.path" -> updatePathTracking
+		path_tracking -> updatePathTracking
+	t_path [fontsize=14]
+		updatePathTracking -> t_path
+	path_tracking [fontsize=14]
+		updatePathTracking -> path_tracking
+	compute_social_monitoring [fontsize=14 shape=box]
+		page_log -> compute_social_monitoring
+		session_stats -> compute_social_monitoring
+	bi_4402_relevant_ids [fontsize=14]
+		bi_4402_relevant_ids -> compute_social_monitoring
+		"rids(" -> compute_social_monitoring
+	bi_4402_results_1 [fontsize=14]
+		bi_4402_results_1 -> compute_social_monitoring
+		trv_tss_search -> compute_social_monitoring
+		trv_tss_search_user -> compute_social_monitoring
+		trv_tss_user -> compute_social_monitoring
+		"trivago_analytic.trv_member" -> compute_social_monitoring
+	bi_4402_relevant_search_ids [fontsize=14]
+		bi_4402_relevant_search_ids -> compute_social_monitoring
+	bi_4402_social_tables_results_1 [fontsize=14]
+		bi_4402_social_tables_results_1 -> compute_social_monitoring
+		trv_tss_user_action_item -> compute_social_monitoring
+	bi_4402_relevant_ids [fontsize=14]
+		compute_social_monitoring -> bi_4402_relevant_ids
+	bi_4402_results_1 [fontsize=14]
+		compute_social_monitoring -> bi_4402_results_1
+	bi_4402_results_2 [fontsize=14]
+		compute_social_monitoring -> bi_4402_results_2
+	"trivago_confluence.trivago_social_monitoring_video" [fontsize=14]
+		compute_social_monitoring -> "trivago_confluence.trivago_social_monitoring_video"
+	bi_4402_relevant_search_ids [fontsize=14]
+		compute_social_monitoring -> bi_4402_relevant_search_ids
+	bi_4402_social_tables_results_1 [fontsize=14]
+		compute_social_monitoring -> bi_4402_social_tables_results_1
+	bi_4402_social_tables_results_2 [fontsize=14]
+		compute_social_monitoring -> bi_4402_social_tables_results_2
+	bi_4402_social_tables_results_3 [fontsize=14]
+		compute_social_monitoring -> bi_4402_social_tables_results_3
+	bi_4402_social_tables_results_4 [fontsize=14]
+		compute_social_monitoring -> bi_4402_social_tables_results_4
+	"trivago_confluence.trivago_social_monitoring" [fontsize=14]
+		compute_social_monitoring -> "trivago_confluence.trivago_social_monitoring"
+	updateip2locidday [fontsize=14 shape=box]
+	generatesemsList [fontsize=14 shape=box]
+		path_cico_tracking -> generatesemsList
+	updateCrawlers [fontsize=14 shape=box]
+	updateOlapDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateOlapDay
+	"trivago_analytic_ssd.olap" [fontsize=14]
+		updateOlapDay -> "trivago_analytic_ssd.olap"
+	updateItemRelevance_ExpRevenue [fontsize=14 shape=box]
+	updateSystemControllerDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateSystemControllerDay
+		"trivago_analytic_ssd.page_log_detail" -> updateSystemControllerDay
+		"(date_id" -> updateSystemControllerDay
+	spider_log_stats [fontsize=14]
+		spider_log_stats -> updateSystemControllerDay
+		crawler_stats -> updateSystemControllerDay
+	"trivago_analytic.trv_aly_export_times_per_locale" [fontsize=14]
+		"trivago_analytic.trv_aly_export_times_per_locale" -> updateSystemControllerDay
+	"trivago_analytic.trv_aly_export_per_page_id" [fontsize=14]
+		"trivago_analytic.trv_aly_export_per_page_id" -> updateSystemControllerDay
+	"trivago_analytic.trv_aly_export_java_data" [fontsize=14]
+		"trivago_analytic.trv_aly_export_java_data" -> updateSystemControllerDay
+	"trivago_analytic_ssd.system_tracking" [fontsize=14]
+		updateSystemControllerDay -> "trivago_analytic_ssd.system_tracking"
+	"trivago_analytic_ssd.system_page_id_tracking" [fontsize=14]
+		updateSystemControllerDay -> "trivago_analytic_ssd.system_page_id_tracking"
+	"trivago_analytic_ssd.system_java_tracking" [fontsize=14]
+		updateSystemControllerDay -> "trivago_analytic_ssd.system_java_tracking"
+	updateBookingPcco [fontsize=14 shape=box]
+		booking_log -> updateBookingPcco
+		page_log -> updateBookingPcco
+		session_stats -> updateBookingPcco
+		co_log -> updateBookingPcco
+		booking_without_cookies_log -> updateBookingPcco
+	booking_log [fontsize=14]
+		updateBookingPcco -> booking_log
+	booking_without_cookies_log [fontsize=14]
+		updateBookingPcco -> booking_without_cookies_log
+	updateControllerUsageDay [fontsize=14 shape=box]
+		page_log -> updateControllerUsageDay
+		page_log_detail -> updateControllerUsageDay
+		"trivago_analytic.trv_member" -> updateControllerUsageDay
+	controller_usage [fontsize=14]
+		updateControllerUsageDay -> controller_usage
+	updatePageIDTrackingApp [fontsize=14 shape=box]
+		test_result_tracking_app -> updatePageIDTrackingApp
+		mantis_med_1 -> updatePageIDTrackingApp
+	createDumpTables [fontsize=14 shape=box]
+	"information_schema.processlist" [fontsize=14]
+		"information_schema.processlist" -> createDumpTables
+	"trivago_analytic.dump_page_log" [fontsize=14]
+		createDumpTables -> "trivago_analytic.dump_page_log"
+	"trivago_analytic.dump_page_log_detail" [fontsize=14]
+		createDumpTables -> "trivago_analytic.dump_page_log_detail"
+	"trivago_analytic.dump_spider_log" [fontsize=14]
+		createDumpTables -> "trivago_analytic.dump_spider_log"
+	"trivago_analytic.dump_price_search_log" [fontsize=14]
+		createDumpTables -> "trivago_analytic.dump_price_search_log"
+	updateBookingRecode8102Day [fontsize=14 shape=box]
+		booking_without_cookies_log -> updateBookingRecode8102Day
+		co_log -> updateBookingRecode8102Day
+	booking_without_cookies_log [fontsize=14]
+		updateBookingRecode8102Day -> booking_without_cookies_log
+	bwcl [fontsize=14]
+		updateBookingRecode8102Day -> bwcl
+	updateSearchTypesContexts [fontsize=14 shape=box]
+	updateItemRelevance_HGWBoostDay [fontsize=14 shape=box]
+		"trivago_analytic.trv_image_data" -> updateItemRelevance_HGWBoostDay
+	ir_images01 [fontsize=14]
+		ir_images01 -> updateItemRelevance_HGWBoostDay
+		page_log -> updateItemRelevance_HGWBoostDay
+		"trivago_analytic.trv_member_action" -> updateItemRelevance_HGWBoostDay
+		"trivago_analytic.trv_hotelpartner_item_description" -> updateItemRelevance_HGWBoostDay
+		"trivago_analytic.trv_hotelpartner_opinion_comment" -> updateItemRelevance_HGWBoostDay
+	ir_content_boost [fontsize=14]
+		ir_content_boost -> updateItemRelevance_HGWBoostDay
+	ir_images00 [fontsize=14]
+		updateItemRelevance_HGWBoostDay -> ir_images00
+	ir_images01 [fontsize=14]
+		updateItemRelevance_HGWBoostDay -> ir_images01
+	ir_content_boost_day [fontsize=14]
+		updateItemRelevance_HGWBoostDay -> ir_content_boost_day
+	ir_content_boost [fontsize=14]
+		updateItemRelevance_HGWBoostDay -> ir_content_boost
+	updateImageController [fontsize=14 shape=box]
+	updateItemRelevance [fontsize=14 shape=box]
+		"trivago_analytic_ssd.partner_price_status" -> updateItemRelevance
+		"trivago_analytic_repl.co_price" -> updateItemRelevance
+		trv_cpc_override -> updateItemRelevance
+		"trivago_analytic_repl.co_tracking" -> updateItemRelevance
+		co_log -> updateItemRelevance
+	updatePriceParityTracking [fontsize=14 shape=box]
+	updateAppVersionKpisDay [fontsize=14 shape=box]
+		session_stats -> updateAppVersionKpisDay
+	app_version_kpis_00 [fontsize=14]
+		app_version_kpis_00 -> updateAppVersionKpisDay
+		LEFT -> updateAppVersionKpisDay
+		OUTER -> updateAppVersionKpisDay
+		JOIN -> updateAppVersionKpisDay
+		page_log_detail -> updateAppVersionKpisDay
+	pld1 [fontsize=14]
+		pld1 -> updateAppVersionKpisDay
+	app_version_kpis_00 [fontsize=14]
+		updateAppVersionKpisDay -> app_version_kpis_00
+	app_version_kpis_01 [fontsize=14]
+		updateAppVersionKpisDay -> app_version_kpis_01
+	"trivago_analytic_ssd.app_version_kpis" [fontsize=14]
+		updateAppVersionKpisDay -> "trivago_analytic_ssd.app_version_kpis"
+	"trivago_analytic.app_version_kpis" [fontsize=14]
+		updateAppVersionKpisDay -> "trivago_analytic.app_version_kpis"
+	updatePriceBlockingDay [fontsize=14 shape=box]
+		"trivago_analytic_repl.co_price" -> updatePriceBlockingDay
+		trv_cpc_override -> updatePriceBlockingDay
+		"trivago_analytic_repl.co_tracking" -> updatePriceBlockingDay
+		co_log -> updatePriceBlockingDay
+		"trivago_analytic_ssd.psl_clickout_log_partner_detail" -> updatePriceBlockingDay
+		"trivago_analytic_ssd.blockweights" -> updatePriceBlockingDay
+	"trivago_analytic_ssd.tpc_exposure_cpcs" [fontsize=14]
+		"trivago_analytic_ssd.tpc_exposure_cpcs" -> updatePriceBlockingDay
+		locale -> updatePriceBlockingDay
+		item_id -> updatePriceBlockingDay
+	partner_id [fontsize=14]
+		partner_id -> updatePriceBlockingDay
+	item [fontsize=14]
+		updatePriceBlockingDay -> item
+	"trivago_analytic_ssd.tpc_exposure_cpcs" [fontsize=14]
+		updatePriceBlockingDay -> "trivago_analytic_ssd.tpc_exposure_cpcs"
+	"trivago_analytic_ssd.tpc_exposure_cpcs_item" [fontsize=14]
+		updatePriceBlockingDay -> "trivago_analytic_ssd.tpc_exposure_cpcs_item"
+	"trivago_analytic_ssd.tpc_exposure_cpcs_category" [fontsize=14]
+		updatePriceBlockingDay -> "trivago_analytic_ssd.tpc_exposure_cpcs_category"
+	tpc_cpc_correction_by_co_log [fontsize=14]
+		updatePriceBlockingDay -> tpc_cpc_correction_by_co_log
+	updateConfluenceProductRoadmap [fontsize=14 shape=box]
+	"trivago_confluence.roadmap_update" [fontsize=14]
+		updateConfluenceProductRoadmap -> "trivago_confluence.roadmap_update"
+	updateWeight [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateWeight
+		"trivago_analytic_ssd.page_log_detail" -> updateWeight
+		"trivago_analytic_ssd.session_stats" -> updateWeight
+		"trivago_analytic_ssd.path" -> updateWeight
+	"trivago_analytic.update_prod_weight" [fontsize=14]
+		updateWeight -> "trivago_analytic.update_prod_weight"
+	BuildPathWeights [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> BuildPathWeights
+		"trivago_analytic_ssd.session_stats" -> BuildPathWeights
+	"trivago_analytic_ssd.path_name" [fontsize=14]
+		BuildPathWeights -> "trivago_analytic_ssd.path_name"
+	update_ClickshareDevelopmentInventory_Day [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> update_ClickshareDevelopmentInventory_Day
+		"(date" -> update_ClickshareDevelopmentInventory_Day
+		item_id -> update_ClickshareDevelopmentInventory_Day
+		locale -> update_ClickshareDevelopmentInventory_Day
+		date -> update_ClickshareDevelopmentInventory_Day
+	inventory_partner_id [fontsize=14]
+		inventory_partner_id -> update_ClickshareDevelopmentInventory_Day
+	clickshare_inventory [fontsize=14]
+		update_ClickshareDevelopmentInventory_Day -> clickshare_inventory
+	SnoozeeMargins [fontsize=14 shape=box]
+	updateSpiderLog [fontsize=14 shape=box]
+		"trivago_analytic.dump_spider_log" -> updateSpiderLog
+	"trivago_analytic.spider_log" [fontsize=14]
+		updateSpiderLog -> "trivago_analytic.spider_log"
+	updateNonFocusPages [fontsize=14 shape=box]
+	updatePartnersPerHotelTracking [fontsize=14 shape=box]
+		"trivago_analytic_ssd.partner2locale" -> updatePartnersPerHotelTracking
+		"trivago_analytic_ssd.item2partner" -> updatePartnersPerHotelTracking
+		"trivago_analytic_ssd.partner_price_status" -> updatePartnersPerHotelTracking
+	advertiserbucketing [fontsize=14 shape=box]
+		"trivago_analytic_ssd.partner" -> advertiserbucketing
+		"trivago_analytic_ssd.item2partner" -> advertiserbucketing
+		"trivago_analytic_ssd.item" -> advertiserbucketing
+		"trivago_analytic_ssd.co_log" -> advertiserbucketing
+		"trivago_analytic_repl.co_tracking" -> advertiserbucketing
+	updateMobileAppKpis [fontsize=14 shape=box]
+		page_log_detail -> updateMobileAppKpis
+		session_stats -> updateMobileAppKpis
+		"pld(" -> updateMobileAppKpis
+	"trivago_confluence.app_kpi_monitoring_month_ios" [fontsize=14]
+		updateMobileAppKpis -> "trivago_confluence.app_kpi_monitoring_month_ios"
+	"trivago_analytic.app_kpi_monitoring_month_ios_archive" [fontsize=14]
+		updateMobileAppKpis -> "trivago_analytic.app_kpi_monitoring_month_ios_archive"
+	"trivago_confluence.app_kpi_monitoring_week_ios" [fontsize=14]
+		updateMobileAppKpis -> "trivago_confluence.app_kpi_monitoring_week_ios"
+	"trivago_analytic.app_kpi_monitoring_week_ios_archive" [fontsize=14]
+		updateMobileAppKpis -> "trivago_analytic.app_kpi_monitoring_week_ios_archive"
+	"trivago_confluence.app_kpi_monitoring_month_android" [fontsize=14]
+		updateMobileAppKpis -> "trivago_confluence.app_kpi_monitoring_month_android"
+	"trivago_analytic.app_kpi_monitoring_month_android_archive" [fontsize=14]
+		updateMobileAppKpis -> "trivago_analytic.app_kpi_monitoring_month_android_archive"
+	"trivago_confluence.app_kpi_monitoring_week_android" [fontsize=14]
+		updateMobileAppKpis -> "trivago_confluence.app_kpi_monitoring_week_android"
+	"trivago_analytic.app_kpi_monitoring_week_android_archive" [fontsize=14]
+		updateMobileAppKpis -> "trivago_analytic.app_kpi_monitoring_week_android_archive"
+	updateKpisVisitsSearchContext [fontsize=14 shape=box]
+	updateConversionTrackingDay [fontsize=14 shape=box]
+		session_stats -> updateConversionTrackingDay
+	traffic_conversion_tracking [fontsize=14]
+		updateConversionTrackingDay -> traffic_conversion_tracking
+	updateKpisSpiderStatsDay [fontsize=14 shape=box]
+	"trivago_analytic_ssd.spider_log_stats" [fontsize=14]
+		"trivago_analytic_ssd.spider_log_stats" -> updateKpisSpiderStatsDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisSpiderStatsDay -> "trivago_analytic_ssd.kpis"
+	updateKpisSEOMetrics [fontsize=14 shape=box]
+	updatePriceCalendar [fontsize=14 shape=box]
+		partner_price_status -> updatePriceCalendar
+	"trivago_analytic.price_calendar" [fontsize=14]
+		"trivago_analytic.price_calendar" -> updatePriceCalendar
+	"trivago_analytic.price_overview_new" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_overview_new"
+	item [fontsize=14]
+		updatePriceCalendar -> item
+	"trivago_analytic.price_calendar_new" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_calendar_new"
+	"trivago_analytic.price_calendar_category_new" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_calendar_category_new"
+	"trivago_analytic.price_deals_new" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_deals_new"
+	"trivago_analytic.price_overview" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_overview"
+	"trivago_analytic.price_calendar" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_calendar"
+	"trivago_analytic.price_calendar_best_price" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_calendar_best_price"
+	"trivago_analytic.price_calendar_category" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_calendar_category"
+	"trivago_analytic.price_deals" [fontsize=14]
+		updatePriceCalendar -> "trivago_analytic.price_deals"
+	updateDPMTrackingDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.co_log" -> updateDPMTrackingDay
+		"trivago_analytic_ssd.sem_parameter_detail" -> updateDPMTrackingDay
+		pld2 -> updateDPMTrackingDay
+	dpm_co_tracking [fontsize=14]
+		updateDPMTrackingDay -> dpm_co_tracking
+	updateBaselineDay [fontsize=14 shape=box]
+		lookup_value -> updateBaselineDay
+	"(localehour" [fontsize=14]
+		"(localehour" -> updateBaselineDay
+	"(locale" [fontsize=14]
+		updateBaselineDay -> "(locale"
+	timestamp [fontsize=14]
+		updateBaselineDay -> timestamp
+	"(localehour" [fontsize=14]
+		updateBaselineDay -> "(localehour"
+	hour [fontsize=14]
+		updateBaselineDay -> hour
+	"trivago_analytic_ssd.baseline" [fontsize=14]
+		updateBaselineDay -> "trivago_analytic_ssd.baseline"
+	updateKpiswebsiteotherDay [fontsize=14 shape=box]
+		page_log -> updateKpiswebsiteotherDay
+		session_stats -> updateKpiswebsiteotherDay
+	kpi_slideout_openings [fontsize=14]
+		kpi_slideout_openings -> updateKpiswebsiteotherDay
+		co_log -> updateKpiswebsiteotherDay
+	kpi_unique_clickouts [fontsize=14]
+		kpi_unique_clickouts -> updateKpiswebsiteotherDay
+		"trivago_analytic.trv_member" -> updateKpiswebsiteotherDay
+	"trivago_analytic.trv_mc_respondent" [fontsize=14]
+		"trivago_analytic.trv_mc_respondent" -> updateKpiswebsiteotherDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpiswebsiteotherDay -> "trivago_analytic_ssd.kpis"
+	kpi_slideout_openings [fontsize=14]
+		updateKpiswebsiteotherDay -> kpi_slideout_openings
+	kpi_unique_clickouts [fontsize=14]
+		updateKpiswebsiteotherDay -> kpi_unique_clickouts
+	updateSoapDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.page_log" -> updateSoapDay
+		"trivago_analytic_ssd.page_log_detail" -> updateSoapDay
+	soap [fontsize=14]
+		updateSoapDay -> soap
+	updateKpisSEMSearchEngine [fontsize=14 shape=box]
+	updateplanned [fontsize=14 shape=box]
+	"trivago_analytic_ssd.plancontroller_input" [fontsize=14]
+		"trivago_analytic_ssd.plancontroller_input" -> updateplanned
+		kpis -> updateplanned
+	"trivago_analytic_ssd.plancontroller_plans" [fontsize=14]
+		updateplanned -> "trivago_analytic_ssd.plancontroller_plans"
+	updateAndroid [fontsize=14 shape=box]
+		device_classification -> updateAndroid
+	android_tablets [fontsize=14]
+		updateAndroid -> android_tablets
+	updateHotelTraffic [fontsize=14 shape=box]
+		hotel_traffic -> updateHotelTraffic
+		hotel_traffic_annual -> updateHotelTraffic
+	hotel_traffic [fontsize=14]
+		updateHotelTraffic -> hotel_traffic
+	hotel_traffic_annual [fontsize=14]
+		updateHotelTraffic -> hotel_traffic_annual
+	autoReExec [fontsize=14 shape=box]
+	updateKpisBookings [fontsize=14 shape=box]
+	updateCoPartnerHotel [fontsize=14 shape=box]
+	updateKpisSEMSearchEngineDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateKpisSEMSearchEngineDay
+		"trivago_analytic_repl.cip_detail" -> updateKpisSEMSearchEngineDay
+		"(ci_partner_id" -> updateKpisSEMSearchEngineDay
+	"trivago_analytic_ssd.kpis" [fontsize=14]
+		updateKpisSEMSearchEngineDay -> "trivago_analytic_ssd.kpis"
+	PageIDbasicApp [fontsize=14 shape=box]
+		page_id_tracking_app -> PageIDbasicApp
+		"trivago_analytic_ssd.normal_distribution_two_tailed" -> PageIDbasicApp
+	updateIrExpDay [fontsize=14 shape=box]
+		"trivago_analytic_ssd.session_stats" -> updateIrExpDay
+		page_log -> updateIrExpDay
+		page_log_detail -> updateIrExpDay
+	updateTestResultTrackingSearchType [fontsize=14 shape=box]
+	calculateMysteryCheck [fontsize=14 shape=box]
+	updateIdealStandardDate [fontsize=14 shape=box]
+		"trivago_analytic_ssd.partner_price_status" -> updateIdealStandardDate
+	"(select" [fontsize=14]
+		updateIdealStandardDate -> "(select"
+	item_id [fontsize=14]
+		updateIdealStandardDate -> item_id
+	"avg(price" [fontsize=14]
+		updateIdealStandardDate -> "avg(price"
+	from [fontsize=14]
+		updateIdealStandardDate -> from
+	updateThpiBaseHistory [fontsize=14 shape=box]
+		"trivago_analytic.partner_price_archive" -> updateThpiBaseHistory
+	thpi_base [fontsize=14]
+		updateThpiBaseHistory -> thpi_base
+	HOTControllerData [fontsize=14 shape=box]
+	update_ClickshareDevelopmentPartner_Day [fontsize=14 shape=box]
+		"trivago_analytic.trv_ctest" -> update_ClickshareDevelopmentPartner_Day
+		"trivago_analytic_ssd.co_log" -> update_ClickshareDevelopmentPartner_Day
+		"trivago_analytic_ssd.session_stats" -> update_ClickshareDevelopmentPartner_Day
+		date -> update_ClickshareDevelopmentPartner_Day
+		partner_id -> update_ClickshareDevelopmentPartner_Day
+	clickshare_development_partner [fontsize=14]
+		update_ClickshareDevelopmentPartner_Day -> clickshare_development_partner
+	recalculateecpc [fontsize=14 shape=box]
+	ecpc_tracking [fontsize=14]
+		ecpc_tracking -> recalculateecpc
+	ecpc_kpis [fontsize=14]
+		recalculateecpc -> ecpc_kpis
+	updateUserAgentTrackingDay [fontsize=14 shape=box]
+		session_stats -> updateUserAgentTrackingDay
+	user_agent_tracking [fontsize=14]
+		user_agent_tracking -> updateUserAgentTrackingDay
+	user_agent_tracking [fontsize=14]
+		updateUserAgentTrackingDay -> user_agent_tracking
+	HotelRelationsTableDay [fontsize=14 shape=box]
+		"trivago_analytic.thm_login_log" -> HotelRelationsTableDay
+		item2hotelpartner -> HotelRelationsTableDay
+		item -> HotelRelationsTableDay
+		cats2names -> HotelRelationsTableDay
+		"trivago_analytic.trv_image_data" -> HotelRelationsTableDay
+		"trivago_analytic.trv_hotelpartner_item_description" -> HotelRelationsTableDay
+		"trivago_analytic.trv_hotelpartner_opinion_comment" -> HotelRelationsTableDay
+		"trivago_analytic.trv_opinion" -> HotelRelationsTableDay
+		"(opinion_id" -> HotelRelationsTableDay
+		"trivago_analytic.trv_member_action" -> HotelRelationsTableDay
+	"trivago_analytic.hgw_last_login" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hgw_last_login"
+	"trivago_analytic.hotel_category" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotel_category"
+	"trivago_analytic.hotelierinfo_general" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotelierinfo_general"
+	"trivago_analytic.hotelierinfo_images" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotelierinfo_images"
+	"trivago_analytic.hotelierinfo_description" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotelierinfo_description"
+	"trivago_analytic.hotelierinfo_reviews" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotelierinfo_reviews"
+	"trivago_analytic.hotelierinfo_datachanges" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotelierinfo_datachanges"
+	"trivago_analytic.hotelierinfo" [fontsize=14]
+		HotelRelationsTableDay -> "trivago_analytic.hotelierinfo"
+	updatePixelPartners [fontsize=14 shape=box]
+	updateEFData [fontsize=14 shape=box]
+	ef_dump_log [fontsize=14]
+		ef_dump_log -> updateEFData
+	ef_lookup [fontsize=14]
+		ef_lookup -> updateEFData
+	ef_lookup [fontsize=14]
+		updateEFData -> ef_lookup
+	"(select" [fontsize=14]
+		updateEFData -> "(select"
+	distinct [fontsize=14]
+		updateEFData -> distinct
+	Portfolio [fontsize=14]
+		updateEFData -> Portfolio
+	Portfolio_ID [fontsize=14]
+		updateEFData -> Portfolio_ID
+	from [fontsize=14]
+		updateEFData -> from
+	ef_dump_log [fontsize=14]
+		updateEFData -> ef_dump_log
+	Campaignef_Campaign_ID [fontsize=14]
+		updateEFData -> Campaignef_Campaign_ID
+	Search_Engineef_Search_Engine_ID [fontsize=14]
+		updateEFData -> Search_Engineef_Search_Engine_ID
+	insertPriceSearchLog [fontsize=14 shape=box]
+	updateSearchTrackingDay [fontsize=14 shape=box]
+	"trivago_analytic_ssd.search_tracking" [fontsize=14]
+		updateSearchTrackingDay -> "trivago_analytic_ssd.search_tracking"
+	adblocking_clickshare_day [fontsize=14 shape=box]
+		"trivago_analytic.trv_ctest" -> adblocking_clickshare_day
+		co_log -> adblocking_clickshare_day
+		session_stats -> adblocking_clickshare_day
+	blocking_impact_clickshare_total [fontsize=14]
+		adblocking_clickshare_day -> blocking_impact_clickshare_total
+	blocking_impact_clickshare [fontsize=14]
+		adblocking_clickshare_day -> blocking_impact_clickshare
+}

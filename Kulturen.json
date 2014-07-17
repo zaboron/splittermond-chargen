@@ -1,0 +1,5420 @@
+[{
+    "description": "Shahandir",
+    "name": "Shahandir",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Empathie: Rede mit mir"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren",
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Kulturkunde Dalmarien",
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Mertalischer St\u00e4dtebund",
+    "name": "Mertalischer St\u00e4dtebund",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Stra\u00dfenkunde: Ger\u00fcchte aufschnappen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Bann",
+                    "Beherrschung",
+                    "Bewegung",
+                    "Erkenntnis",
+                    "Fels",
+                    "Feuer",
+                    "Heilung",
+                    "Illusion",
+                    "Kampf",
+                    "Licht",
+                    "Natur",
+                    "Schatten",
+                    "Schicksal",
+                    "Schutz",
+                    "St\u00e4rkung",
+                    "Tod",
+                    "Verwandlung",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Soziales Gesp\u00fcr",
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Elyrea-Volk",
+    "name": "Elyrea-Volk",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Gebirge"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Wurfwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Fels",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Frynjord",
+    "name": "Frynjord",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Anf\u00fchren: Sammeln"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde",
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Wasser"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "K\u00e4lteresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Sch\u00e4delkorsaren",
+    "name": "Sch\u00e4delkorsaren",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Seefahrt: Beine des Seemanns"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Akrobatik",
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn",
+                    "Z\u00e4h"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Utarti",
+    "name": "Utarti",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Dschungel"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Wurfwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Farukhur",
+    "name": "Farukhur",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Anf\u00fchren: Herausforderung"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit",
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde",
+                    "Bann",
+                    "Beherrschung",
+                    "Bewegung",
+                    "Erkenntnis",
+                    "Fels",
+                    "Feuer",
+                    "Heilung",
+                    "Illusion",
+                    "Kampf",
+                    "Licht",
+                    "Natur",
+                    "Schatten",
+                    "Schicksal",
+                    "Schutz",
+                    "St\u00e4rkung",
+                    "Tod",
+                    "Verwandlung",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Pashtar",
+    "name": "Pashtar",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Seefahrt: Blick auf die Sterne"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Gulong",
+    "name": "Gulong",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Savanne"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Borombri",
+    "name": "Borombri",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Handwerk: Geselle nach Wahl"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Schusswaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schl\u00f6sser und Fallen",
+                    "Fels"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gutes Ged\u00e4chtnis",
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Afali",
+    "name": "Afali",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Seefahrt: Beine des Seemanns"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Wasser"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "W\u00e4chterbund",
+    "name": "W\u00e4chterbund",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: Unbeirrbar"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Schutz"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Zielstrebig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Jogodai-Stammesangeh\u00f6rige",
+    "name": "Jogodai-Stammesangeh\u00f6rige",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Tierf\u00fchrung: Reiterkampf"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wurfwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Akrobatik",
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "St\u00e4rkung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Z\u00e4h"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Porukala",
+    "name": "Porukala",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Seefahrt: Seeb\u00e4r"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde",
+                    "Wasser"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Mahaluu",
+    "name": "Mahaluu",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Schwimmen: Flusstaucher"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik",
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilung",
+                    "Natur"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Attraktivit\u00e4t",
+                    "Gesellig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Demerai",
+    "name": "Demerai",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Redegewandtheit: Ablenken"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Beherrschung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gesellig",
+                    "Soziales Gesp\u00fcr"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Jagodien",
+    "name": "Jagodien",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Tierf\u00fchrung: Reiterkampf"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schusswaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn",
+                    "Scharfe Sicht"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Badashan",
+    "name": "Badashan",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Dschungel"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung",
+                    "Natur"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Giftresistenz",
+                    "Hitzeresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Raugarr",
+    "name": "Raugarr",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Handgemenge: Vorst\u00fcrmen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit",
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Z\u00e4h"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Keshubim",
+    "name": "Keshubim",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Heimlichkeit: Meuchelangriff I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Alchemie",
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Schatten"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Flink",
+                    "Giftresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Furgand",
+    "name": "Furgand",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: K\u00fchler Kopf I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Hiebwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Akrobatik",
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren",
+                    "Fels",
+                    "Feuer"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Edelhandwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Hitzeresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Albischer Seebund",
+    "name": "Albischer Seebund",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Seefahrt: Beine des Seemanns"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Kettenwaffen",
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gleichgewichtssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Westergrom",
+    "name": "Westergrom",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: K\u00fchler Kopf I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Fels"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Fingerfertigkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Z\u00e4h"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Chorrash",
+    "name": "Chorrash",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Tierf\u00fchrung: Reiterkampf"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Wurfwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung",
+                    "Wind"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Tierfreund",
+                    "Tiervertrauter"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Schwertalben-Adel",
+    "name": "Schwertalben-Adel",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Anf\u00fchren: Herausforderung"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Kampf"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Literat"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Dakardsmyr",
+    "name": "Dakardsmyr",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Schwimmen: Arbeit unter Wasser"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Alchemie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit",
+                    "Wasser"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Giftresistenz",
+                    "Gleichgewichtssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Patalis",
+    "name": "Patalis",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Diplomatie: Diplomat"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Soziales Gesp\u00fcr"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Gotor Marakatam und Kutakina",
+    "name": "Gotor Marakatam und Kutakina",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Dschungel"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde",
+                    "St\u00e4rkung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Hitzeresistenz",
+                    "Krankheitsresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Kungaitan",
+    "name": "Kungaitan",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Seefahrt: Blick auf die Sterne"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit",
+                    "Beherrschung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gesellig",
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Zhoujiang",
+    "name": "Zhoujiang",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Diplomatie: Feilscher"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Bann",
+                    "Beherrschung",
+                    "Bewegung",
+                    "Erkenntnis",
+                    "Fels",
+                    "Feuer",
+                    "Heilung",
+                    "Illusion",
+                    "Kampf",
+                    "Licht",
+                    "Natur",
+                    "Schatten",
+                    "Schicksal",
+                    "Schutz",
+                    "St\u00e4rkung",
+                    "Tod",
+                    "Verwandlung",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde",
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gesellig",
+                    "Soziales Gesp\u00fcr"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Stromlandinseln nseln",
+    "name": "Stromlandinseln nseln",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Akrobatik: Balance"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "Wasser"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Sadu",
+    "name": "Sadu",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Empathie: Gegner durchschauen I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt",
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Bastler",
+                    "Soziales Gesp\u00fcr"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Fedirin",
+    "name": "Fedirin",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: Eiserner Wille"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde",
+                    "Tod"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gutes Ged\u00e4chtnis"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Ashurmazaan",
+    "name": "Ashurmazaan",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Diplomatie: Diplomat"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren",
+                    "Bann",
+                    "Schutz"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gesellig",
+                    "Zielstrebig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Schwertalben-Volk",
+    "name": "Schwertalben-Volk",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: Unbeirrbar"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Konzentrationsst\u00e4rke",
+                    "Zielstrebig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Elyrea-Rosenorden",
+    "name": "Elyrea-Rosenorden",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: Unbeirrbar"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schutz",
+                    "St\u00e4rkung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Literat",
+                    "Zielstrebig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Piriwatu",
+    "name": "Piriwatu",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Naturkunde: Konservierung"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Nyrdfing",
+    "name": "Nyrdfing",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Handwerk: Sparfuchs"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Klingenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Licht"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Bastler",
+                    "K\u00e4lteresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Aitushar",
+    "name": "Aitushar",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Diplomatie: Stil und Grazie"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Illusion"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Attraktivit\u00e4t",
+                    "Gesellig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Stromlandinseln Siprangu",
+    "name": "Stromlandinseln Siprangu",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Stra\u00dfenkunde: Ger\u00fcchte aufschnappen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Darbietung",
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Feuerl\u00e4ufer",
+    "name": "Feuerl\u00e4ufer",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Wildnisl\u00e4ufer"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Feuer"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Hitzeresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Ioria",
+    "name": "Ioria",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Stra\u00dfenkunde: Ger\u00fcchte aufschnappen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit",
+                    "Bann",
+                    "Beherrschung",
+                    "Bewegung",
+                    "Erkenntnis",
+                    "Fels",
+                    "Feuer",
+                    "Heilung",
+                    "Illusion",
+                    "Kampf",
+                    "Licht",
+                    "Natur",
+                    "Schatten",
+                    "Schicksal",
+                    "Schutz",
+                    "St\u00e4rkung",
+                    "Tod",
+                    "Verwandlung",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Dalmarisches Reich",
+    "name": "Dalmarisches Reich",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Empathie: Gegner durchschauen I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gesellig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Selenia",
+    "name": "Selenia",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Geschichte und Mythen: Schwerpunkt Drachlinge"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Bann",
+                    "Beherrschung",
+                    "Bewegung",
+                    "Erkenntnis",
+                    "Fels",
+                    "Feuer",
+                    "Heilung",
+                    "Illusion",
+                    "Kampf",
+                    "Licht",
+                    "Natur",
+                    "Schatten",
+                    "Schicksal",
+                    "Schutz",
+                    "St\u00e4rkung",
+                    "Tod",
+                    "Verwandlung",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gesellig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Tarr",
+    "name": "Tarr",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde W\u00fcste"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Klingenwaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Wurfwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "St\u00e4rkung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Hitzeresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Termark",
+    "name": "Termark",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Entschlossenheit: K\u00fchler Kopf I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren",
+                    "Kampf"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Heilkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Z\u00e4h",
+                    "Zielstrebig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "D\u00e4mmeralben",
+    "name": "D\u00e4mmeralben",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Tierf\u00fchrung: Dompteur"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Wurfwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Tierfreund",
+                    "Tiervertrauter"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Schaschbar",
+    "name": "Schaschbar",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Wahrnehmung: Umgebungssinne Dschungel"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Alchemie",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Fels"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Bastler",
+                    "Hitzeresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Vaigarr",
+    "name": "Vaigarr",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Wald"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wurfwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit",
+                    "Geschichte und Mythen",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn",
+                    "Z\u00e4h"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Immersommeralben",
+    "name": "Immersommeralben",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde Wald"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Schusswaffen",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Scharfes Geh\u00f6r",
+                    "Scharfe Sicht"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Tir Durghachan",
+    "name": "Tir Durghachan",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Arkane Kunde: Arkane Verteidigung I"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde",
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Bann",
+                    "Schutz"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Zielstrebig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Turubar",
+    "name": "Turubar",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Empathie: Beruhigen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Fels"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Konzentrationsst\u00e4rke"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Teleshai",
+    "name": "Teleshai",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Redegewandtheit: Bei\u00dfender Spott"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Darbietung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Illusion"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit",
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Weltgewandt"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Keshabid",
+    "name": "Keshabid",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Heimlichkeit: Leisetreter"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik",
+                    "St\u00e4rkung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Edelhandwerk",
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit",
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Bastler",
+                    "Gesellig"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Puntani",
+    "name": "Puntani",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Akrobatik: Blitzreflexe"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "Schatten"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie",
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Flink",
+                    "Scharfes Geh\u00f6r"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Zwingard",
+    "name": "Zwingard",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Z\u00e4higkeit: Schnell wieder auf den Beinen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Hiebwaffen",
+                    "Schusswaffen",
+                    "Stangenwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Klingenwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "St\u00e4rkung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Z\u00e4h"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Midstad",
+    "name": "Midstad",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Empathie: Rede mit mir"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Hiebwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schicksal"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Konzentrationsst\u00e4rke"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Anuu",
+    "name": "Anuu",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Naturkunde: Konservierung"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit",
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst",
+                    "Schwimmen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Scharfes Geh\u00f6r",
+                    "Scharfe Sicht"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Arkuri",
+    "name": "Arkuri",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Handwerk: Sparfuchs"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Bastler"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Wintholt",
+    "name": "Wintholt",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Z\u00e4higkeit: Wachsamkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung",
+                    "Natur"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn",
+                    "Scharfes Geh\u00f6r"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Jogodai-Sklaven",
+    "name": "Jogodai-Sklaven",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Handwerk: Effizienz"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik",
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Flink"
+                ],
+                "value": 1
+            }
+        ]
+    }
+}]

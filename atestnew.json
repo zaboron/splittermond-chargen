@@ -1,0 +1,158 @@
+[
+  {
+    "description": "Afali",
+    "name": "Afali",
+    "stats": {
+        "masteries": [
+            {
+                "options": "Seefahrt: Beine des Seemanns",
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde",
+                    "Wasser"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Seefahrt"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},
+  {
+        "name": "z",
+        "description": "z",
+        "stats": {
+            "strengths": [
+                {
+                    "options": [
+                        "Flink"
+                    ],
+                    "value": 1
+                }
+            ],
+            "skills": [
+                {
+                    "options": [
+                        "Heilkunde"
+                    ],
+                    "value": 2
+                },
+                {
+                    "options": [
+                        "Handwerk"
+                    ],
+                    "value": 2
+                },
+                {
+                    "options": [
+                        "Darbietung"
+                    ],
+                    "value": 2
+                },
+                {
+                    "options": [
+                        "Athletik"
+                    ],
+                    "value": 2
+                },
+                {
+                    "options": [
+                        "Alchemie"
+                    ],
+                    "value": 2
+                },
+                {
+                    "options": [
+                        "Verwandlungsmagie"
+                    ],
+                    "value": 1
+                },
+                {
+                    "options": [
+                        "Wurfwaffen"
+                    ],
+                    "value": 2
+                },
+                {
+                    "options": [
+                        "Handgemenge"
+                    ],
+                    "value": 2
+                }
+            ],
+            "masteries": [
+                {
+                    "options": [
+                        "Akrobatik: Ausweichen I"
+                    ],
+                    "value": 1
+                }
+            ]
+        }
+    }
+]

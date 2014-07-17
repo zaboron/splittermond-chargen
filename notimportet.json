@@ -1,0 +1,302 @@
+[{
+    "description": "Die Familie des Abenteurers besitzt einen eigenen kleinen Hof, bestellt auf den L\u00e4ndereien eines Gro\u00dfbauern eine kleine Parzelle oder arbeitet schlicht als Bedienstete auf einem gr\u00f6\u00dferen Hof. Auch der Abenteurer musste dadurch fr\u00fch bei der Feldarbeit oder der Versorgung des Viehs helfen und allerlei andere zupackende T\u00e4tigkeiten ausf\u00fchren. Aus diesen Kindertagen ist ihm ebenso eine gewisse Z\u00e4higkeit verblieben wie einige Kontakte und vermutlich ein tierischer Begleiter. Abk\u00f6mmlinge von Kleinbauern gelten als eher ungebildet, daf\u00fcr sagt man ihnen die sprichw\u00f6rtliche Bauernschl\u00e4ue nach. Sie sind oft Meister im Improvisieren und k\u00f6nnen mit begrenzten Mitteln einiges erreichen, auch durch ihre Ausdauer und Sturheit.",
+    "name": "Kleinbauern",
+    "stats": {"resources": [
+        {
+            "options": [
+                "Kontakte"
+            ],
+            "value": 2
+        },
+        {
+            "options": [
+                "Kreatur",
+                "Mentor"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Verm\u00f6gen",
+                "Zuflucht"
+            ],
+            "value": 1
+        }
+    ],
+    "skills": [
+        {
+            "options": [
+                "Handwerk"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Naturkunde"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Tierf\u00fchrung"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "\u00dcberleben"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Z\u00e4higkeit"
+            ],
+            "value": 1
+        }]}},{
+    "description": "Die Eltern des Abenteurers leben am Hofe eines Herrschers, gleich ob es sich dabei um den Padishah von Farukan, den Kaiser von Selenia oder um einen Herzog oder Baron handelt. H\u00f6flinge zeichnet dabei aus, dass ihr Leben voll auf das Treiben am Hof ausgerichtet ist, egal welche Stellung sie dort besitzen. Auch der Abenteurer hat entsprechend Einblick in das Leben der Edlen und Adligen erhalten, ob er nun selbst diesem Stand angeh\u00f6rt oder nicht. Der fr\u00fche Kontakt mit Menschen aus aller Herren L\u00e4nder und mit Intrigen und R\u00e4nkespielen hat ihn einiges \u00fcber das menschliche Zusammenleben gelehrt. Wer von H\u00f6flingen abstammt, hat oft einen gewissen Ehrgeiz entwickelt, da er solch ein Streben am Hofe beobachten konnte. Zu Recht oder zu Unrecht sagt man ihm mitunter auch eine gewisse Verschlagenheit nach.",
+    "name": "H\u00f6flinge",
+    "stats": {"resources": [
+        {
+            "options": [
+                "Ansehen",
+                "Rang",
+                "Stand"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Kontakte"
+            ],
+            "value": 2
+        },
+        {
+            "options": [
+                "Verm\u00f6gen"
+            ],
+            "value": 1
+        }
+    ],
+    "skills": [
+        {
+            "options": [
+                "Diplomatie"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Empathie"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Entschlossenheit"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Redegewandtheit"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Stra\u00dfenkunde"
+            ],
+            "value": 1
+        }]}},{
+    "description": "Die Eltern des Abenteurers, falls er sie je kennengelernt hat, geh\u00f6ren zu jenen Gruppen, die bessergestellte Bewohner von Lorakis oft als Abschaum betrachten: Kriminelle, Bettler, Tagel\u00f6hner, Landstreicher oder gar Arbeitssklaven. Der Abenteurer hat daher fr\u00fch gelernt, in der Gesellschaft auf sich gestellt zu \u00fcberleben und sich seiner Haut zu erwehren, selbst wenn er heute dieses Leben hinter sich gelassen haben mag. Dennoch entkommt er seiner Herkunft nie ganz, und sei es nur wegen der vielen, teils zwielichtigen Kontakte, die er noch immer besitzt und die ihm in weniger legalen Angelegenheiten hilfreich sein k\u00f6nnen. Und im Zweifel kennt jemand aus dem Gesindel immer einen Ort, wo er Unterschlupf finden kann. Abenteurer, die dem Gesindel entstammen, sind aufgrund ihrer harten Kindheit oft misstrauisch gegen\u00fcber Fremden und neigen dazu, nach einem besseren Leben oder gar Reichtum zu streben. Sie zeichnen sich oft aber andererseits durch unbeugsamen Willen und gro\u00dfe Anpassungsf\u00e4higkeit aus.",
+    "name": "Gesindel",
+    "stats": {"resources": [
+        {
+            "options": [
+                "Ansehen"
+            ],
+            "value": -1
+        },
+        {
+            "options": [
+                "Kontakte"
+            ],
+            "value": 3
+        },
+        {
+            "options": [
+                "Mentor"
+            ],
+            "value": 2
+        },
+        {
+            "options": [
+                "Kreatur"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Stand"
+            ],
+            "value": -1
+        },
+        {
+            "options": [
+                "Verm\u00f6gen"
+            ],
+            "value": -1
+        },
+        {
+            "options": [
+                "Zuflucht"
+            ],
+            "value": 1
+        }
+    ],
+    "skills": [
+        {
+            "options": [
+                "Handgemenge"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Entschlossenheit"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Heimlichkeit"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Stra\u00dfenkunde",
+                "\u00dcberleben"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Z\u00e4higkeit"
+            ],
+            "value": 1
+        }]}},{
+    "description": "Die Eltern des Abenteurers sind H\u00e4ndler, gleich ob es sich dabei um Kaufleute, Fernh\u00e4ndler oder kleine Kr\u00e4mer handelt. Durch die Handelspartner und Kunden seiner Eltern hat der Abenteurer schon fr\u00fch einiges \u00fcber die Welt gelernt, ebenso \u00fcber Verhandlungen und Feilscherei. Dazu besitzt er als H\u00e4ndlerkind ein gewisses Ansehen und vielleicht sogar noch etwas Geld. Wom\u00f6glich kennt er einige alte Handelskontakte seiner Eltern, die ihm in fremden Landen oder bei der Beschaffung von G\u00fctern zur Seite stehen k\u00f6nnen. Wer von H\u00e4ndlern abstammt, zeichnet sich nicht nur durch gro\u00dfe Neugier, sondern oft auch durch einen starken Gesch\u00e4ftssinn aus. Er versucht, aus jeder Situation das Beste zu machen, kann dabei aber mitunter gierig erscheinen.",
+    "name": "H\u00e4ndler",
+    "stats": {"resources": [
+        {
+            "options": [
+                "Kontakte"
+            ],
+            "value": 2
+        },
+        {
+            "options": [
+                "Verm\u00f6gen"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Stand",
+                "Zuflucht"
+            ],
+            "value": 1
+        }
+    ],
+    "skills": [
+        {
+            "options": [
+                "Diplomatie"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Empathie"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "L\u00e4nderkunde"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Redegewandtheit"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Stra\u00dfenkunde",
+                "Seefahrt",
+                "Tierf\u00fchrung"
+            ],
+            "value": 1
+        }]}},{
+    "description": "Der Abenteurer verbrachte seine Kindheit mit seinen Eltern auf der Stra\u00dfe oder gar in der Wildnis, wo diese von Ort zu Ort zogen, unabh\u00e4ngig davon, ob es sich bei ihnen um stolze Reiternomaden, Kesselflicker, rechtlose Vagabunden oder Fernh\u00e4ndler gehandelt hat. Er hat schon in jungen Jahren viel von der Welt gesehen. Die Stra\u00dfe oder weite Wildnis ist ihm vertraut. Er kann oft auf Kontakte seiner weitgereisten Eltern zur\u00fcckgreifen, die ihm in fremder Umgebung zur Seite stehen k\u00f6nnen. Vielleicht hat er einen tierischen Begleiter, der ihm auf seinen Fahrten Gesellschaft leistet. Abk\u00f6mmlinge von Reisenden besitzen selbst einen gro\u00dfen Horizont und sind oft tolerant Neuem und Unbekanntem gegen\u00fcber. Andererseits sind sie leicht misstrauisch, da Reisende stets als Fremde gelten und nicht immer gut behandelt werden.",
+    "name": "Reisende",
+    "stats": {"resources": [
+        {
+            "options": [
+                "Ansehen",
+                "Mentor",
+                "Verm\u00f6gen"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Kontakte"
+            ],
+            "value": 2
+        },
+        {
+            "options": [
+                "Kreatur"
+            ],
+            "value": 1
+        }
+    ],
+    "skills": [
+        {
+            "options": [
+                "Handwerk"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "L\u00e4nderkunde"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Stra\u00dfenkunde",
+                "Naturkunde"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Tierf\u00fchrung",
+                "\u00dcberleben"
+            ],
+            "value": 1
+        },
+        {
+            "options": [
+                "Z\u00e4higkeit"
+            ],
+            "value": 1
+        }]}}]

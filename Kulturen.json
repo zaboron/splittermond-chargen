@@ -59,7 +59,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -79,7 +79,7 @@
         "strengths": [
             {
                 "options": [
-                    "Kulturkunde Dalmarien",
+                    "Kulturkunde",
                     "Weltgewandt"
                 ],
                 "value": 1
@@ -107,7 +107,6 @@
             },
             {
                 "options": [
-                    "Handgemenge",
                     "Klingenwaffen",
                     "Stangenwaffen",
                     "Kettenwaffen",
@@ -138,25 +137,25 @@
             {
                 "options": [
                     "Handwerk",
-                    "Bann",
-                    "Beherrschung",
-                    "Bewegung",
-                    "Erkenntnis",
-                    "Fels",
-                    "Feuer",
-                    "Heilung",
-                    "Illusion",
-                    "Kampf",
-                    "Licht",
-                    "Natur",
-                    "Schatten",
-                    "Schicksal",
-                    "Schutz",
-                    "St\u00e4rkung",
-                    "Tod",
-                    "Verwandlung",
-                    "Wasser",
-                    "Wind"
+                    "Bannmagie",
+                    "Beherrschungsmagie",
+                    "Bewegungsmagie",
+                    "Erkenntnismagie",
+                    "Felsmagie",
+                    "Feuermagie",
+                    "Heilungsmagie",
+                    "Illusionsmagie",
+                    "Kampfmagie",
+                    "Lichtmagie",
+                    "Naturmagie",
+                    "Schattenmagie",
+                    "Schicksalsmagie",
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie",
+                    "Todesmagie",
+                    "Verwandlungsmagie",
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             },
@@ -202,7 +201,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Gebirge"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -223,8 +222,8 @@
             {
                 "options": [
                     "Handwerk",
-                    "Fels",
-                    "Natur"
+                    "Felsmagie",
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -309,7 +308,7 @@
             {
                 "options": [
                     "Arkane Kunde",
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -328,7 +327,7 @@
             {
                 "options": [
                     "Heilkunde",
-                    "Wasser"
+                    "Wassermagie"
                 ],
                 "value": 1
             },
@@ -387,7 +386,6 @@
             },
             {
                 "options": [
-                    "Handgemenge",
                     "Klingenwaffen",
                     "Stangenwaffen",
                     "Kettenwaffen",
@@ -464,7 +462,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Dschungel"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -492,14 +490,14 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "Handwerk",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -602,32 +600,32 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
             {
                 "options": [
                     "L\u00e4nderkunde",
-                    "Bann",
-                    "Beherrschung",
-                    "Bewegung",
-                    "Erkenntnis",
-                    "Fels",
-                    "Feuer",
-                    "Heilung",
-                    "Illusion",
-                    "Kampf",
-                    "Licht",
-                    "Natur",
-                    "Schatten",
-                    "Schicksal",
-                    "Schutz",
-                    "St\u00e4rkung",
-                    "Tod",
-                    "Verwandlung",
-                    "Wasser",
-                    "Wind"
+                    "Bannmagie",
+                    "Beherrschungsmagie",
+                    "Bewegungsmagie",
+                    "Erkenntnismagie",
+                    "Felsmagie",
+                    "Feuermagie",
+                    "Heilungsmagie",
+                    "Illusionsmagie",
+                    "Kampfmagie",
+                    "Lichtmagie",
+                    "Naturmagie",
+                    "Schattenmagie",
+                    "Schicksalsmagie",
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie",
+                    "Todesmagie",
+                    "Verwandlungsmagie",
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             },
@@ -687,7 +685,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -718,8 +716,8 @@
             {
                 "options": [
                     "\u00dcberleben",
-                    "Wasser",
-                    "Wind"
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             }
@@ -740,7 +738,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Savanne"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -833,7 +831,7 @@
         "masteries": [
             {
                 "options": [
-                    "Handwerk: Geselle nach Wahl"
+                    "Handwerk: Geselle"
                 ],
                 "value": 1
             }
@@ -853,7 +851,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -871,8 +869,8 @@
             },
             {
                 "options": [
-                    "Schl\u00f6sser und Fallen",
-                    "Fels"
+                    "Schl\u00f6sser & Fallen",
+                    "Felsmagie"
                 ],
                 "value": 1
             },
@@ -944,7 +942,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -964,7 +962,7 @@
             {
                 "options": [
                     "Naturkunde",
-                    "Wasser"
+                    "Wassermagie"
                 ],
                 "value": 1
             },
@@ -1049,14 +1047,14 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
             {
                 "options": [
                     "Naturkunde",
-                    "Schutz"
+                    "Schutzmagie"
                 ],
                 "value": 1
             },
@@ -1128,8 +1126,8 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
-                    "St\u00e4rkung"
+                    "Geschichte & Mythen",
+                    "St\u00e4rkungsmagie"
                 ],
                 "value": 1
             },
@@ -1196,7 +1194,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -1210,7 +1208,7 @@
             {
                 "options": [
                     "L\u00e4nderkunde",
-                    "Wasser"
+                    "Wassermagie"
                 ],
                 "value": 1
             },
@@ -1325,8 +1323,8 @@
             },
             {
                 "options": [
-                    "Heilung",
-                    "Natur"
+                    "Heilungsmagie",
+                    "Naturmagie"
                 ],
                 "value": 1
             }
@@ -1395,14 +1393,14 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "Handwerk",
-                    "Beherrschung"
+                    "Beherrschungsmagie"
                 ],
                 "value": 1
             },
@@ -1463,7 +1461,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
+                    "Geschichte & Mythen",
                     "Entschlossenheit"
                 ],
                 "value": 1
@@ -1522,7 +1520,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Dschungel"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -1549,7 +1547,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -1587,7 +1585,7 @@
             {
                 "options": [
                     "Wahrnehmung",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             }
@@ -1609,7 +1607,7 @@
         "masteries": [
             {
                 "options": [
-                    "Handgemenge: Vorst\u00fcrmen"
+                    "Handgemenge: Voranst\u00fcrmen"
                 ],
                 "value": 1
             }
@@ -1630,7 +1628,7 @@
             {
                 "options": [
                     "Entschlossenheit",
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -1693,7 +1691,7 @@
         "masteries": [
             {
                 "options": [
-                    "Heimlichkeit: Meuchelangriff I"
+                    "Heimlichkeit: Überraschungsangriff I"
                 ],
                 "value": 1
             }
@@ -1728,7 +1726,7 @@
             {
                 "options": [
                     "Heilkunde",
-                    "Schatten"
+                    "Schattenmagie"
                 ],
                 "value": 1
             },
@@ -1795,15 +1793,15 @@
             {
                 "options": [
                     "Akrobatik",
-                    "Schl\u00f6sser und Fallen"
+                    "Schl\u00f6sser & Fallen"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "Anf\u00fchren",
-                    "Fels",
-                    "Feuer"
+                    "Felsmagie",
+                    "Feuermagie"
                 ],
                 "value": 1
             },
@@ -1827,7 +1825,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -1931,8 +1929,8 @@
             {
                 "options": [
                     "\u00dcberleben",
-                    "Wasser",
-                    "Wind"
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             }
@@ -1968,7 +1966,7 @@
             {
                 "options": [
                     "Hiebwaffen",
-                    "Fels"
+                    "Felsmagie"
                 ],
                 "value": 1
             },
@@ -1987,7 +1985,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -2099,7 +2097,7 @@
             {
                 "options": [
                     "Wahrnehmung",
-                    "Wind"
+                    "Windmagie"
                 ],
                 "value": 1
             },
@@ -2172,7 +2170,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -2190,7 +2188,7 @@
             },
             {
                 "options": [
-                    "Kampf"
+                    "Kampfmagie"
                 ],
                 "value": 1
             }
@@ -2244,21 +2242,21 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "Heilkunde",
-                    "Schl\u00f6sser und Fallen"
+                    "Schl\u00f6sser & Fallen"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "Heimlichkeit",
-                    "Wasser"
+                    "Wassermagie"
                 ],
                 "value": 1
             },
@@ -2343,7 +2341,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
+                    "Geschichte & Mythen",
                     "L\u00e4nderkunde"
                 ],
                 "value": 1
@@ -2383,7 +2381,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Dschungel"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -2415,14 +2413,14 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "L\u00e4nderkunde",
-                    "St\u00e4rkung"
+                    "St\u00e4rkungsmagie"
                 ],
                 "value": 1
             },
@@ -2514,7 +2512,7 @@
             {
                 "options": [
                     "Entschlossenheit",
-                    "Beherrschung"
+                    "Beherrschungsmagie"
                 ],
                 "value": 1
             },
@@ -2592,32 +2590,32 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
             {
                 "options": [
                     "Handwerk",
-                    "Bann",
-                    "Beherrschung",
-                    "Bewegung",
-                    "Erkenntnis",
-                    "Fels",
-                    "Feuer",
-                    "Heilung",
-                    "Illusion",
-                    "Kampf",
-                    "Licht",
-                    "Natur",
-                    "Schatten",
-                    "Schicksal",
-                    "Schutz",
-                    "St\u00e4rkung",
-                    "Tod",
-                    "Verwandlung",
-                    "Wasser",
-                    "Wind"
+                    "Bannmagie",
+                    "Beherrschungsmagie",
+                    "Bewegungsmagie",
+                    "Erkenntnismagie",
+                    "Felsmagie",
+                    "Feuermagie",
+                    "Heilungsmagie",
+                    "Illusionsmagie",
+                    "Kampfmagie",
+                    "Lichtmagie",
+                    "Naturmagie",
+                    "Schattenmagie",
+                    "Schicksalsmagie",
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie",
+                    "Todesmagie",
+                    "Verwandlungsmagie",
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             },
@@ -2703,8 +2701,8 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
-                    "Wasser"
+                    "Geschichte & Mythen",
+                    "Wassermagie"
                 ],
                 "value": 1
             },
@@ -2801,7 +2799,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
+                    "Geschichte & Mythen",
                     "L\u00e4nderkunde"
                 ],
                 "value": 1
@@ -2887,14 +2885,14 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
             {
                 "options": [
                     "L\u00e4nderkunde",
-                    "Tod"
+                    "Todesmagie"
                 ],
                 "value": 1
             },
@@ -2956,8 +2954,8 @@
             {
                 "options": [
                     "Anf\u00fchren",
-                    "Bann",
-                    "Schutz"
+                    "Bannmagie",
+                    "Schutzmagie"
                 ],
                 "value": 1
             },
@@ -2988,7 +2986,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -3062,7 +3060,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -3143,7 +3141,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -3173,8 +3171,8 @@
             },
             {
                 "options": [
-                    "Schutz",
-                    "St\u00e4rkung"
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie"
                 ],
                 "value": 1
             }
@@ -3211,7 +3209,7 @@
                     "Wurfwaffen",
                     "Schusswaffen",
                     "Hiebwaffen",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -3229,7 +3227,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
+                    "Geschichte & Mythen",
                     "Jagdkunst"
                 ],
                 "value": 1
@@ -3327,7 +3325,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -3341,7 +3339,7 @@
             {
                 "options": [
                     "Heilkunde",
-                    "Licht"
+                    "Lichtmagie"
                 ],
                 "value": 1
             },
@@ -3392,7 +3390,7 @@
             {
                 "options": [
                     "Darbietung",
-                    "Illusion"
+                    "Illusionsmagie"
                 ],
                 "value": 1
             },
@@ -3429,7 +3427,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -3496,7 +3494,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -3541,8 +3539,8 @@
         ]
     }
 },{
-    "description": "Feuerl\u00e4ufer",
-    "name": "Feuerl\u00e4ufer",
+    "description": "Feuermagiel\u00e4ufer",
+    "name": "Feuermagiel\u00e4ufer",
     "stats": {
         "masteries": [
             {
@@ -3567,7 +3565,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
+                    "Geschichte & Mythen",
                     "Naturkunde"
                 ],
                 "value": 1
@@ -3612,7 +3610,7 @@
             },
             {
                 "options": [
-                    "Feuer"
+                    "Feuermagie"
                 ],
                 "value": 1
             }
@@ -3671,7 +3669,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -3690,25 +3688,25 @@
             {
                 "options": [
                     "Redegewandtheit",
-                    "Bann",
-                    "Beherrschung",
-                    "Bewegung",
-                    "Erkenntnis",
-                    "Fels",
-                    "Feuer",
-                    "Heilung",
-                    "Illusion",
-                    "Kampf",
-                    "Licht",
-                    "Natur",
-                    "Schatten",
-                    "Schicksal",
-                    "Schutz",
-                    "St\u00e4rkung",
-                    "Tod",
-                    "Verwandlung",
-                    "Wasser",
-                    "Wind"
+                    "Bannmagie",
+                    "Beherrschungsmagie",
+                    "Bewegungsmagie",
+                    "Erkenntnismagie",
+                    "Felsmagie",
+                    "Feuermagie",
+                    "Heilungsmagie",
+                    "Illusionsmagie",
+                    "Kampfmagie",
+                    "Lichtmagie",
+                    "Naturmagie",
+                    "Schattenmagie",
+                    "Schicksalsmagie",
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie",
+                    "Todesmagie",
+                    "Verwandlungsmagie",
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             },
@@ -3768,7 +3766,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -3820,7 +3818,7 @@
         "masteries": [
             {
                 "options": [
-                    "Geschichte und Mythen: Schwerpunkt Drachlinge"
+                    "Geschichte & Mythen: Schwerpunkt Einzelnes Volk"
                 ],
                 "value": 1
             }
@@ -3848,25 +3846,25 @@
             {
                 "options": [
                     "Diplomatie",
-                    "Bann",
-                    "Beherrschung",
-                    "Bewegung",
-                    "Erkenntnis",
-                    "Fels",
-                    "Feuer",
-                    "Heilung",
-                    "Illusion",
-                    "Kampf",
-                    "Licht",
-                    "Natur",
-                    "Schatten",
-                    "Schicksal",
-                    "Schutz",
-                    "St\u00e4rkung",
-                    "Tod",
-                    "Verwandlung",
-                    "Wasser",
-                    "Wind"
+                    "Bannmagie",
+                    "Beherrschungsmagie",
+                    "Bewegungsmagie",
+                    "Erkenntnismagie",
+                    "Felsmagie",
+                    "Feuermagie",
+                    "Heilungsmagie",
+                    "Illusionsmagie",
+                    "Kampfmagie",
+                    "Lichtmagie",
+                    "Naturmagie",
+                    "Schattenmagie",
+                    "Schicksalsmagie",
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie",
+                    "Todesmagie",
+                    "Verwandlungsmagie",
+                    "Wassermagie",
+                    "Windmagie"
                 ],
                 "value": 1
             },
@@ -3878,7 +3876,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -3930,7 +3928,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde W\u00fcste"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -3959,7 +3957,7 @@
             {
                 "options": [
                     "Athletik",
-                    "St\u00e4rkung"
+                    "St\u00e4rkungsmagie"
                 ],
                 "value": 1
             },
@@ -3972,7 +3970,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -4033,7 +4031,7 @@
             {
                 "options": [
                     "Anf\u00fchren",
-                    "Kampf"
+                    "Kampfmagie"
                 ],
                 "value": 1
             },
@@ -4051,7 +4049,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -4140,7 +4138,7 @@
             {
                 "options": [
                     "Heilkunde",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -4192,7 +4190,7 @@
         "masteries": [
             {
                 "options": [
-                    "Wahrnehmung: Umgebungssinne Dschungel"
+                    "Wahrnehmung: Umgebungssinne"
                 ],
                 "value": 1
             }
@@ -4238,13 +4236,13 @@
             {
                 "options": [
                     "Naturkunde",
-                    "Fels"
+                    "Felsmagie"
                 ],
                 "value": 1
             },
             {
                 "options": [
-                    "Schl\u00f6sser und Fallen"
+                    "Schl\u00f6sser & Fallen"
                 ],
                 "value": 1
             },
@@ -4284,7 +4282,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Wald"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -4311,8 +4309,8 @@
             {
                 "options": [
                     "Entschlossenheit",
-                    "Geschichte und Mythen",
-                    "Natur"
+                    "Geschichte & Mythen",
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -4370,7 +4368,7 @@
         "masteries": [
             {
                 "options": [
-                    "\u00dcberleben: Gel\u00e4ndekunde Wald"
+                    "\u00dcberleben: Gel\u00e4ndekunde"
                 ],
                 "value": 1
             }
@@ -4379,7 +4377,7 @@
             {
                 "options": [
                     "Schusswaffen",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -4417,7 +4415,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -4471,7 +4469,6 @@
             },
             {
                 "options": [
-                    "Handgemenge",
                     "Klingenwaffen",
                     "Stangenwaffen",
                     "Kettenwaffen",
@@ -4503,7 +4500,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -4527,8 +4524,8 @@
             },
             {
                 "options": [
-                    "Bann",
-                    "Schutz"
+                    "Bannmagie",
+                    "Schutzmagie"
                 ],
                 "value": 1
             }
@@ -4570,7 +4567,7 @@
             {
                 "options": [
                     "Edelhandwerk",
-                    "Fels"
+                    "Felsmagie"
                 ],
                 "value": 1
             },
@@ -4588,7 +4585,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -4655,7 +4652,7 @@
             {
                 "options": [
                     "Diplomatie",
-                    "Illusion"
+                    "Illusionsmagie"
                 ],
                 "value": 1
             },
@@ -4674,7 +4671,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
+                    "Geschichte & Mythen",
                     "\u00dcberleben"
                 ],
                 "value": 1
@@ -4729,7 +4726,7 @@
             {
                 "options": [
                     "Akrobatik",
-                    "St\u00e4rkung"
+                    "St\u00e4rkungsmagie"
                 ],
                 "value": 1
             },
@@ -4761,13 +4758,13 @@
             {
                 "options": [
                     "Fingerfertigkeit",
-                    "Schl\u00f6sser und Fallen"
+                    "Schl\u00f6sser & Fallen"
                 ],
                 "value": 1
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -4822,14 +4819,14 @@
             {
                 "options": [
                     "Athletik",
-                    "Schatten"
+                    "Schattenmagie"
                 ],
                 "value": 1
             },
             {
                 "options": [
                     "Diplomatie",
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -4922,7 +4919,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -4936,7 +4933,7 @@
             {
                 "options": [
                     "Heilkunde",
-                    "St\u00e4rkung"
+                    "St\u00e4rkungsmagie"
                 ],
                 "value": 1
             },
@@ -5002,7 +4999,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },
@@ -5046,7 +5043,7 @@
             },
             {
                 "options": [
-                    "Schicksal"
+                    "Schicksalsmagie"
                 ],
                 "value": 1
             }
@@ -5087,8 +5084,8 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen",
-                    "Natur"
+                    "Geschichte & Mythen",
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -5205,7 +5202,7 @@
             {
                 "options": [
                     "Naturkunde",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -5278,7 +5275,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 2
             },
@@ -5298,7 +5295,7 @@
             {
                 "options": [
                     "Tierf\u00fchrung",
-                    "Natur"
+                    "Naturmagie"
                 ],
                 "value": 1
             },
@@ -5359,7 +5356,7 @@
             },
             {
                 "options": [
-                    "Geschichte und Mythen"
+                    "Geschichte & Mythen"
                 ],
                 "value": 1
             },

@@ -1,6 +1,7 @@
 ListeAbstammungen = ['Kleinbauern', 'Gesindel', 'Händler', 'Künstler', 'Priester', 'Seefahrer', 'Kriegsvolk', 'Magistrale', 'Hochadel', 'Großbauern', 'Handwerker', 'Höflinge', 'Gelehrte', 'Reisende', 'Zauberer', 'Landadel']
 
 def inOptionenAufteilen(element):
+    try:
         Optionsseintrag = {}
         Option = element.rsplit(' ',1)
         Option[0] = Option[0].replace('eine Kampffertigkeit','Handgemenge oder Klingenwaffen oder Stangenwaffen oder Kettenwaffen oder Wurfwaffen oder Schusswaffen oder Hiebwaffen')
@@ -13,6 +14,8 @@ def inOptionenAufteilen(element):
         Optionsseintrag['options'] = Option[0]
         Optionsseintrag['value'] = int(Option[1])
         return Optionsseintrag
+    except ValueError:
+        return element
 
 def splitstrip(string,sep):
     splitstring = string.split(sep)

@@ -1,0 +1,1787 @@
+[{
+    "description": "Priester des Wissens ",
+    "name": "Priester des Wissens ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Erkenntnismagie: Sprachbegabt"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Stand"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Rang (passender Kult)",
+                    "Relikt"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Alchemie",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichten und Mythen"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Erkenntnismagie"
+                ],
+                "value": 4
+            },
+            {
+                "options": [
+                    "Schutzmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Bann",
+                    "Beherrschung",
+                    "Bewegung",
+                    "Erkenntnis",
+                    "Fels",
+                    "Feuer",
+                    "Heilung",
+                    "Illusion",
+                    "Kampf",
+                    "Licht",
+                    "Natur",
+                    "Schatten",
+                    "Schicksal",
+                    "Schutz",
+                    "St\u00e4rkung",
+                    "Tod",
+                    "Verwandlung",
+                    "Wasser",
+                    "Wind"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gutes Ged\u00e4chtnis, Literat, Priester"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Verwandler ",
+    "name": "Der Verwandler ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "St\u00e4rkungsmagie: \u00dcberlasten), eine beliebige Schwelle 1-Meisterschaft in Verwandlungsmagi"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Stand"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Relikt",
+                    "Verm\u00f6gen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Alchemie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Heilungsmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Naturmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schutzmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "St\u00e4rkungsmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Verwandlungsmagie"
+                ],
+                "value": 4
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Erh\u00f6hter Fokuspool",
+                    "Erh\u00f6hte Fokusregeneration"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der K\u00e4mpfer ",
+    "name": "Der K\u00e4mpfer ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Z\u00e4higkeit: R\u00fcstungstr\u00e4ger I), eine beliebige Schwelle 1-Meisterschaft in einer gew\u00e4hlten Kampffertigkei"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Gefolge"
+                ],
+                "value": 2
+            },
+            "Mentor und Rang (passende Organisation)"
+        ],
+        "skills": [
+            {
+                "options": [
+                    "drei Kampffertigkeiten"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "St\u00e4rkungsmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 3
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Robust"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Schurke ",
+    "name": "Der Schurke ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Heimlichkeit: Schwerpunkt St\u00e4dtische Umgebung), eine beliebige Schwelle 1-Meisterschaft in Stra\u00dfenkund"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Kontakte",
+                    "Mentor"
+                ],
+                "value": 2
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Schattenmagie",
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "St\u00e4rkungsmagie",
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Flink, Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Heiler ",
+    "name": "Der Heiler ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Heilkunde: Heilungsmagi"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Stand"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Relikt",
+                    "Verm\u00f6gen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Alchemie",
+                    "Arkane Kunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "das andere"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilungsmagie"
+                ],
+                "value": 4
+            },
+            {
+                "options": [
+                    "St\u00e4rkungsmagie"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Giftresistenz",
+                    "Krankheitsresistenz, Literat",
+                    "Scharfe Sicht"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Waldl\u00e4ufer ",
+    "name": "Der Waldl\u00e4ufer ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde [nach Wahl]), eine beliebige Schwelle 1-Meisterschaft in einer gew\u00e4hlten Fernkampffertigkei"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Kreatur",
+                    "Relikt"
+                ],
+                "value": 2
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "eine weitere"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "eine Fernkampffertigkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung",
+                    "Naturmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 3
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd, Hitzeresistenz",
+                    "K\u00e4lteresistenz"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Kundschafter ",
+    "name": "Der Kundschafter ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Heimlichkeit: Schwerpunkt H\u00f6ren"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Kreatur",
+                    "Relikt"
+                ],
+                "value": 2
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "eine Fernkampffertigkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Handwerk",
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Schwimmen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit",
+                    "Naturmagie"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Flink, Orientierungssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der R\u00e4nkeschmied ",
+    "name": "Der R\u00e4nkeschmied ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Diplomatie: Diplomat), Redegewandtheit (Ablenkung"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Kontakte"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Mentor",
+                    "Stand"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Arkane Kunde",
+                    "Geschichte und Mythen",
+                    "Illusionsmagie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Darbietung",
+                    "Edelhandwerk"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit",
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gutes Ged\u00e4chtnis",
+                    "Literat, Soziales Gesp\u00fcr"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Magische Unterh\u00e4ndler ",
+    "name": "Der Magische Unterh\u00e4ndler ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Diplomatie: Diplomat), Erkenntnismagie (Forschender Geist"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Kontakte",
+                    "Mentor"
+                ],
+                "value": 2
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Beherrschungsmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Erkenntnismagie"
+                ],
+                "value": 4
+            },
+            {
+                "options": [
+                    "Schutzmagie"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Literat, Soziales Gesp\u00fcr"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Mystische Krieger ",
+    "name": "Der Mystische Krieger ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Kampfmagie: Eiserne Konzentration), eine beliebige Schwelle 1-Meisterschaft einer gew\u00e4hlten Kampffertigkei"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Stand"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Mentor",
+                    "Verm\u00f6gen"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "zwei Kampffertigkeiten"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Heilungsmagie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Kampfmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Schutzmagie",
+                    "St\u00e4rkungsmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "das andere"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Erh\u00f6hter Fokuspool",
+                    "Erh\u00f6hte Lebensregeneration"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Die Schattenklinge ",
+    "name": "Die Schattenklinge ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Fingerfertigkeit: Schnellziehen), eine beliebige Schwelle 1-Meisterschaft in einer gew\u00e4hlten Kampffertigkei"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Relikt"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Kontakte"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Bewegungsmagieoder Schattenmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "zwei Waffenfertigkeiten"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Akrobatik"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Arkane Kunde",
+                    "L\u00e4nderkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Fingerfertigkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heimlichkeit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Stra\u00dfenkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 3
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Flink, Gleichgewichtssinn"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Recke ",
+    "name": "Der Recke ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Anf\u00fchren: eine beliebige Schwelle 1-Meisterschaft einer gew\u00e4hlten Kampffertigkei"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen"
+                ],
+                "value": 2
+            },
+            "Kreatur und Stand"
+        ],
+        "skills": [
+            {
+                "options": [
+                    "zwei Kampffertigkeiten"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Akrobatik",
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Arkane Kunde",
+                    "Heilkunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Redegewandtheit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Erh\u00f6hte Lebensregeneration",
+                    "Robust"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Wanderpriester ",
+    "name": "Der Wanderpriester ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "\u00dcberleben: Gel\u00e4ndekunde [nach Wahl]), Naturmagie (Naturkenner"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Rang (passender Kult)"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Kontakte",
+                    "Relikt"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen",
+                    "L\u00e4nderkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "das andere"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Handwerk"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Heilkunde",
+                    "Heilungsmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Jagdkunst"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Bewegungsmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Naturmagie"
+                ],
+                "value": 4
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Ausdauernd",
+                    "Soziales Gesp\u00fcr, Orientierungssinn, Priester"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Glaubenskrieger ",
+    "name": "Der Glaubenskrieger ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "Geschichte und Mythen: Magieschul"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Ansehen",
+                    "Relikt",
+                    "Stand"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Mentor",
+                    "Rang (passender Kult)"
+                ],
+                "value": 1
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "Handgemenge",
+                    "Klingenwaffen",
+                    "Stangenwaffen",
+                    "Kettenwaffen",
+                    "Wurfwaffen",
+                    "Schusswaffen",
+                    "Hiebwaffen"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "eine weitere"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Anf\u00fchren"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Entschlossenheit"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Bannmagie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Heilungsmagie"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Schicksalsmagie",
+                    "St\u00e4rkungsmagie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Schutzmagie",
+                    "Kampfmagie"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "das andere"
+                ],
+                "value": 1
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Erh\u00f6hter Fokuspool",
+                    "Robust, Priester"
+                ],
+                "value": 1
+            }
+        ]
+    }
+},{
+    "description": "Der Entdecker ",
+    "name": "Der Entdecker ",
+    "stats": {
+        "masteries": [
+            {
+                "options": [
+                    "L\u00e4nderkunde: Universalgelehrter), Wahrnehmung (Umgebungssinne [nach Wahl]"
+                ],
+                "value": 1
+            }
+        ],
+        "ressources": [
+            {
+                "options": [
+                    "Kontakte",
+                    "Mentor"
+                ],
+                "value": 2
+            }
+        ],
+        "skills": [
+            {
+                "options": [
+                    "eine beliebige Kampffertigkeit"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Athletik",
+                    "Seefahrt"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Arkane Kunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Diplomatie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Empathie"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "Geschichte und Mythen"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Heimlichkeit",
+                    "Z\u00e4higkeit"
+                ],
+                "value": 2
+            },
+            {
+                "options": [
+                    "L\u00e4nderkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Naturkunde"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Schl\u00f6sser und Fallen"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "Tierf\u00fchrung"
+                ],
+                "value": 1
+            },
+            {
+                "options": [
+                    "\u00dcberleben"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Wahrnehmung"
+                ],
+                "value": 3
+            },
+            {
+                "options": [
+                    "Bewegungsmagie",
+                    "Erkenntnismagie"
+                ],
+                "value": 2
+            }
+        ],
+        "strengths": [
+            {
+                "options": [
+                    "Gutes Ged\u00e4chtnis",
+                    "Literat, Scharfe Sicht",
+                    "Scharfes Geh\u00f6r"
+                ],
+                "value": 1
+            }
+        ]
+    }
+}]

@@ -29,7 +29,10 @@ for row in attribute:
         row[i] = field.rsplit(' ', maxsplit = 1)[0]  
         row[i] = row[i].rsplit('•', maxsplit = 1)[0]    
         row[i] = row[i].strip()
-    row[0] = removeKlammern(row[0])  
+        row[i] = re.sub(re.compile(r'\•',flags ) ,"" ,row[i])
+        
+    row[0] = removeKlammern(row[0])
+    row[0] = row[0].strip()  
     
     #print(len(row))
     #print(row)    
@@ -47,11 +50,11 @@ for row in attribute:
             row[i] = splitstrip(field,',')
             
 for Zauber in Zauberen.keys():
-    Schulenliste = []
+    Schulenliste = {}
     for element in splitstrip(Zauberen[Zauber].schulen,','):
-        Schulenliste.append([element.split(' ')[0],element.split(' ')[1]])  
+        Schulenliste[element.split(' ')[0]] = element.split(' ')[1]  
     Zauberen[Zauber] = Zauberen[Zauber]._replace(schulen = Schulenliste)
-    Zauberen[Zauber] = Zauberen[Zauber]._replace(Optionen = Zauberen[Zauber].Optionen.split(','))
+    Zauberen[Zauber] = Zauberen[Zauber]._replace(Optionen = [x.strip() for x in Zauberen[Zauber].Optionen.split(',')])
 
   
 v = ''

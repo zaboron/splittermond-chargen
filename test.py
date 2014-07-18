@@ -1,37 +1,75 @@
-import abstammungen
-import kulturen
-testabst = ["alle au\u00dfer Hochadel",
-        "H\u00f6flinge und Landadel"]
-testabst2 = [
-        "Einsiedler",
-        "Handwerker",
-        "Kleinbauern",
-        "Kriegsvolk",
-        "Reisende",
-        "Zauberer"
-    ]
+i = 0
+sicherheit ={}
+risiko ={}
+normal ={}
+sicherheitmeister ={}
+risikomeister ={}
+normalmeister ={}
+sortiertesorten = [sicherheit,normal,risiko,sicherheitmeister,normalmeister,risikomeister]
+sorten = {'Sicherheitswurf':sicherheit, 'Normaler Wurf':normal, 'Risikowurf':risiko, 'Sicherheitswurf als Meister':sicherheitmeister, 
+          'Normaler Wurf als Meister':normalmeister, 'Risikowurf als Meister':risikomeister}
 
+for ergebnis in range(1,22):
+    for element in sorten:
+        sorten[element][ergebnis]=0
 
-def parseAbstammung(akzeptierteAbstammungRaw):
-    if type(akzeptierteAbstammungRaw) is str:
-        akzeptierteAbstammungRaw = [akzeptierteAbstammungRaw]
-    else:
-        akzeptierteAbstammungRaw = akzeptierteAbstammungRaw
-    akzeptierteAbstammungRaw =  ' '.join(akzeptierteAbstammungRaw)
-    akzeptierteAbstammung = []
-    if 'alle' in akzeptierteAbstammungRaw:
-        akzeptierteAbstammung += abstammungen.ListeAbstammungen
-        if 'außer' in akzeptierteAbstammungRaw:
-            ausnahmen = akzeptierteAbstammungRaw.rsplit(sep = ' außer ', maxsplit = 1)[1]
-            for ausnahme in ausnahmen.split(' '):
-                try:
-                    akzeptierteAbstammung.remove(ausnahme)
-                except ValueError:
-                    pass    
+for w1 in range(1,11):
+    for w2 in range(1,11):
+        for w3 in range(1,11):
+            for w4 in range(1,11):
+                for w5 in range(1,11):
+                    i += 1
+                    result = sorted([w1,w2,w3,w4])
+                    if sum(result[0:2]) < 4:
+                        risiko[sum(result[0:2])] +=1
+                    else:                        
+                        risiko[sum(result[2:4])] +=1
+                    sicherheit[max(w1,w2)] += 1
+                    normal[w1+w2] += 1                    
+                    sicherheitmeister[max(w1,w2,w5)] += 1
+                    if w1+w2 <4 :
+                        normalmeister[w1+w2] += 1
+                    else:
+                        normalmeister[w1+w2+w5-min(w1,w2,w5)]+= 1
+                    result = sorted([w1,w2,w3,w4])
+                    if sum(result[0:2]) < 4:
+                        risikomeister[sum(result[0:2])] +=1
+                    else:                        
+                        risikomeister[sum(sorted([w1,w2,w3,w4,w5])[3:5])] +=1
+
+for ergebnis in sorten:
+    summe = 0
+    durchschnitt = 0
+   
+    for x in sorten[ergebnis]:
+        v = sorten[ergebnis][x]*100/i
+        durchschnitt += sorten[ergebnis][x]*x
+        sorten[ergebnis][x] = [round(sorten[ergebnis][x]*100/i,2),round(100-summe,2)]        
+        summe +=v   
+    sorten[ergebnis][21] = durchschnitt/i
+tablestring = ''
+for i in range(1,3):
+    tablestring += '[table][tr][td]'
+    for x in range(1,4):
+        for name, value in sorten.items():
+            if value == sortiertesorten[x+3*(i-1)-1]:
+                tablestring += '[B]'+name +'[/B][/td][td] Durchschnitt: '+str(value[21])+'[/td][td][/td][td][/td][td]'
+    tablestring +='[/tr]\r\n[tr]'
+    for x in range(1,4):
+        tablestring +='[td]Ergebnis[/td][td]Wahrscheinlichkeit[/td][td] kumulierte Wahrscheinlichkeit[/td][td]      [/td]'
+    tablestring +='[/tr]\r\n'
+    for ergebniss in range(1,21):
+        tablestring +='[tr]'
+        for x in range(1,4):
+            for name, value in sorten.items():
+                if value == sortiertesorten[x*i-1]:
+                    tablestring += '[td]'+str(ergebniss)+'[/td][td]'+str(value[ergebniss][0])+'[/td][td]'+str(value[ergebniss][1])+'[/td][td]      [/td]'
+        
+        tablestring +='[/tr]\r\n'
+    tablestring += '[/table]'
                 
-    else:
-        akzeptierteAbstammung += akzeptierteAbstammungRaw.split(sep = ' ')
-    return akzeptierteAbstammung
 
-for x in kulturen.Kulturen:
-    print(parseAbstammung(kulturen.Kulturen[x].Abstammungen))
+print(tablestring)
+                
+    
+

@@ -10,7 +10,6 @@ KulturFinal = namedtuple('Kultur', 'name description stats')
 stats = namedtuple('stats', 'strengths skills masteries')
 
 
-
 with codecs.open('kulturen.txt', "r", "utf-8") as f:
     lines = [x.splitlines() for x in f.readlines()[1:]]
     attribute = []

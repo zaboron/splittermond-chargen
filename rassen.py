@@ -2,9 +2,7 @@ from collections import namedtuple
 from random import randint
 Rasse = namedtuple('Rasse', 'name Attributsmodifikatoren Größenklasse Stärken Farbenart Haarfarbe Augenfarbe Körpergröße Gewicht')
 
-class Charakter():
-    def __init__(self):
-        pass
+
 Rassen = {}
 Rassen['Alb'] = Rasse('Alb',{'AUS':'1','BEW':'1','BEL':'1','KON':'-1'},5,['Attraktivität','Scharfes Gehör','Dämmersicht'],'Hautfarbe',
 {'silberweiß':[2,3],'weißblond':[4,5],'goldblond':[6,7,8],'dunkelblond':[9,10],
@@ -42,6 +40,8 @@ Rassen['Zwerg'] = Rasse('Zwerg',{'KON':'1','WIL':'1','BEL':'1','BEW':'-1'},4,['G
 {'schwarz':[2,],'grau':[3,4],'dunkelbraun':[5,6],'hellbraun':[7,8,9,10],
 'grünbraun':[11,12,13,14],'grün':[15,16,17],'kupferfarben':[18,19],'silbern':[20]},
 [135,2],[60, 100])
+
+
 
 
 def bestimmeFarbe(Farbenliste):

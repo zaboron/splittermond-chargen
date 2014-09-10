@@ -1,77 +1,26 @@
-from tkinter import *
 
-from collections import namedtuple
-from operator import itemgetter
+from collections import Counter
+def zehn(ziffer):
+    if int(ziffer) == 0:
+        return 10
+    else:
+        return int(ziffer)
 
-Rasse = namedtuple('Rasse', 'name Beschreibung')
-Rassen = [Rasse('Alb','Ein Elf'),  Rasse('Gnom','Ein Gnom'), Rasse('Varg','Ein Wolf'), Rasse('Mensch','Ein Mensch')]
-
-
-Kultur = namedtuple('Kultur', 'name Beschreibung')
-Kulturen = [Kultur('Zwingard','Ein Zwingarder'),  Kultur('Seealb','Ein Seealb')]
-
-class App(Frame): # an extended Frame
-    def __init__(self, parent=None):
-        Frame.__init__(self, parent) # do superclass )
-        self.pack()
-        self.data = 42
-
+diff = []
+for w in range(0,100000):
+    list_of_ints = [zehn(i) for i in str(w)] + [ 10 for i in range(0,5)]
+    result = sorted(list_of_ints[:4])
+    if sum(result[0:2]) < 4:
+        x = sum(result[0:2])
+        y = sum(result[0:2])
+    else:
+        x = sum(result[2:4])
+        y = sorted([result[0],result[2],result[3],list_of_ints[4]])
+        if sum(y[0:2]) < 4:
+            y = sum(y[0:2])
+        else:
+            y = sum(y[2:4])
+    diff += [str(y-x)]
     
 
-class RadioSelektion(App):
-    def __init__(self, entries, parent=None):
-        App.__init__(self, parent)
-        self.zahl_var = StringVar() #you should google "tkinter variables" if you don't know about these yet
-        self.zahl_var.set("You selected the option " + Rassen[0].Beschreibung)
-        self.buttonwidth = max(len(entry.name) for entry in entries)
-        self.generiereButtons(entries)
-        self.make_widgets() # attach widgets to self
-        
-    def make_widgets(self):
-        widget = Button(self, text='Next', command=self.message)
-        widget.pack(side=LEFT)
-        
-    def message(self):
-        self.master.withdraw()
-   
-    def generiereButtons(self,entries):
-        button_frame = LabelFrame(self, text='Click a button!', width = 20)
-        label = Label(button_frame,textvariable = self.zahl_var)
-        for element in entries:  
-            OptionMenu(button_frame, text=element.name,  variable=self.zahl_var, value="You selected the option " + element.Beschreibung,
-                     command=self.sel,indicatoron=0, width = self.buttonwidth).pack( anchor = W )
-        label.pack()
-        button_frame.pack()
-        self.sel()
-        
-    def sel(self):
-        selection = self.zahl_var.get()
-        #root.update_idletasks()  
-        
-class test(App):
-    def __init__(self, parent=None):
-        App.__init__(self, parent)
-        
-    def make_widgets(self):
-        widget = Button(self, text='Next', command=self.message)
-        widget.pack(side=LEFT)
-        
-    def message(self):
-        self.master.withdraw()
-   
-    def generiereButtons(self,entries):
-        button_frame = LabelFrame(self, text='Click a button!', width = 20)
-        label = Label(button_frame,textvariable = self.zahl_var)
-        for element in entries:  
-            OptionMenu(button_frame, text=element.name,  variable=self.zahl_var, value="You selected the option " + element.Beschreibung,
-                     command=self.sel,indicatoron=0, width = self.buttonwidth).pack( anchor = W )
-        label.pack()
-        button_frame.pack()
-        self.sel()
-        
-    def sel(self):
-        selection = self.zahl_var.get()
-        #root.update_idletasks()  
-    
-
-if __name__ == '__main__': RadioSelektion(Rassen).mainloop()
+print(Counter(elem[0] for elem in diff))

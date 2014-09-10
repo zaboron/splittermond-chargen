@@ -64,7 +64,9 @@ for Zauber in Zauberen.keys():
 v = ''
 for x in Zauberen:
     n = Zauberen[x]
-    print(json.dumps(dict(zip(n._fields, list(n)) ), indent=4, sort_keys=True)+',')
+    if '0' in n.schulen.values():
+        print(n.name, n.schulen.values(), n.Typus)
+        #print(json.dumps(dict(zip(n._fields, list(n)) ), indent=4, sort_keys=True)+',')    
     v +=json.dumps(dict(zip(n._fields, list(n)) ), indent=4, sort_keys=True)+','
 
     
